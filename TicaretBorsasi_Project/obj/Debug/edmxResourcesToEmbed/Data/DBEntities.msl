@@ -1,0 +1,1351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBModelStoreContainer" CdmEntityContainer="DBEntities">
+    <EntitySetMapping Name="aspnet_Applications">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Applications">
+        <MappingFragment StoreEntitySet="aspnet_Applications">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+          <ScalarProperty Name="LoweredApplicationName" ColumnName="LoweredApplicationName" />
+          <ScalarProperty Name="ApplicationName" ColumnName="ApplicationName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Membership">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Membership">
+        <MappingFragment StoreEntitySet="aspnet_Membership">
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptWindowStart" ColumnName="FailedPasswordAnswerAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAnswerAttemptCount" ColumnName="FailedPasswordAnswerAttemptCount" />
+          <ScalarProperty Name="FailedPasswordAttemptWindowStart" ColumnName="FailedPasswordAttemptWindowStart" />
+          <ScalarProperty Name="FailedPasswordAttemptCount" ColumnName="FailedPasswordAttemptCount" />
+          <ScalarProperty Name="LastLockoutDate" ColumnName="LastLockoutDate" />
+          <ScalarProperty Name="LastPasswordChangedDate" ColumnName="LastPasswordChangedDate" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="IsLockedOut" ColumnName="IsLockedOut" />
+          <ScalarProperty Name="IsApproved" ColumnName="IsApproved" />
+          <ScalarProperty Name="PasswordAnswer" ColumnName="PasswordAnswer" />
+          <ScalarProperty Name="PasswordQuestion" ColumnName="PasswordQuestion" />
+          <ScalarProperty Name="LoweredEmail" ColumnName="LoweredEmail" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MobilePIN" ColumnName="MobilePIN" />
+          <ScalarProperty Name="PasswordSalt" ColumnName="PasswordSalt" />
+          <ScalarProperty Name="PasswordFormat" ColumnName="PasswordFormat" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Paths">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Paths">
+        <MappingFragment StoreEntitySet="aspnet_Paths">
+          <ScalarProperty Name="LoweredPath" ColumnName="LoweredPath" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationAllUsers">
+      <EntityTypeMapping TypeName="DBModel.aspnet_PersonalizationAllUsers">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationAllUsers">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_PersonalizationPerUser">
+      <EntityTypeMapping TypeName="DBModel.aspnet_PersonalizationPerUser">
+        <MappingFragment StoreEntitySet="aspnet_PersonalizationPerUser">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PageSettings" ColumnName="PageSettings" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Profile">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Profile">
+        <MappingFragment StoreEntitySet="aspnet_Profile">
+          <ScalarProperty Name="LastUpdatedDate" ColumnName="LastUpdatedDate" />
+          <ScalarProperty Name="PropertyValuesBinary" ColumnName="PropertyValuesBinary" />
+          <ScalarProperty Name="PropertyValuesString" ColumnName="PropertyValuesString" />
+          <ScalarProperty Name="PropertyNames" ColumnName="PropertyNames" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Roles">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Roles">
+        <MappingFragment StoreEntitySet="aspnet_Roles">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LoweredRoleName" ColumnName="LoweredRoleName" />
+          <ScalarProperty Name="RoleName" ColumnName="RoleName" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_SchemaVersions">
+      <EntityTypeMapping TypeName="DBModel.aspnet_SchemaVersions">
+        <MappingFragment StoreEntitySet="aspnet_SchemaVersions">
+          <ScalarProperty Name="IsCurrentVersion" ColumnName="IsCurrentVersion" />
+          <ScalarProperty Name="CompatibleSchemaVersion" ColumnName="CompatibleSchemaVersion" />
+          <ScalarProperty Name="Feature" ColumnName="Feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_Users">
+      <EntityTypeMapping TypeName="DBModel.aspnet_Users">
+        <MappingFragment StoreEntitySet="aspnet_Users">
+          <ScalarProperty Name="LastActivityDate" ColumnName="LastActivityDate" />
+          <ScalarProperty Name="IsAnonymous" ColumnName="IsAnonymous" />
+          <ScalarProperty Name="MobileAlias" ColumnName="MobileAlias" />
+          <ScalarProperty Name="LoweredUserName" ColumnName="LoweredUserName" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationId" ColumnName="ApplicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="aspnet_WebEvent_Events">
+      <EntityTypeMapping TypeName="DBModel.aspnet_WebEvent_Events">
+        <MappingFragment StoreEntitySet="aspnet_WebEvent_Events">
+          <ScalarProperty Name="Details" ColumnName="Details" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="RequestUrl" ColumnName="RequestUrl" />
+          <ScalarProperty Name="MachineName" ColumnName="MachineName" />
+          <ScalarProperty Name="ApplicationVirtualPath" ColumnName="ApplicationVirtualPath" />
+          <ScalarProperty Name="ApplicationPath" ColumnName="ApplicationPath" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="EventDetailCode" ColumnName="EventDetailCode" />
+          <ScalarProperty Name="EventCode" ColumnName="EventCode" />
+          <ScalarProperty Name="EventOccurrence" ColumnName="EventOccurrence" />
+          <ScalarProperty Name="EventSequence" ColumnName="EventSequence" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="EventTime" ColumnName="EventTime" />
+          <ScalarProperty Name="EventTimeUtc" ColumnName="EventTimeUtc" />
+          <ScalarProperty Name="EventId" ColumnName="EventId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AIDAT_TAKIP">
+      <EntityTypeMapping TypeName="DBModel.AIDAT_TAKIP">
+        <MappingFragment StoreEntitySet="AIDAT_TAKIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TahakkukMahsupNo" ColumnName="TahakkukMahsupNo" />
+          <ScalarProperty Name="TahakkukTarihi" ColumnName="TahakkukTarihi" />
+          <ScalarProperty Name="Taksit2CezaAciklama" ColumnName="Taksit2CezaAciklama" />
+          <ScalarProperty Name="Taksit2CezaMiktar" ColumnName="Taksit2CezaMiktar" />
+          <ScalarProperty Name="Taksit2CezaTarihi" ColumnName="Taksit2CezaTarihi" />
+          <ScalarProperty Name="Taksit1CezaAciklama" ColumnName="Taksit1CezaAciklama" />
+          <ScalarProperty Name="Taksit1CezaMiktar" ColumnName="Taksit1CezaMiktar" />
+          <ScalarProperty Name="Taksit1CezaTarihi" ColumnName="Taksit1CezaTarihi" />
+          <ScalarProperty Name="Taksit2OdemeAciklama" ColumnName="Taksit2OdemeAciklama" />
+          <ScalarProperty Name="Taksit2OdemeMiktar" ColumnName="Taksit2OdemeMiktar" />
+          <ScalarProperty Name="Taksit2OdemeTarihi" ColumnName="Taksit2OdemeTarihi" />
+          <ScalarProperty Name="Taksit1OdemeAciklama" ColumnName="Taksit1OdemeAciklama" />
+          <ScalarProperty Name="Taksit1OdemeMiktar" ColumnName="Taksit1OdemeMiktar" />
+          <ScalarProperty Name="Taksit1OdemeTarihi" ColumnName="Taksit1OdemeTarihi" />
+          <ScalarProperty Name="AidatMiktar" ColumnName="AidatMiktar" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="DereceKey" ColumnName="DereceKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="AidatTakipKey" ColumnName="AidatTakipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BANKA_MEVDUAT">
+      <EntityTypeMapping TypeName="DBModel.BANKA_MEVDUAT">
+        <MappingFragment StoreEntitySet="BANKA_MEVDUAT">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="StopajYuzdesi" ColumnName="StopajYuzdesi" />
+          <ScalarProperty Name="FaizYuzdesi" ColumnName="FaizYuzdesi" />
+          <ScalarProperty Name="VadeSonu" ColumnName="VadeSonu" />
+          <ScalarProperty Name="VadeBasi" ColumnName="VadeBasi" />
+          <ScalarProperty Name="VadeliYatanMeblag" ColumnName="VadeliYatanMeblag" />
+          <ScalarProperty Name="BankaAdi" ColumnName="BankaAdi" />
+          <ScalarProperty Name="BankaHesapNo" ColumnName="BankaHesapNo" />
+          <ScalarProperty Name="BankaMevduatKey" ColumnName="BankaMevduatKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BEYANs">
+      <EntityTypeMapping TypeName="DBModel.BEYAN">
+        <MappingFragment StoreEntitySet="BEYAN">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BeyanTastik" ColumnName="BeyanTastik" />
+          <ScalarProperty Name="BulunduguYer" ColumnName="BulunduguYer" />
+          <ScalarProperty Name="StopajVarmi" ColumnName="StopajVarmi" />
+          <ScalarProperty Name="FisTarihiFisNoFisSatiri" ColumnName="FisTarihiFisNoFisSatiri" />
+          <ScalarProperty Name="DovizTutari" ColumnName="DovizTutari" />
+          <ScalarProperty Name="DovizKuru" ColumnName="DovizKuru" />
+          <ScalarProperty Name="DovizAdi" ColumnName="DovizAdi" />
+          <ScalarProperty Name="BeyanSatisTutari" ColumnName="BeyanSatisTutari" />
+          <ScalarProperty Name="KarsiAdres" ColumnName="KarsiAdres" />
+          <ScalarProperty Name="KarsiUnvan" ColumnName="KarsiUnvan" />
+          <ScalarProperty Name="KarsiVergiNo" ColumnName="KarsiVergiNo" />
+          <ScalarProperty Name="KarsiVergiDairesiAdi" ColumnName="KarsiVergiDairesiAdi" />
+          <ScalarProperty Name="BeyannameKarsiFirmaTuccarSicilKey" ColumnName="BeyannameKarsiFirmaTuccarSicilKey" />
+          <ScalarProperty Name="SatisSekliKey" ColumnName="SatisSekliKey" />
+          <ScalarProperty Name="CanliHayvanAdet" ColumnName="CanliHayvanAdet" />
+          <ScalarProperty Name="BeyanKayitTipKey" ColumnName="BeyanKayitTipKey" />
+          <ScalarProperty Name="MaddeKodKey" ColumnName="MaddeKodKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="BeyanFaturaTarihi" ColumnName="BeyanFaturaTarihi" />
+          <ScalarProperty Name="BeyanFaturaNo" ColumnName="BeyanFaturaNo" />
+          <ScalarProperty Name="TeslimTarihi" ColumnName="TeslimTarihi" />
+          <ScalarProperty Name="TeslimMahalli" ColumnName="TeslimMahalli" />
+          <ScalarProperty Name="OzelSartTanimlama" ColumnName="OzelSartTanimlama" />
+          <ScalarProperty Name="UretimYili" ColumnName="UretimYili" />
+          <ScalarProperty Name="Mensei" ColumnName="Mensei" />
+          <ScalarProperty Name="BirimTipKey" ColumnName="BirimTipKey" />
+          <ScalarProperty Name="BirimFiyat" ColumnName="BirimFiyat" />
+          <ScalarProperty Name="MeraFonu" ColumnName="MeraFonu" />
+          <ScalarProperty Name="FonPayiBagkur" ColumnName="FonPayiBagkur" />
+          <ScalarProperty Name="Stopaj" ColumnName="Stopaj" />
+          <ScalarProperty Name="TescilMiktar" ColumnName="TescilMiktar" />
+          <ScalarProperty Name="SimsariyeMiktar" ColumnName="SimsariyeMiktar" />
+          <ScalarProperty Name="BeyanMiktar" ColumnName="BeyanMiktar" />
+          <ScalarProperty Name="SaticiAdres" ColumnName="SaticiAdres" />
+          <ScalarProperty Name="SaticiAd" ColumnName="SaticiAd" />
+          <ScalarProperty Name="MustahsilNo" ColumnName="MustahsilNo" />
+          <ScalarProperty Name="BeyanTipKey" ColumnName="BeyanTipKey" />
+          <ScalarProperty Name="AlisSatisTipKey" ColumnName="AlisSatisTipKey" />
+          <ScalarProperty Name="BeyanSatirNo" ColumnName="BeyanSatirNo" />
+          <ScalarProperty Name="BeyanNo" ColumnName="BeyanNo" />
+          <ScalarProperty Name="BorsaSubeKey" ColumnName="BorsaSubeKey" />
+          <ScalarProperty Name="BeyanTarihi" ColumnName="BeyanTarihi" />
+          <ScalarProperty Name="BeyanKey" ColumnName="BeyanKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DERECE_DEGISIKLIK">
+      <EntityTypeMapping TypeName="DBModel.DERECE_DEGISIKLIK">
+        <MappingFragment StoreEntitySet="DERECE_DEGISIKLIK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="YKKNo" ColumnName="YKKNo" />
+          <ScalarProperty Name="YKKTarih" ColumnName="YKKTarih" />
+          <ScalarProperty Name="DereceKey" ColumnName="DereceKey" />
+          <ScalarProperty Name="DereceVerilisYil" ColumnName="DereceVerilisYil" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="DereceDegisiklikKey" ColumnName="DereceDegisiklikKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_ADRES">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_ADRES">
+        <MappingFragment StoreEntitySet="FIRMA_ADRES">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="FirmaAdresTipKey" ColumnName="FirmaAdresTipKey" />
+          <ScalarProperty Name="FirmaAdres" ColumnName="FirmaAdres" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaAdresKey" ColumnName="FirmaAdresKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_DIGER_FAALIYET_KOD">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_DIGER_FAALIYET_KOD">
+        <MappingFragment StoreEntitySet="FIRMA_DIGER_FAALIYET_KOD">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="BaslangicTarihi" ColumnName="BaslangicTarihi" />
+          <ScalarProperty Name="NaceKodu2" ColumnName="NaceKodu2" />
+          <ScalarProperty Name="NaceKodu1" ColumnName="NaceKodu1" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaDigerFaaliyetKodKey" ColumnName="FirmaDigerFaaliyetKodKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_FAALIYET">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_FAALIYET">
+        <MappingFragment StoreEntitySet="FIRMA_FAALIYET">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Ihracat" ColumnName="Ihracat" />
+          <ScalarProperty Name="Ithalat" ColumnName="Ithalat" />
+          <ScalarProperty Name="Satim" ColumnName="Satim" />
+          <ScalarProperty Name="Alim" ColumnName="Alim" />
+          <ScalarProperty Name="Bayi" ColumnName="Bayi" />
+          <ScalarProperty Name="Uretim" ColumnName="Uretim" />
+          <ScalarProperty Name="MaddeKodKey" ColumnName="MaddeKodKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaFaaliyetKey" ColumnName="FirmaFaaliyetKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_KAYITLI_ODA">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_KAYITLI_ODA">
+        <MappingFragment StoreEntitySet="FIRMA_KAYITLI_ODA">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="OdaBorsaSicilNo" ColumnName="OdaBorsaSicilNo" />
+          <ScalarProperty Name="OdaBorsaKayitTarihi" ColumnName="OdaBorsaKayitTarihi" />
+          <ScalarProperty Name="OdaBorsaAdi" ColumnName="OdaBorsaAdi" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaKayitliOdaKey" ColumnName="FirmaKayitliOdaKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_SAHIS">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_SAHIS">
+        <MappingFragment StoreEntitySet="FIRMA_SAHIS">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TcKimlikNo" ColumnName="TcKimlikNo" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="OgrenimDurumTipKey" ColumnName="OgrenimDurumTipKey" />
+          <ScalarProperty Name="Uyruk" ColumnName="Uyruk" />
+          <ScalarProperty Name="DogumTarihi" ColumnName="DogumTarihi" />
+          <ScalarProperty Name="DogumYeri" ColumnName="DogumYeri" />
+          <ScalarProperty Name="BabaAdi" ColumnName="BabaAdi" />
+          <ScalarProperty Name="Ad" ColumnName="Ad" />
+          <ScalarProperty Name="Soyad" ColumnName="Soyad" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaSahisKey" ColumnName="FirmaSahisKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_TELEFON_FAX">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_TELEFON_FAX">
+        <MappingFragment StoreEntitySet="FIRMA_TELEFON_FAX">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="FirmaTelefonFaxTipKey" ColumnName="FirmaTelefonFaxTipKey" />
+          <ScalarProperty Name="FirmaTelefonFax" ColumnName="FirmaTelefonFax" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaTelefonFaxKey" ColumnName="FirmaTelefonFaxKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_UYARI">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_UYARI">
+        <MappingFragment StoreEntitySet="FIRMA_UYARI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aktif" ColumnName="Aktif" />
+          <ScalarProperty Name="FirmaUyariTarih" ColumnName="FirmaUyariTarih" />
+          <ScalarProperty Name="FirmaUyari" ColumnName="FirmaUyari" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaUyariKey" ColumnName="FirmaUyariKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_YETKILI">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_YETKILI">
+        <MappingFragment StoreEntitySet="FIRMA_YETKILI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaYetkiliKey" ColumnName="FirmaYetkiliKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIRMA_YONETIM">
+      <EntityTypeMapping TypeName="DBModel.FIRMA_YONETIM">
+        <MappingFragment StoreEntitySet="FIRMA_YONETIM">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="FirmaYonetimKey" ColumnName="FirmaYonetimKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FIS_NO">
+      <EntityTypeMapping TypeName="DBModel.FIS_NO">
+        <MappingFragment StoreEntitySet="FIS_NO">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AralikNo" ColumnName="AralikNo" />
+          <ScalarProperty Name="KasimNo" ColumnName="KasimNo" />
+          <ScalarProperty Name="EkimNo" ColumnName="EkimNo" />
+          <ScalarProperty Name="EylulNo" ColumnName="EylulNo" />
+          <ScalarProperty Name="AgustosNo" ColumnName="AgustosNo" />
+          <ScalarProperty Name="TemmuzNo" ColumnName="TemmuzNo" />
+          <ScalarProperty Name="HaziranNo" ColumnName="HaziranNo" />
+          <ScalarProperty Name="MayisNo" ColumnName="MayisNo" />
+          <ScalarProperty Name="NisanNo" ColumnName="NisanNo" />
+          <ScalarProperty Name="MartNo" ColumnName="MartNo" />
+          <ScalarProperty Name="SubatNo" ColumnName="SubatNo" />
+          <ScalarProperty Name="OcakNo" ColumnName="OcakNo" />
+          <ScalarProperty Name="FisTipKey" ColumnName="FisTipKey" />
+          <ScalarProperty Name="MuhasebeTipKey" ColumnName="MuhasebeTipKey" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="FisNoKey" ColumnName="FisNoKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GELEN_GIDEN_EVRAK">
+      <EntityTypeMapping TypeName="DBModel.GELEN_GIDEN_EVRAK">
+        <MappingFragment StoreEntitySet="GELEN_GIDEN_EVRAK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="EvrakTipKey" ColumnName="EvrakTipKey" />
+          <ScalarProperty Name="YaziOzeti" ColumnName="YaziOzeti" />
+          <ScalarProperty Name="EvrakNo" ColumnName="EvrakNo" />
+          <ScalarProperty Name="EvrakTarihi" ColumnName="EvrakTarihi" />
+          <ScalarProperty Name="IlIlceKey" ColumnName="IlIlceKey" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="EvrakSiraNo" ColumnName="EvrakSiraNo" />
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="DosyaGrupKey" ColumnName="DosyaGrupKey" />
+          <ScalarProperty Name="GelenGidenEvrakKey" ColumnName="GelenGidenEvrakKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HESAP_PLANI">
+      <EntityTypeMapping TypeName="DBModel.HESAP_PLANI">
+        <MappingFragment StoreEntitySet="HESAP_PLANI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Alacak2_" ColumnName="Alacak2_" />
+          <ScalarProperty Name="Alacak1_" ColumnName="Alacak1_" />
+          <ScalarProperty Name="AlacakAralik" ColumnName="AlacakAralik" />
+          <ScalarProperty Name="AlacakKasim" ColumnName="AlacakKasim" />
+          <ScalarProperty Name="AlacakEkim" ColumnName="AlacakEkim" />
+          <ScalarProperty Name="AlacakEylul" ColumnName="AlacakEylul" />
+          <ScalarProperty Name="AlacakAgustos" ColumnName="AlacakAgustos" />
+          <ScalarProperty Name="AlacakTemmuz" ColumnName="AlacakTemmuz" />
+          <ScalarProperty Name="AlacakHaziran" ColumnName="AlacakHaziran" />
+          <ScalarProperty Name="AlacakMayis" ColumnName="AlacakMayis" />
+          <ScalarProperty Name="AlacakNisan" ColumnName="AlacakNisan" />
+          <ScalarProperty Name="AlacakMart" ColumnName="AlacakMart" />
+          <ScalarProperty Name="AlacakSubat" ColumnName="AlacakSubat" />
+          <ScalarProperty Name="AlacakOcak" ColumnName="AlacakOcak" />
+          <ScalarProperty Name="Borc2_" ColumnName="Borc2_" />
+          <ScalarProperty Name="Borc1_" ColumnName="Borc1_" />
+          <ScalarProperty Name="BorcAralik" ColumnName="BorcAralik" />
+          <ScalarProperty Name="BorcKasim" ColumnName="BorcKasim" />
+          <ScalarProperty Name="BorcEkim" ColumnName="BorcEkim" />
+          <ScalarProperty Name="BorcEylul" ColumnName="BorcEylul" />
+          <ScalarProperty Name="BorcAgustos" ColumnName="BorcAgustos" />
+          <ScalarProperty Name="BorcTemmuz" ColumnName="BorcTemmuz" />
+          <ScalarProperty Name="BorcHaziran" ColumnName="BorcHaziran" />
+          <ScalarProperty Name="BorcMayis" ColumnName="BorcMayis" />
+          <ScalarProperty Name="BorcNisan" ColumnName="BorcNisan" />
+          <ScalarProperty Name="BorcMart" ColumnName="BorcMart" />
+          <ScalarProperty Name="BorcSubat" ColumnName="BorcSubat" />
+          <ScalarProperty Name="BorcOcak" ColumnName="BorcOcak" />
+          <ScalarProperty Name="HesapAdi" ColumnName="HesapAdi" />
+          <ScalarProperty Name="HesapKodu" ColumnName="HesapKodu" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="MuhasebeTipKey" ColumnName="MuhasebeTipKey" />
+          <ScalarProperty Name="HesapPlaniKey" ColumnName="HesapPlaniKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="KAYIT_TAKIP">
+      <EntityTypeMapping TypeName="DBModel.KAYIT_TAKIP">
+        <MappingFragment StoreEntitySet="KAYIT_TAKIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="CezaMiktar" ColumnName="CezaMiktar" />
+          <ScalarProperty Name="CezaTarihi" ColumnName="CezaTarihi" />
+          <ScalarProperty Name="VadeTarihi" ColumnName="VadeTarihi" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="OdemeMiktar" ColumnName="OdemeMiktar" />
+          <ScalarProperty Name="OdemeTarihi" ColumnName="OdemeTarihi" />
+          <ScalarProperty Name="AidatMiktar" ColumnName="AidatMiktar" />
+          <ScalarProperty Name="DereceKey" ColumnName="DereceKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="KayitTakipKey" ColumnName="KayitTakipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MESLEK_GRUP_DEGISIKLIK">
+      <EntityTypeMapping TypeName="DBModel.MESLEK_GRUP_DEGISIKLIK">
+        <MappingFragment StoreEntitySet="MESLEK_GRUP_DEGISIKLIK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="YKKNo" ColumnName="YKKNo" />
+          <ScalarProperty Name="YKKTarih" ColumnName="YKKTarih" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="MeslekGrupKey" ColumnName="MeslekGrupKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="MeslekGrupDegisiklikKey" ColumnName="MeslekGrupDegisiklikKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="REHBERs">
+      <EntityTypeMapping TypeName="DBModel.REHBER">
+        <MappingFragment StoreEntitySet="REHBER">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="Tel3" ColumnName="Tel3" />
+          <ScalarProperty Name="Tel2" ColumnName="Tel2" />
+          <ScalarProperty Name="Tel1" ColumnName="Tel1" />
+          <ScalarProperty Name="Soyadi" ColumnName="Soyadi" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="RehberKey" ColumnName="RehberKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SERMAYE_DEGISIKLIK">
+      <EntityTypeMapping TypeName="DBModel.SERMAYE_DEGISIKLIK">
+        <MappingFragment StoreEntitySet="SERMAYE_DEGISIKLIK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="YKKNo" ColumnName="YKKNo" />
+          <ScalarProperty Name="YKKTarih" ColumnName="YKKTarih" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="Sermaye" ColumnName="Sermaye" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="SermayeDegisiklikKey" ColumnName="SermayeDegisiklikKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TASDIK_FASIL_AKTARMA_ACIKLAMA">
+      <EntityTypeMapping TypeName="DBModel.TASDIK_FASIL_AKTARMA_ACIKLAMA">
+        <MappingFragment StoreEntitySet="TASDIK_FASIL_AKTARMA_ACIKLAMA">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="TasdikFasilAktarmaTipKey" ColumnName="TasdikFasilAktarmaTipKey" />
+          <ScalarProperty Name="TasdikFasilAktarmaAciklamaKey" ColumnName="TasdikFasilAktarmaAciklamaKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TESCIL_ORAN">
+      <EntityTypeMapping TypeName="DBModel.TESCIL_ORAN">
+        <MappingFragment StoreEntitySet="TESCIL_ORAN">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Satis" ColumnName="Satis" />
+          <ScalarProperty Name="MuhasebeTipKey" ColumnName="MuhasebeTipKey" />
+          <ScalarProperty Name="TahsilatTipKey" ColumnName="TahsilatTipKey" />
+          <ScalarProperty Name="Tavan" ColumnName="Tavan" />
+          <ScalarProperty Name="MeraFonu" ColumnName="MeraFonu" />
+          <ScalarProperty Name="FonPayi" ColumnName="FonPayi" />
+          <ScalarProperty Name="Stopaj" ColumnName="Stopaj" />
+          <ScalarProperty Name="SimsarOrani" ColumnName="SimsarOrani" />
+          <ScalarProperty Name="TescilOrani" ColumnName="TescilOrani" />
+          <ScalarProperty Name="TescilOranKey" ColumnName="TescilOranKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_ALIS_SATIS_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_ALIS_SATIS_TIP">
+        <MappingFragment StoreEntitySet="TT_ALIS_SATIS_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AlisSatisTipAdi" ColumnName="AlisSatisTipAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="AlisSatisTipKey" ColumnName="AlisSatisTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_BEYAN_KAYIT_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_BEYAN_KAYIT_TIP">
+        <MappingFragment StoreEntitySet="TT_BEYAN_KAYIT_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BeyanKayitTipAdi" ColumnName="BeyanKayitTipAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="BeyanKayitTipKey" ColumnName="BeyanKayitTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_BEYAN_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_BEYAN_TIP">
+        <MappingFragment StoreEntitySet="TT_BEYAN_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="BeyanTipAdi" ColumnName="BeyanTipAdi" />
+          <ScalarProperty Name="BeyanTipKey" ColumnName="BeyanTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_BIRIM_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_BIRIM_TIP">
+        <MappingFragment StoreEntitySet="TT_BIRIM_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BirimTipAdi" ColumnName="BirimTipAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="BirimTipKey" ColumnName="BirimTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_BORSA_SUBE">
+      <EntityTypeMapping TypeName="DBModel.TT_BORSA_SUBE">
+        <MappingFragment StoreEntitySet="TT_BORSA_SUBE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BorsaSubeMeraFonuKodu" ColumnName="BorsaSubeMeraFonuKodu" />
+          <ScalarProperty Name="BorsaSubeTesciliyeKodu" ColumnName="BorsaSubeTesciliyeKodu" />
+          <ScalarProperty Name="BorsaSubeSimsariyeKodu" ColumnName="BorsaSubeSimsariyeKodu" />
+          <ScalarProperty Name="BorsaSubeAdi" ColumnName="BorsaSubeAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="BorsaSubeKey" ColumnName="BorsaSubeKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_DERECE">
+      <EntityTypeMapping TypeName="DBModel.TT_DERECE">
+        <MappingFragment StoreEntitySet="TT_DERECE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="MuhasebeKodu" ColumnName="MuhasebeKodu" />
+          <ScalarProperty Name="Aidat" ColumnName="Aidat" />
+          <ScalarProperty Name="Kaydiye" ColumnName="Kaydiye" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="DereceKey" ColumnName="DereceKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_DERECE_CEZA_ORAN">
+      <EntityTypeMapping TypeName="DBModel.TT_DERECE_CEZA_ORAN">
+        <MappingFragment StoreEntitySet="TT_DERECE_CEZA_ORAN">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Taksit2" ColumnName="Taksit2" />
+          <ScalarProperty Name="Taksit1" ColumnName="Taksit1" />
+          <ScalarProperty Name="Ay12" ColumnName="Ay12" />
+          <ScalarProperty Name="Ay11" ColumnName="Ay11" />
+          <ScalarProperty Name="Ay10" ColumnName="Ay10" />
+          <ScalarProperty Name="Ay9" ColumnName="Ay9" />
+          <ScalarProperty Name="Ay8" ColumnName="Ay8" />
+          <ScalarProperty Name="Ay7" ColumnName="Ay7" />
+          <ScalarProperty Name="Ay6" ColumnName="Ay6" />
+          <ScalarProperty Name="Ay5" ColumnName="Ay5" />
+          <ScalarProperty Name="Ay4" ColumnName="Ay4" />
+          <ScalarProperty Name="Ay3" ColumnName="Ay3" />
+          <ScalarProperty Name="Ay2" ColumnName="Ay2" />
+          <ScalarProperty Name="Ay1" ColumnName="Ay1" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="DereceCezaOranKey" ColumnName="DereceCezaOranKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_DOSYA_GRUP">
+      <EntityTypeMapping TypeName="DBModel.TT_DOSYA_GRUP">
+        <MappingFragment StoreEntitySet="TT_DOSYA_GRUP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="DosyaGrupAdi" ColumnName="DosyaGrupAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="DosyaGrupKey" ColumnName="DosyaGrupKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_EVRAK_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_EVRAK_TIP">
+        <MappingFragment StoreEntitySet="TT_EVRAK_TIP">
+          <ScalarProperty Name="EvrakTipAdi" ColumnName="EvrakTipAdi" />
+          <ScalarProperty Name="EvrakTipKey" ColumnName="EvrakTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_FIRMA_ADRES_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_FIRMA_ADRES_TIP">
+        <MappingFragment StoreEntitySet="TT_FIRMA_ADRES_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="FirmaAdresTipAdi" ColumnName="FirmaAdresTipAdi" />
+          <ScalarProperty Name="FirmaAdresTipKey" ColumnName="FirmaAdresTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_FIRMA_TELEFON_FAX_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_FIRMA_TELEFON_FAX_TIP">
+        <MappingFragment StoreEntitySet="TT_FIRMA_TELEFON_FAX_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="FirmaTelefonFaxTipAdi" ColumnName="FirmaTelefonFaxTipAdi" />
+          <ScalarProperty Name="FirmaTelefonFaxTipKey" ColumnName="FirmaTelefonFaxTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_FIS_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_FIS_TIP">
+        <MappingFragment StoreEntitySet="TT_FIS_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="FisTipAdi" ColumnName="FisTipAdi" />
+          <ScalarProperty Name="FisTipKey" ColumnName="FisTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_HESAP_PLANI_DOKUM_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_HESAP_PLANI_DOKUM_TIP">
+        <MappingFragment StoreEntitySet="TT_HESAP_PLANI_DOKUM_TIP">
+          <ScalarProperty Name="HesapPlaniDokumTipAdi" ColumnName="HesapPlaniDokumTipAdi" />
+          <ScalarProperty Name="HesapPlaniDokumTipKey" ColumnName="HesapPlaniDokumTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_IL_ILCE">
+      <EntityTypeMapping TypeName="DBModel.TT_IL_ILCE">
+        <MappingFragment StoreEntitySet="TT_IL_ILCE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TobbKodu" ColumnName="TobbKodu" />
+          <ScalarProperty Name="IlIlceAdi" ColumnName="IlIlceAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="IlIlceKey" ColumnName="IlIlceKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_KONSOLIDE_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_KONSOLIDE_TIP">
+        <MappingFragment StoreEntitySet="TT_KONSOLIDE_TIP">
+          <ScalarProperty Name="KonsolideTipAdi" ColumnName="KonsolideTipAdi" />
+          <ScalarProperty Name="KonsolideTipKey" ColumnName="KonsolideTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_KURULUS_TUR">
+      <EntityTypeMapping TypeName="DBModel.TT_KURULUS_TUR">
+        <MappingFragment StoreEntitySet="TT_KURULUS_TUR">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TobbKodu" ColumnName="TobbKodu" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="KurulusTurKey" ColumnName="KurulusTurKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MADDE_KOD">
+      <EntityTypeMapping TypeName="DBModel.TT_MADDE_KOD">
+        <MappingFragment StoreEntitySet="TT_MADDE_KOD">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TobbKodu" ColumnName="TobbKodu" />
+          <ScalarProperty Name="StopajYuzdesi" ColumnName="StopajYuzdesi" />
+          <ScalarProperty Name="TmoGrubu" ColumnName="TmoGrubu" />
+          <ScalarProperty Name="LabGrubu" ColumnName="LabGrubu" />
+          <ScalarProperty Name="BirimKg" ColumnName="BirimKg" />
+          <ScalarProperty Name="Fire" ColumnName="Fire" />
+          <ScalarProperty Name="MaddeKoduFonu" ColumnName="MaddeKoduFonu" />
+          <ScalarProperty Name="MeraFonu" ColumnName="MeraFonu" />
+          <ScalarProperty Name="Stopaj" ColumnName="Stopaj" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MaddeKodKey" ColumnName="MaddeKodKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MESLEK_GRUP">
+      <EntityTypeMapping TypeName="DBModel.TT_MESLEK_GRUP">
+        <MappingFragment StoreEntitySet="TT_MESLEK_GRUP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="MeslekAdi" ColumnName="MeslekAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MeslekGrupKey" ColumnName="MeslekGrupKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MUHASEBE_ADI">
+      <EntityTypeMapping TypeName="DBModel.TT_MUHASEBE_ADI">
+        <MappingFragment StoreEntitySet="TT_MUHASEBE_ADI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MuhasebeAdiKey" ColumnName="MuhasebeAdiKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MUHASEBE_DURUM_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_MUHASEBE_DURUM_TIP">
+        <MappingFragment StoreEntitySet="TT_MUHASEBE_DURUM_TIP">
+          <ScalarProperty Name="MuhasebeDurumTipAdi" ColumnName="MuhasebeDurumTipAdi" />
+          <ScalarProperty Name="MuhasebeDurumTipKey" ColumnName="MuhasebeDurumTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MUHASEBE_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_MUHASEBE_TIP">
+        <MappingFragment StoreEntitySet="TT_MUHASEBE_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MuhasebeTipKey" ColumnName="MuhasebeTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_OGRENIM_DURUM_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_OGRENIM_DURUM_TIP">
+        <MappingFragment StoreEntitySet="TT_OGRENIM_DURUM_TIP">
+          <ScalarProperty Name="OgrenimDurumTipAdi" ColumnName="OgrenimDurumTipAdi" />
+          <ScalarProperty Name="OgrenimDurumTipKey" ColumnName="OgrenimDurumTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_SATIS_SEKLI">
+      <EntityTypeMapping TypeName="DBModel.TT_SATIS_SEKLI">
+        <MappingFragment StoreEntitySet="TT_SATIS_SEKLI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TipKey" ColumnName="TipKey" />
+          <ScalarProperty Name="SimsarKey" ColumnName="SimsarKey" />
+          <ScalarProperty Name="TescilKey" ColumnName="TescilKey" />
+          <ScalarProperty Name="StopajKey" ColumnName="StopajKey" />
+          <ScalarProperty Name="AlanKey" ColumnName="AlanKey" />
+          <ScalarProperty Name="SatanKey" ColumnName="SatanKey" />
+          <ScalarProperty Name="SatisSekliUzunAdi" ColumnName="SatisSekliUzunAdi" />
+          <ScalarProperty Name="SatisSekliAdi" ColumnName="SatisSekliAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="SatisSekliKey" ColumnName="SatisSekliKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_SICIL_MEMURLUGU">
+      <EntityTypeMapping TypeName="DBModel.TT_SICIL_MEMURLUGU">
+        <MappingFragment StoreEntitySet="TT_SICIL_MEMURLUGU">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="SicilMemurluguKey" ColumnName="SicilMemurluguKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_TAHSILAT_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_TAHSILAT_TIP">
+        <MappingFragment StoreEntitySet="TT_TAHSILAT_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TahsilatTipAdi" ColumnName="TahsilatTipAdi" />
+          <ScalarProperty Name="TahsilatTipKey" ColumnName="TahsilatTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_TASDIK_FASIL_AKTARMA_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_TASDIK_FASIL_AKTARMA_TIP">
+        <MappingFragment StoreEntitySet="TT_TASDIK_FASIL_AKTARMA_TIP">
+          <ScalarProperty Name="TasdikFasilAktarmaTipAdi" ColumnName="TasdikFasilAktarmaTipAdi" />
+          <ScalarProperty Name="TasdikFasilAktarmaTipKey" ColumnName="TasdikFasilAktarmaTipKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_VERGI_DAIRE">
+      <EntityTypeMapping TypeName="DBModel.TT_VERGI_DAIRE">
+        <MappingFragment StoreEntitySet="TT_VERGI_DAIRE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TobbNo" ColumnName="TobbNo" />
+          <ScalarProperty Name="VergiDairesiAdi" ColumnName="VergiDairesiAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="VergiDaireKey" ColumnName="VergiDaireKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_YAZISMA_ADRES">
+      <EntityTypeMapping TypeName="DBModel.TT_YAZISMA_ADRES">
+        <MappingFragment StoreEntitySet="TT_YAZISMA_ADRES">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="YazismaAdresAdi" ColumnName="YazismaAdresAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="YazismaAdresKey" ColumnName="YazismaAdresKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUCCAR_ASKI">
+      <EntityTypeMapping TypeName="DBModel.TUCCAR_ASKI">
+        <MappingFragment StoreEntitySet="TUCCAR_ASKI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BitisAciklama" ColumnName="BitisAciklama" />
+          <ScalarProperty Name="BitisKararNo" ColumnName="BitisKararNo" />
+          <ScalarProperty Name="BitisTarihi" ColumnName="BitisTarihi" />
+          <ScalarProperty Name="AskiAciklama" ColumnName="AskiAciklama" />
+          <ScalarProperty Name="AskiKararNo" ColumnName="AskiKararNo" />
+          <ScalarProperty Name="AskiTarihi" ColumnName="AskiTarihi" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="TuccarAskiKey" ColumnName="TuccarAskiKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUCCAR_DEPO">
+      <EntityTypeMapping TypeName="DBModel.TUCCAR_DEPO">
+        <MappingFragment StoreEntitySet="TUCCAR_DEPO">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="DigerBorsaSatis2" ColumnName="DigerBorsaSatis2" />
+          <ScalarProperty Name="DigerBorsaAlis2" ColumnName="DigerBorsaAlis2" />
+          <ScalarProperty Name="Satis2" ColumnName="Satis2" />
+          <ScalarProperty Name="Alis2" ColumnName="Alis2" />
+          <ScalarProperty Name="Devir2" ColumnName="Devir2" />
+          <ScalarProperty Name="DigerBorsaSatis1" ColumnName="DigerBorsaSatis1" />
+          <ScalarProperty Name="DigerBorsaAlis1" ColumnName="DigerBorsaAlis1" />
+          <ScalarProperty Name="Satis1" ColumnName="Satis1" />
+          <ScalarProperty Name="Alis1" ColumnName="Alis1" />
+          <ScalarProperty Name="Devir1" ColumnName="Devir1" />
+          <ScalarProperty Name="MaddeKodKey" ColumnName="MaddeKodKey" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="TuccarDepoKey" ColumnName="TuccarDepoKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUCCAR_KEFALET_TEMINAT">
+      <EntityTypeMapping TypeName="DBModel.TUCCAR_KEFALET_TEMINAT">
+        <MappingFragment StoreEntitySet="TUCCAR_KEFALET_TEMINAT">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="KefilKey" ColumnName="KefilKey" />
+          <ScalarProperty Name="TuccarKey" ColumnName="TuccarKey" />
+          <ScalarProperty Name="TuccarKefaletTeminatKey" ColumnName="TuccarKefaletTeminatKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUCCAR_SICIL">
+      <EntityTypeMapping TypeName="DBModel.TUCCAR_SICIL">
+        <MappingFragment StoreEntitySet="TUCCAR_SICIL">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="VergiNoEski" ColumnName="VergiNoEski" />
+          <ScalarProperty Name="TCKimlikNo" ColumnName="TCKimlikNo" />
+          <ScalarProperty Name="VergiNo" ColumnName="VergiNo" />
+          <ScalarProperty Name="VergiDaireKey" ColumnName="VergiDaireKey" />
+          <ScalarProperty Name="Sermaye" ColumnName="Sermaye" />
+          <ScalarProperty Name="TerkinYKKNo" ColumnName="TerkinYKKNo" />
+          <ScalarProperty Name="TerkinTarihi" ColumnName="TerkinTarihi" />
+          <ScalarProperty Name="YKKNo" ColumnName="YKKNo" />
+          <ScalarProperty Name="YKKTarihi" ColumnName="YKKTarihi" />
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="IlIlceKey" ColumnName="IlIlceKey" />
+          <ScalarProperty Name="SicilKayitNo" ColumnName="SicilKayitNo" />
+          <ScalarProperty Name="SicilTarih" ColumnName="SicilTarih" />
+          <ScalarProperty Name="SicilMemurluguKey" ColumnName="SicilMemurluguKey" />
+          <ScalarProperty Name="KurulusTurKey" ColumnName="KurulusTurKey" />
+          <ScalarProperty Name="NaceKodu2" ColumnName="NaceKodu2" />
+          <ScalarProperty Name="NaceKodu1" ColumnName="NaceKodu1" />
+          <ScalarProperty Name="ResenKayitMi" ColumnName="ResenKayitMi" />
+          <ScalarProperty Name="WebAdresi" ColumnName="WebAdresi" />
+          <ScalarProperty Name="EpostaAdresi" ColumnName="EpostaAdresi" />
+          <ScalarProperty Name="IsciSayisi" ColumnName="IsciSayisi" />
+          <ScalarProperty Name="BolgeAdi" ColumnName="BolgeAdi" />
+          <ScalarProperty Name="KayitTescilMi" ColumnName="KayitTescilMi" />
+          <ScalarProperty Name="MerkezSubeMi" ColumnName="MerkezSubeMi" />
+          <ScalarProperty Name="MersisNo" ColumnName="MersisNo" />
+          <ScalarProperty Name="DereceYil" ColumnName="DereceYil" />
+          <ScalarProperty Name="DereceKey" ColumnName="DereceKey" />
+          <ScalarProperty Name="MeslekGrupKey" ColumnName="MeslekGrupKey" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="SicilNo" ColumnName="SicilNo" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TUCCAR_TAHSIL">
+      <EntityTypeMapping TypeName="DBModel.TUCCAR_TAHSIL">
+        <MappingFragment StoreEntitySet="TUCCAR_TAHSIL">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="Ay" ColumnName="Ay" />
+          <ScalarProperty Name="VergiDaireKey" ColumnName="VergiDaireKey" />
+          <ScalarProperty Name="Miktar" ColumnName="Miktar" />
+          <ScalarProperty Name="TahsilNo" ColumnName="TahsilNo" />
+          <ScalarProperty Name="TahsilTarihi" ColumnName="TahsilTarihi" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="TuccarTahsilKey" ColumnName="TuccarTahsilKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UNVAN_DEGISIKLIK">
+      <EntityTypeMapping TypeName="DBModel.UNVAN_DEGISIKLIK">
+        <MappingFragment StoreEntitySet="UNVAN_DEGISIKLIK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="YKKNo" ColumnName="YKKNo" />
+          <ScalarProperty Name="YKKTarih" ColumnName="YKKTarih" />
+          <ScalarProperty Name="Yil" ColumnName="Yil" />
+          <ScalarProperty Name="Unvan" ColumnName="Unvan" />
+          <ScalarProperty Name="TuccarSicilKey" ColumnName="TuccarSicilKey" />
+          <ScalarProperty Name="UnvanDegisiklikKey" ColumnName="UnvanDegisiklikKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="YEVMIYEs">
+      <EntityTypeMapping TypeName="DBModel.YEVMIYE">
+        <MappingFragment StoreEntitySet="YEVMIYE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Alacak" ColumnName="Alacak" />
+          <ScalarProperty Name="Borc" ColumnName="Borc" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="SatirNo" ColumnName="SatirNo" />
+          <ScalarProperty Name="FisNo" ColumnName="FisNo" />
+          <ScalarProperty Name="FisTarih" ColumnName="FisTarih" />
+          <ScalarProperty Name="FisTipKey" ColumnName="FisTipKey" />
+          <ScalarProperty Name="HesapPlaniKey" ColumnName="HesapPlaniKey" />
+          <ScalarProperty Name="MuhasebeTipKey" ColumnName="MuhasebeTipKey" />
+          <ScalarProperty Name="YevmiyeKey" ColumnName="YevmiyeKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BORSA_BILGI">
+      <EntityTypeMapping TypeName="DBModel.BORSA_BILGI">
+        <MappingFragment StoreEntitySet="BORSA_BILGI">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="GecTescilBeyan30Gun" ColumnName="GecTescilBeyan30Gun" />
+          <ScalarProperty Name="TasTesNo" ColumnName="TasTesNo" />
+          <ScalarProperty Name="TesekkulNo" ColumnName="TesekkulNo" />
+          <ScalarProperty Name="GecTescil" ColumnName="GecTescil" />
+          <ScalarProperty Name="UyeTeminatTipiKey" ColumnName="UyeTeminatTipiKey" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Fax2" ColumnName="Fax2" />
+          <ScalarProperty Name="Fax1" ColumnName="Fax1" />
+          <ScalarProperty Name="Telefon2" ColumnName="Telefon2" />
+          <ScalarProperty Name="Telefon1" ColumnName="Telefon1" />
+          <ScalarProperty Name="MuracaatMercii" ColumnName="MuracaatMercii" />
+          <ScalarProperty Name="BorsaAdresi" ColumnName="BorsaAdresi" />
+          <ScalarProperty Name="MeclisBaskani" ColumnName="MeclisBaskani" />
+          <ScalarProperty Name="YonetimKuruluBaskani" ColumnName="YonetimKuruluBaskani" />
+          <ScalarProperty Name="GenelSekreter" ColumnName="GenelSekreter" />
+          <ScalarProperty Name="IsyeriSicilNo" ColumnName="IsyeriSicilNo" />
+          <ScalarProperty Name="KurulusTarihi" ColumnName="KurulusTarihi" />
+          <ScalarProperty Name="TOBBKurumTipi" ColumnName="TOBBKurumTipi" />
+          <ScalarProperty Name="TOBBKodu" ColumnName="TOBBKodu" />
+          <ScalarProperty Name="BorsaAdi" ColumnName="BorsaAdi" />
+          <ScalarProperty Name="ProgramBaslik" ColumnName="ProgramBaslik" />
+          <ScalarProperty Name="ProgramLogo" ColumnName="ProgramLogo" />
+          <ScalarProperty Name="ProgramBorsaBilgiKey" ColumnName="ProgramBorsaBilgiKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DUYURUs">
+      <EntityTypeMapping TypeName="DBModel.DUYURU">
+        <MappingFragment StoreEntitySet="DUYURU">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="ProgramDuyuruAktif" ColumnName="ProgramDuyuruAktif" />
+          <ScalarProperty Name="ProgramDuyuru" ColumnName="ProgramDuyuru" />
+          <ScalarProperty Name="ProgramDuyuruTarih" ColumnName="ProgramDuyuruTarih" />
+          <ScalarProperty Name="ProgramDuyuruKey" ColumnName="ProgramDuyuruKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGs">
+      <EntityTypeMapping TypeName="DBModel.LOG">
+        <MappingFragment StoreEntitySet="LOG">
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ExceptionType" ColumnName="ExceptionType" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="LogKey" ColumnName="LogKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SALON_SATIS_AYAR">
+      <EntityTypeMapping TypeName="DBModel.SALON_SATIS_AYAR">
+        <MappingFragment StoreEntitySet="SALON_SATIS_AYAR">
+          <ScalarProperty Name="GeriSayacSuresi" ColumnName="GeriSayacSuresi" />
+          <ScalarProperty Name="SayacSuresi" ColumnName="SayacSuresi" />
+          <ScalarProperty Name="ArtmaMiktari" ColumnName="ArtmaMiktari" />
+          <ScalarProperty Name="DusmeMiktari" ColumnName="DusmeMiktari" />
+          <ScalarProperty Name="SalonSatisAyarKey" ColumnName="SalonSatisAyarKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_UYE_TEMINAT_TIP">
+      <EntityTypeMapping TypeName="DBModel.TT_UYE_TEMINAT_TIP">
+        <MappingFragment StoreEntitySet="TT_UYE_TEMINAT_TIP">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="UyeTeminatTipAdi" ColumnName="UyeTeminatTipAdi" />
+          <ScalarProperty Name="UyeTeminatTipiKey" ColumnName="UyeTeminatTipiKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SATIS">
+      <EntityTypeMapping TypeName="DBModel.SATI">
+        <MappingFragment StoreEntitySet="SATIS">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="BitisFiyati" ColumnName="BitisFiyati" />
+          <ScalarProperty Name="BaslangicFiyati" ColumnName="BaslangicFiyati" />
+          <ScalarProperty Name="BitisZaman" ColumnName="BitisZaman" />
+          <ScalarProperty Name="BaslangicZaman" ColumnName="BaslangicZaman" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+          <ScalarProperty Name="UrunKey" ColumnName="UrunKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SatisKey" ColumnName="SatisKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TEKLIFs">
+      <EntityTypeMapping TypeName="DBModel.TEKLIF">
+        <MappingFragment StoreEntitySet="TEKLIF">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AktifMi" ColumnName="AktifMi" />
+          <ScalarProperty Name="TarihSaat" ColumnName="TarihSaat" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="SatisKey" ColumnName="SatisKey" />
+          <ScalarProperty Name="TeklifKey" ColumnName="TeklifKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TESCILs">
+      <EntityTypeMapping TypeName="DBModel.TESCIL">
+        <MappingFragment StoreEntitySet="TESCIL">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TescilParametreKey" ColumnName="TescilParametreKey" />
+          <ScalarProperty Name="TescilKey" ColumnName="TescilKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TESCIL_KIMLIK">
+      <EntityTypeMapping TypeName="DBModel.TESCIL_KIMLIK">
+        <MappingFragment StoreEntitySet="TESCIL_KIMLIK">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="Adres" ColumnName="Adres" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="KimlikNo" ColumnName="KimlikNo" />
+          <ScalarProperty Name="TescilKimlikKey" ColumnName="TescilKimlikKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_MADDE_KOD1">
+      <EntityTypeMapping TypeName="DBModel.TT_MADDE_KOD1">
+        <MappingFragment StoreEntitySet="TT_MADDE_KOD1">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TobbKodu" ColumnName="TobbKodu" />
+          <ScalarProperty Name="StopajYuzdesi" ColumnName="StopajYuzdesi" />
+          <ScalarProperty Name="TmoGrubu" ColumnName="TmoGrubu" />
+          <ScalarProperty Name="LabGrubu" ColumnName="LabGrubu" />
+          <ScalarProperty Name="BirimKg" ColumnName="BirimKg" />
+          <ScalarProperty Name="Fire" ColumnName="Fire" />
+          <ScalarProperty Name="MaddeKoduFonu" ColumnName="MaddeKoduFonu" />
+          <ScalarProperty Name="MeraFonu" ColumnName="MeraFonu" />
+          <ScalarProperty Name="Stopaj" ColumnName="Stopaj" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="MaddeKodKey" ColumnName="MaddeKodKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_SATICI_URETIM_MERKEZ">
+      <EntityTypeMapping TypeName="DBModel.TT_SATICI_URETIM_MERKEZ">
+        <MappingFragment StoreEntitySet="TT_SATICI_URETIM_MERKEZ">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="SaticiUretimMerkeziAdi" ColumnName="SaticiUretimMerkeziAdi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="SaticiUretimMerkezKey" ColumnName="SaticiUretimMerkezKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_TESCIL_PARAMETRE">
+      <EntityTypeMapping TypeName="DBModel.TT_TESCIL_PARAMETRE">
+        <MappingFragment StoreEntitySet="TT_TESCIL_PARAMETRE">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="AlinabilirMi" ColumnName="AlinabilirMi" />
+          <ScalarProperty Name="Adi" ColumnName="Adi" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="TescilParametreKey" ColumnName="TescilParametreKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TT_TOBB_KOD">
+      <EntityTypeMapping TypeName="DBModel.TT_TOBB_KOD">
+        <MappingFragment StoreEntitySet="TT_TOBB_KOD">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="BaremDisiKodu" ColumnName="BaremDisiKodu" />
+          <ScalarProperty Name="YemlikKodu" ColumnName="YemlikKodu" />
+          <ScalarProperty Name="BaremtDisi" ColumnName="BaremtDisi" />
+          <ScalarProperty Name="Yemlik" ColumnName="Yemlik" />
+          <ScalarProperty Name="Derece3" ColumnName="Derece3" />
+          <ScalarProperty Name="Derece2" ColumnName="Derece2" />
+          <ScalarProperty Name="Derece1" ColumnName="Derece1" />
+          <ScalarProperty Name="Kod" ColumnName="Kod" />
+          <ScalarProperty Name="TobbKodKey" ColumnName="TobbKodKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="URUNs">
+      <EntityTypeMapping TypeName="DBModel.URUN">
+        <MappingFragment StoreEntitySet="URUN">
+          <ScalarProperty Name="GuncelleTarih" ColumnName="GuncelleTarih" />
+          <ScalarProperty Name="GuncelleKisiKey" ColumnName="GuncelleKisiKey" />
+          <ScalarProperty Name="KayitTarih" ColumnName="KayitTarih" />
+          <ScalarProperty Name="KayitKisiKey" ColumnName="KayitKisiKey" />
+          <ScalarProperty Name="TabanFiyati" ColumnName="TabanFiyati" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="UrunKey" ColumnName="UrunKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="aspnet_UsersInRoles" TypeName="DBModel.aspnet_UsersInRoles" StoreEntitySet="aspnet_UsersInRoles">
+      <EndProperty Name="aspnet_Users">
+        <ScalarProperty Name="UserId" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="aspnet_Roles">
+        <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

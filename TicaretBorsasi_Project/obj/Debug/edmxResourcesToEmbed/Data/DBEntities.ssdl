@@ -1,0 +1,2601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DBModelStoreContainer">
+    <EntitySet Name="aspnet_Applications" EntityType="DBModel.Store.aspnet_Applications" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Membership" EntityType="DBModel.Store.aspnet_Membership" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Paths" EntityType="DBModel.Store.aspnet_Paths" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="DBModel.Store.aspnet_PersonalizationAllUsers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="DBModel.Store.aspnet_PersonalizationPerUser" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Profile" EntityType="DBModel.Store.aspnet_Profile" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Roles" EntityType="DBModel.Store.aspnet_Roles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="DBModel.Store.aspnet_SchemaVersions" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_Users" EntityType="DBModel.Store.aspnet_Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_UsersInRoles" EntityType="DBModel.Store.aspnet_UsersInRoles" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="DBModel.Store.aspnet_WebEvent_Events" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="DBModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AIDAT_TAKIP" EntityType="DBModel.Store.AIDAT_TAKIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="BANKA_MEVDUAT" EntityType="DBModel.Store.BANKA_MEVDUAT" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="BEYAN" EntityType="DBModel.Store.BEYAN" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="DERECE_DEGISIKLIK" EntityType="DBModel.Store.DERECE_DEGISIKLIK" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_ADRES" EntityType="DBModel.Store.FIRMA_ADRES" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_DIGER_FAALIYET_KOD" EntityType="DBModel.Store.FIRMA_DIGER_FAALIYET_KOD" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_FAALIYET" EntityType="DBModel.Store.FIRMA_FAALIYET" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_KAYITLI_ODA" EntityType="DBModel.Store.FIRMA_KAYITLI_ODA" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_SAHIS" EntityType="DBModel.Store.FIRMA_SAHIS" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_TELEFON_FAX" EntityType="DBModel.Store.FIRMA_TELEFON_FAX" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_UYARI" EntityType="DBModel.Store.FIRMA_UYARI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_YETKILI" EntityType="DBModel.Store.FIRMA_YETKILI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIRMA_YONETIM" EntityType="DBModel.Store.FIRMA_YONETIM" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="FIS_NO" EntityType="DBModel.Store.FIS_NO" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="GELEN_GIDEN_EVRAK" EntityType="DBModel.Store.GELEN_GIDEN_EVRAK" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="HESAP_PLANI" EntityType="DBModel.Store.HESAP_PLANI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="KAYIT_TAKIP" EntityType="DBModel.Store.KAYIT_TAKIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="MESLEK_GRUP_DEGISIKLIK" EntityType="DBModel.Store.MESLEK_GRUP_DEGISIKLIK" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="REHBER" EntityType="DBModel.Store.REHBER" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="SERMAYE_DEGISIKLIK" EntityType="DBModel.Store.SERMAYE_DEGISIKLIK" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TASDIK_FASIL_AKTARMA_ACIKLAMA" EntityType="DBModel.Store.TASDIK_FASIL_AKTARMA_ACIKLAMA" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TESCIL_ORAN" EntityType="DBModel.Store.TESCIL_ORAN" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_ALIS_SATIS_TIP" EntityType="DBModel.Store.TT_ALIS_SATIS_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_BEYAN_KAYIT_TIP" EntityType="DBModel.Store.TT_BEYAN_KAYIT_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_BEYAN_TIP" EntityType="DBModel.Store.TT_BEYAN_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_BIRIM_TIP" EntityType="DBModel.Store.TT_BIRIM_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_BORSA_SUBE" EntityType="DBModel.Store.TT_BORSA_SUBE" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_DERECE" EntityType="DBModel.Store.TT_DERECE" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_DERECE_CEZA_ORAN" EntityType="DBModel.Store.TT_DERECE_CEZA_ORAN" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_DOSYA_GRUP" EntityType="DBModel.Store.TT_DOSYA_GRUP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_EVRAK_TIP" EntityType="DBModel.Store.TT_EVRAK_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_FIRMA_ADRES_TIP" EntityType="DBModel.Store.TT_FIRMA_ADRES_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_FIRMA_TELEFON_FAX_TIP" EntityType="DBModel.Store.TT_FIRMA_TELEFON_FAX_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_FIS_TIP" EntityType="DBModel.Store.TT_FIS_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_HESAP_PLANI_DOKUM_TIP" EntityType="DBModel.Store.TT_HESAP_PLANI_DOKUM_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_IL_ILCE" EntityType="DBModel.Store.TT_IL_ILCE" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_KONSOLIDE_TIP" EntityType="DBModel.Store.TT_KONSOLIDE_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_KURULUS_TUR" EntityType="DBModel.Store.TT_KURULUS_TUR" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_MADDE_KOD" EntityType="DBModel.Store.TT_MADDE_KOD" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_MESLEK_GRUP" EntityType="DBModel.Store.TT_MESLEK_GRUP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_MUHASEBE_ADI" EntityType="DBModel.Store.TT_MUHASEBE_ADI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_MUHASEBE_DURUM_TIP" EntityType="DBModel.Store.TT_MUHASEBE_DURUM_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_MUHASEBE_TIP" EntityType="DBModel.Store.TT_MUHASEBE_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_OGRENIM_DURUM_TIP" EntityType="DBModel.Store.TT_OGRENIM_DURUM_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_SATIS_SEKLI" EntityType="DBModel.Store.TT_SATIS_SEKLI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_SICIL_MEMURLUGU" EntityType="DBModel.Store.TT_SICIL_MEMURLUGU" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_TAHSILAT_TIP" EntityType="DBModel.Store.TT_TAHSILAT_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_TASDIK_FASIL_AKTARMA_TIP" EntityType="DBModel.Store.TT_TASDIK_FASIL_AKTARMA_TIP" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_VERGI_DAIRE" EntityType="DBModel.Store.TT_VERGI_DAIRE" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TT_YAZISMA_ADRES" EntityType="DBModel.Store.TT_YAZISMA_ADRES" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TUCCAR_ASKI" EntityType="DBModel.Store.TUCCAR_ASKI" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TUCCAR_DEPO" EntityType="DBModel.Store.TUCCAR_DEPO" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TUCCAR_KEFALET_TEMINAT" EntityType="DBModel.Store.TUCCAR_KEFALET_TEMINAT" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TUCCAR_SICIL" EntityType="DBModel.Store.TUCCAR_SICIL" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="TUCCAR_TAHSIL" EntityType="DBModel.Store.TUCCAR_TAHSIL" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="UNVAN_DEGISIKLIK" EntityType="DBModel.Store.UNVAN_DEGISIKLIK" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="YEVMIYE" EntityType="DBModel.Store.YEVMIYE" store:Type="Tables" Schema="MERKEZ_BORSA" />
+    <EntitySet Name="BORSA_BILGI" EntityType="DBModel.Store.BORSA_BILGI" store:Type="Tables" Schema="PROGRAM" />
+    <EntitySet Name="DUYURU" EntityType="DBModel.Store.DUYURU" store:Type="Tables" Schema="PROGRAM" />
+    <EntitySet Name="LOG" EntityType="DBModel.Store.LOG" store:Type="Tables" Schema="PROGRAM" />
+    <EntitySet Name="SALON_SATIS_AYAR" EntityType="DBModel.Store.SALON_SATIS_AYAR" store:Type="Tables" Schema="PROGRAM" />
+    <EntitySet Name="TT_UYE_TEMINAT_TIP" EntityType="DBModel.Store.TT_UYE_TEMINAT_TIP" store:Type="Tables" Schema="PROGRAM" />
+    <EntitySet Name="SATIS" EntityType="DBModel.Store.SATIS" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TEKLIF" EntityType="DBModel.Store.TEKLIF" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TESCIL" EntityType="DBModel.Store.TESCIL" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TESCIL_KIMLIK" EntityType="DBModel.Store.TESCIL_KIMLIK" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TT_MADDE_KOD1" EntityType="DBModel.Store.TT_MADDE_KOD1" store:Type="Tables" Schema="SALON_SATIS" Table="TT_MADDE_KOD" />
+    <EntitySet Name="TT_SATICI_URETIM_MERKEZ" EntityType="DBModel.Store.TT_SATICI_URETIM_MERKEZ" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TT_TESCIL_PARAMETRE" EntityType="DBModel.Store.TT_TESCIL_PARAMETRE" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="TT_TOBB_KOD" EntityType="DBModel.Store.TT_TOBB_KOD" store:Type="Tables" Schema="SALON_SATIS" />
+    <EntitySet Name="URUN" EntityType="DBModel.Store.URUN" store:Type="Tables" Schema="SALON_SATIS" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__2057CCD0" Association="DBModel.Store.FK__aspnet_Me__Appli__2057CCD0">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__214BF109" Association="DBModel.Store.FK__aspnet_Me__UserI__214BF109">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__59904A2C" Association="DBModel.Store.FK__aspnet_Pa__Appli__59904A2C">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__61316BF4" Association="DBModel.Store.FK__aspnet_Pe__PathI__61316BF4">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__66EA454A" Association="DBModel.Store.FK__aspnet_Pe__PathI__66EA454A">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__67DE6983" Association="DBModel.Store.FK__aspnet_Pe__UserI__67DE6983">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__373B3228" Association="DBModel.Store.FK__aspnet_Pr__UserI__373B3228">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__42ACE4D4" Association="DBModel.Store.FK__aspnet_Ro__Appli__42ACE4D4">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__0C50D423" Association="DBModel.Store.FK__aspnet_Us__Appli__0C50D423">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__RoleI__4959E263" Association="DBModel.Store.FK__aspnet_Us__RoleI__4959E263">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__UserI__4865BE2A" Association="DBModel.Store.FK__aspnet_Us__UserI__4865BE2A">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AIDAT_TAKIP_TT_DERECE" Association="DBModel.Store.FK_AIDAT_TAKIP_TT_DERECE">
+      <End Role="TT_DERECE" EntitySet="TT_DERECE" />
+      <End Role="AIDAT_TAKIP" EntitySet="AIDAT_TAKIP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AIDAT_TAKIP_TUCCAR_SICIL" Association="DBModel.Store.FK_AIDAT_TAKIP_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="AIDAT_TAKIP" EntitySet="AIDAT_TAKIP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_ALIS_SATIS_TIP" Association="DBModel.Store.FK_BEYAN_TT_ALIS_SATIS_TIP">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_BEYAN_KAYIT_TIP" Association="DBModel.Store.FK_BEYAN_TT_BEYAN_KAYIT_TIP">
+      <End Role="TT_BEYAN_KAYIT_TIP" EntitySet="TT_BEYAN_KAYIT_TIP" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_BEYAN_TIP" Association="DBModel.Store.FK_BEYAN_TT_BEYAN_TIP">
+      <End Role="TT_BEYAN_TIP" EntitySet="TT_BEYAN_TIP" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_BIRIM_TIP" Association="DBModel.Store.FK_BEYAN_TT_BIRIM_TIP">
+      <End Role="TT_BIRIM_TIP" EntitySet="TT_BIRIM_TIP" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_BORSA_SUBE" Association="DBModel.Store.FK_BEYAN_TT_BORSA_SUBE">
+      <End Role="TT_BORSA_SUBE" EntitySet="TT_BORSA_SUBE" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_MADDE_KOD" Association="DBModel.Store.FK_BEYAN_TT_MADDE_KOD">
+      <End Role="TT_MADDE_KOD" EntitySet="TT_MADDE_KOD" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TT_SATIS_SEKLI" Association="DBModel.Store.FK_BEYAN_TT_SATIS_SEKLI">
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TUCCAR_SICIL" Association="DBModel.Store.FK_BEYAN_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_BEYAN_TUCCAR_SICIL1" Association="DBModel.Store.FK_BEYAN_TUCCAR_SICIL1">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="BEYAN" EntitySet="BEYAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DERECE_DEGISIKLIK_TT_DERECE" Association="DBModel.Store.FK_DERECE_DEGISIKLIK_TT_DERECE">
+      <End Role="TT_DERECE" EntitySet="TT_DERECE" />
+      <End Role="DERECE_DEGISIKLIK" EntitySet="DERECE_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DERECE_DEGISIKLIK_TUCCAR_SICIL" Association="DBModel.Store.FK_DERECE_DEGISIKLIK_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="DERECE_DEGISIKLIK" EntitySet="DERECE_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_ADRES_TT_FIRMA_ADRES_TIP" Association="DBModel.Store.FK_FIRMA_ADRES_TT_FIRMA_ADRES_TIP">
+      <End Role="TT_FIRMA_ADRES_TIP" EntitySet="TT_FIRMA_ADRES_TIP" />
+      <End Role="FIRMA_ADRES" EntitySet="FIRMA_ADRES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_ADRES_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_ADRES_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_ADRES" EntitySet="FIRMA_ADRES" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_DIGER_FAALIYET_KOD_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_DIGER_FAALIYET_KOD_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_DIGER_FAALIYET_KOD" EntitySet="FIRMA_DIGER_FAALIYET_KOD" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_FAALIYET_TT_MADDE_KOD" Association="DBModel.Store.FK_FIRMA_FAALIYET_TT_MADDE_KOD">
+      <End Role="TT_MADDE_KOD" EntitySet="TT_MADDE_KOD" />
+      <End Role="FIRMA_FAALIYET" EntitySet="FIRMA_FAALIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_FAALIYET_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_FAALIYET_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_FAALIYET" EntitySet="FIRMA_FAALIYET" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_KAYITLI_ODA_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_KAYITLI_ODA_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_KAYITLI_ODA" EntitySet="FIRMA_KAYITLI_ODA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_SAHIS_TT_OGRENIM_DURUM_TIP" Association="DBModel.Store.FK_FIRMA_SAHIS_TT_OGRENIM_DURUM_TIP">
+      <End Role="TT_OGRENIM_DURUM_TIP" EntitySet="TT_OGRENIM_DURUM_TIP" />
+      <End Role="FIRMA_SAHIS" EntitySet="FIRMA_SAHIS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_SAHIS_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_SAHIS_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_SAHIS" EntitySet="FIRMA_SAHIS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_TELEFON_FAX_TT_FIRMA_TELEFON_FAX_TIP" Association="DBModel.Store.FK_FIRMA_TELEFON_FAX_TT_FIRMA_TELEFON_FAX_TIP">
+      <End Role="TT_FIRMA_TELEFON_FAX_TIP" EntitySet="TT_FIRMA_TELEFON_FAX_TIP" />
+      <End Role="FIRMA_TELEFON_FAX" EntitySet="FIRMA_TELEFON_FAX" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_TELEFON_FAX_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_TELEFON_FAX_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_TELEFON_FAX" EntitySet="FIRMA_TELEFON_FAX" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_UYARI_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_UYARI_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_UYARI" EntitySet="FIRMA_UYARI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_YETKILI_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_YETKILI_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_YETKILI" EntitySet="FIRMA_YETKILI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIRMA_YONETIM_TUCCAR_SICIL" Association="DBModel.Store.FK_FIRMA_YONETIM_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="FIRMA_YONETIM" EntitySet="FIRMA_YONETIM" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIS_NO_TT_FIS_TIP" Association="DBModel.Store.FK_FIS_NO_TT_FIS_TIP">
+      <End Role="TT_FIS_TIP" EntitySet="TT_FIS_TIP" />
+      <End Role="FIS_NO" EntitySet="FIS_NO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_FIS_NO_TT_MUHASEBE_TIP" Association="DBModel.Store.FK_FIS_NO_TT_MUHASEBE_TIP">
+      <End Role="TT_MUHASEBE_TIP" EntitySet="TT_MUHASEBE_TIP" />
+      <End Role="FIS_NO" EntitySet="FIS_NO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GELEN_GIDEN_EVRAK_TT_DOSYA_GRUP" Association="DBModel.Store.FK_GELEN_GIDEN_EVRAK_TT_DOSYA_GRUP">
+      <End Role="TT_DOSYA_GRUP" EntitySet="TT_DOSYA_GRUP" />
+      <End Role="GELEN_GIDEN_EVRAK" EntitySet="GELEN_GIDEN_EVRAK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GELEN_GIDEN_EVRAK_TT_EVRAK_TIP" Association="DBModel.Store.FK_GELEN_GIDEN_EVRAK_TT_EVRAK_TIP">
+      <End Role="TT_EVRAK_TIP" EntitySet="TT_EVRAK_TIP" />
+      <End Role="GELEN_GIDEN_EVRAK" EntitySet="GELEN_GIDEN_EVRAK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GELEN_GIDEN_EVRAK_TT_IL_ILCE" Association="DBModel.Store.FK_GELEN_GIDEN_EVRAK_TT_IL_ILCE">
+      <End Role="TT_IL_ILCE" EntitySet="TT_IL_ILCE" />
+      <End Role="GELEN_GIDEN_EVRAK" EntitySet="GELEN_GIDEN_EVRAK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HESAP_PLANI_TT_MUHASEBE_TIP" Association="DBModel.Store.FK_HESAP_PLANI_TT_MUHASEBE_TIP">
+      <End Role="TT_MUHASEBE_TIP" EntitySet="TT_MUHASEBE_TIP" />
+      <End Role="HESAP_PLANI" EntitySet="HESAP_PLANI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KAYIT_TAKIP_TT_DERECE" Association="DBModel.Store.FK_KAYIT_TAKIP_TT_DERECE">
+      <End Role="TT_DERECE" EntitySet="TT_DERECE" />
+      <End Role="KAYIT_TAKIP" EntitySet="KAYIT_TAKIP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KAYIT_TAKIP_TUCCAR_SICIL" Association="DBModel.Store.FK_KAYIT_TAKIP_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="KAYIT_TAKIP" EntitySet="KAYIT_TAKIP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MESLEK_GRUP_DEGISIKLIK_TT_MESLEK_GRUP" Association="DBModel.Store.FK_MESLEK_GRUP_DEGISIKLIK_TT_MESLEK_GRUP">
+      <End Role="TT_MESLEK_GRUP" EntitySet="TT_MESLEK_GRUP" />
+      <End Role="MESLEK_GRUP_DEGISIKLIK" EntitySet="MESLEK_GRUP_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MESLEK_GRUP_DEGISIKLIK_TUCCAR_SICIL" Association="DBModel.Store.FK_MESLEK_GRUP_DEGISIKLIK_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="MESLEK_GRUP_DEGISIKLIK" EntitySet="MESLEK_GRUP_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PROGRAM_BORSA_BILGI_TT_UYE_TEMINAT_TIP" Association="DBModel.Store.FK_PROGRAM_BORSA_BILGI_TT_UYE_TEMINAT_TIP">
+      <End Role="TT_UYE_TEMINAT_TIP" EntitySet="TT_UYE_TEMINAT_TIP" />
+      <End Role="BORSA_BILGI" EntitySet="BORSA_BILGI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SATIS_URUN" Association="DBModel.Store.FK_SATIS_URUN">
+      <End Role="URUN" EntitySet="URUN" />
+      <End Role="SATIS" EntitySet="SATIS" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SERMAYE_DEGISIKLIK_TUCCAR_SICIL" Association="DBModel.Store.FK_SERMAYE_DEGISIKLIK_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="SERMAYE_DEGISIKLIK" EntitySet="SERMAYE_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TASDIK_FASIL_AKTARMA_ACIKLAMA_TT_TASDIK_FASIL_AKTARMA_TIP" Association="DBModel.Store.FK_TASDIK_FASIL_AKTARMA_ACIKLAMA_TT_TASDIK_FASIL_AKTARMA_TIP">
+      <End Role="TT_TASDIK_FASIL_AKTARMA_TIP" EntitySet="TT_TASDIK_FASIL_AKTARMA_TIP" />
+      <End Role="TASDIK_FASIL_AKTARMA_ACIKLAMA" EntitySet="TASDIK_FASIL_AKTARMA_ACIKLAMA" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TEKLIF_SATIS" Association="DBModel.Store.FK_TEKLIF_SATIS">
+      <End Role="SATIS" EntitySet="SATIS" />
+      <End Role="TEKLIF" EntitySet="TEKLIF" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TESCIL_ORAN_TT_MUHASEBE_TIP" Association="DBModel.Store.FK_TESCIL_ORAN_TT_MUHASEBE_TIP">
+      <End Role="TT_MUHASEBE_TIP" EntitySet="TT_MUHASEBE_TIP" />
+      <End Role="TESCIL_ORAN" EntitySet="TESCIL_ORAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TESCIL_ORAN_TT_TAHSILAT_TIP" Association="DBModel.Store.FK_TESCIL_ORAN_TT_TAHSILAT_TIP">
+      <End Role="TT_TAHSILAT_TIP" EntitySet="TT_TAHSILAT_TIP" />
+      <End Role="TESCIL_ORAN" EntitySet="TESCIL_ORAN" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TESCIL_TT_TESCIL_PARAMETRE" Association="DBModel.Store.FK_TESCIL_TT_TESCIL_PARAMETRE">
+      <End Role="TT_TESCIL_PARAMETRE" EntitySet="TT_TESCIL_PARAMETRE" />
+      <End Role="TESCIL" EntitySet="TESCIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP1" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP1">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP2" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP2">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP3" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP3">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP4" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP4">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP5" Association="DBModel.Store.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP5">
+      <End Role="TT_ALIS_SATIS_TIP" EntitySet="TT_ALIS_SATIS_TIP" />
+      <End Role="TT_SATIS_SEKLI" EntitySet="TT_SATIS_SEKLI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_ASKI_TUCCAR_SICIL" Association="DBModel.Store.FK_TUCCAR_ASKI_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="TUCCAR_ASKI" EntitySet="TUCCAR_ASKI" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_DEPO_TT_MADDE_KOD" Association="DBModel.Store.FK_TUCCAR_DEPO_TT_MADDE_KOD">
+      <End Role="TT_MADDE_KOD" EntitySet="TT_MADDE_KOD" />
+      <End Role="TUCCAR_DEPO" EntitySet="TUCCAR_DEPO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_DEPO_TUCCAR_SICIL" Association="DBModel.Store.FK_TUCCAR_DEPO_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="TUCCAR_DEPO" EntitySet="TUCCAR_DEPO" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL" Association="DBModel.Store.FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="TUCCAR_KEFALET_TEMINAT" EntitySet="TUCCAR_KEFALET_TEMINAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL1" Association="DBModel.Store.FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL1">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="TUCCAR_KEFALET_TEMINAT" EntitySet="TUCCAR_KEFALET_TEMINAT" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_DERECE" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_DERECE">
+      <End Role="TT_DERECE" EntitySet="TT_DERECE" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_IL_ILCE" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_IL_ILCE">
+      <End Role="TT_IL_ILCE" EntitySet="TT_IL_ILCE" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_KURULUS_TUR" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_KURULUS_TUR">
+      <End Role="TT_KURULUS_TUR" EntitySet="TT_KURULUS_TUR" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_MESLEK_GRUP" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_MESLEK_GRUP">
+      <End Role="TT_MESLEK_GRUP" EntitySet="TT_MESLEK_GRUP" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_SICIL_MEMURLUGU" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_SICIL_MEMURLUGU">
+      <End Role="TT_SICIL_MEMURLUGU" EntitySet="TT_SICIL_MEMURLUGU" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_SICIL_TT_VERGI_DAIRE" Association="DBModel.Store.FK_TUCCAR_SICIL_TT_VERGI_DAIRE">
+      <End Role="TT_VERGI_DAIRE" EntitySet="TT_VERGI_DAIRE" />
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_TAHSIL_TT_VERGI_DAIRE" Association="DBModel.Store.FK_TUCCAR_TAHSIL_TT_VERGI_DAIRE">
+      <End Role="TT_VERGI_DAIRE" EntitySet="TT_VERGI_DAIRE" />
+      <End Role="TUCCAR_TAHSIL" EntitySet="TUCCAR_TAHSIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TUCCAR_TAHSIL_TUCCAR_SICIL" Association="DBModel.Store.FK_TUCCAR_TAHSIL_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="TUCCAR_TAHSIL" EntitySet="TUCCAR_TAHSIL" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UNVAN_DEGISIKLIK_TUCCAR_SICIL" Association="DBModel.Store.FK_UNVAN_DEGISIKLIK_TUCCAR_SICIL">
+      <End Role="TUCCAR_SICIL" EntitySet="TUCCAR_SICIL" />
+      <End Role="UNVAN_DEGISIKLIK" EntitySet="UNVAN_DEGISIKLIK" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YEVMIYE_HESAP_PLANI" Association="DBModel.Store.FK_YEVMIYE_HESAP_PLANI">
+      <End Role="HESAP_PLANI" EntitySet="HESAP_PLANI" />
+      <End Role="YEVMIYE" EntitySet="YEVMIYE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YEVMIYE_TT_FIS_TIP" Association="DBModel.Store.FK_YEVMIYE_TT_FIS_TIP">
+      <End Role="TT_FIS_TIP" EntitySet="TT_FIS_TIP" />
+      <End Role="YEVMIYE" EntitySet="YEVMIYE" />
+    </AssociationSet>
+    <AssociationSet Name="FK_YEVMIYE_TT_MUHASEBE_TIP" Association="DBModel.Store.FK_YEVMIYE_TT_MUHASEBE_TIP">
+      <End Role="TT_MUHASEBE_TIP" EntitySet="TT_MUHASEBE_TIP" />
+      <End Role="YEVMIYE" EntitySet="YEVMIYE" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredApplicationName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="PasswordFormat" Type="int" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredPath" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredRoleName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="CompatibleSchemaVersion" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="LoweredUserName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="char" Nullable="false" MaxLength="32" />
+    <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+    <Property Name="EventTime" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="EventSequence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventOccurrence" Type="decimal" Nullable="false" Precision="19" />
+    <Property Name="EventCode" Type="int" Nullable="false" />
+    <Property Name="EventDetailCode" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="MachineName" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+    <Property Name="Details" Type="ntext" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="AIDAT_TAKIP">
+    <Key>
+      <PropertyRef Name="AidatTakipKey" />
+    </Key>
+    <Property Name="AidatTakipKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="DereceKey" Type="int" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="AidatMiktar" Type="decimal" Scale="2" />
+    <Property Name="Taksit1OdemeTarihi" Type="date" />
+    <Property Name="Taksit1OdemeMiktar" Type="decimal" Scale="2" />
+    <Property Name="Taksit1OdemeAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="Taksit2OdemeTarihi" Type="date" />
+    <Property Name="Taksit2OdemeMiktar" Type="decimal" Scale="2" />
+    <Property Name="Taksit2OdemeAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="Taksit1CezaTarihi" Type="date" />
+    <Property Name="Taksit1CezaMiktar" Type="decimal" Scale="2" />
+    <Property Name="Taksit1CezaAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="Taksit2CezaTarihi" Type="date" />
+    <Property Name="Taksit2CezaMiktar" Type="decimal" Scale="2" />
+    <Property Name="Taksit2CezaAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="TahakkukTarihi" Type="date" />
+    <Property Name="TahakkukMahsupNo" Type="char" MaxLength="4" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BANKA_MEVDUAT">
+    <Key>
+      <PropertyRef Name="BankaMevduatKey" />
+    </Key>
+    <Property Name="BankaMevduatKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BankaHesapNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BankaAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="VadeliYatanMeblag" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="VadeBasi" Type="date" Nullable="false" />
+    <Property Name="VadeSonu" Type="date" Nullable="false" />
+    <Property Name="FaizYuzdesi" Type="float" Nullable="false" />
+    <Property Name="StopajYuzdesi" Type="float" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BEYAN">
+    <Key>
+      <PropertyRef Name="BeyanKey" />
+    </Key>
+    <Property Name="BeyanKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BeyanTarihi" Type="date" />
+    <Property Name="BorsaSubeKey" Type="int" />
+    <Property Name="BeyanNo" Type="char" MaxLength="6" />
+    <Property Name="BeyanSatirNo" Type="char" MaxLength="2" />
+    <Property Name="AlisSatisTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="BeyanTipKey" Type="tinyint" />
+    <Property Name="MustahsilNo" Type="char" MaxLength="10" />
+    <Property Name="SaticiAd" Type="varchar" MaxLength="50" />
+    <Property Name="SaticiAdres" Type="varchar" MaxLength="100" />
+    <Property Name="BeyanMiktar" Type="decimal" Precision="15" Scale="3" />
+    <Property Name="SimsariyeMiktar" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="TescilMiktar" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="Stopaj" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="FonPayiBagkur" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="MeraFonu" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="BirimFiyat" Type="decimal" Precision="12" Scale="4" />
+    <Property Name="BirimTipKey" Type="tinyint" />
+    <Property Name="Mensei" Type="varchar" MaxLength="50" />
+    <Property Name="UretimYili" Type="smallint" />
+    <Property Name="OzelSartTanimlama" Type="varchar" MaxLength="50" />
+    <Property Name="TeslimMahalli" Type="varchar" MaxLength="50" />
+    <Property Name="TeslimTarihi" Type="date" />
+    <Property Name="BeyanFaturaNo" Type="char" MaxLength="6" />
+    <Property Name="BeyanFaturaTarihi" Type="date" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="MaddeKodKey" Type="int" />
+    <Property Name="BeyanKayitTipKey" Type="tinyint" />
+    <Property Name="CanliHayvanAdet" Type="smallint" />
+    <Property Name="SatisSekliKey" Type="int" />
+    <Property Name="BeyannameKarsiFirmaTuccarSicilKey" Type="int" />
+    <Property Name="KarsiVergiDairesiAdi" Type="varchar" MaxLength="50" />
+    <Property Name="KarsiVergiNo" Type="varchar" MaxLength="11" />
+    <Property Name="KarsiUnvan" Type="varchar" MaxLength="50" />
+    <Property Name="KarsiAdres" Type="varchar" MaxLength="100" />
+    <Property Name="BeyanSatisTutari" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="DovizAdi" Type="char" MaxLength="2" />
+    <Property Name="DovizKuru" Type="decimal" Precision="11" Scale="6" />
+    <Property Name="DovizTutari" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="FisTarihiFisNoFisSatiri" Type="char" MaxLength="16" />
+    <Property Name="StopajVarmi" Type="bit" />
+    <Property Name="BulunduguYer" Type="varchar" MaxLength="50" />
+    <Property Name="BeyanTastik" Type="decimal" Precision="16" Scale="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DERECE_DEGISIKLIK">
+    <Key>
+      <PropertyRef Name="DereceDegisiklikKey" />
+    </Key>
+    <Property Name="DereceDegisiklikKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="DereceVerilisYil" Type="smallint" />
+    <Property Name="DereceKey" Type="int" />
+    <Property Name="YKKTarih" Type="date" />
+    <Property Name="YKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_ADRES">
+    <Key>
+      <PropertyRef Name="FirmaAdresKey" />
+    </Key>
+    <Property Name="FirmaAdresKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="FirmaAdres" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="FirmaAdresTipKey" Type="tinyint" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_DIGER_FAALIYET_KOD">
+    <Key>
+      <PropertyRef Name="FirmaDigerFaaliyetKodKey" />
+    </Key>
+    <Property Name="FirmaDigerFaaliyetKodKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="NaceKodu1" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="NaceKodu2" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BaslangicTarihi" Type="date" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="500" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_FAALIYET">
+    <Key>
+      <PropertyRef Name="FirmaFaaliyetKey" />
+    </Key>
+    <Property Name="FirmaFaaliyetKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="MaddeKodKey" Type="int" />
+    <Property Name="Uretim" Type="bit" />
+    <Property Name="Bayi" Type="bit" />
+    <Property Name="Alim" Type="bit" />
+    <Property Name="Satim" Type="bit" />
+    <Property Name="Ithalat" Type="bit" />
+    <Property Name="Ihracat" Type="bit" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_KAYITLI_ODA">
+    <Key>
+      <PropertyRef Name="FirmaKayitliOdaKey" />
+    </Key>
+    <Property Name="FirmaKayitliOdaKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="OdaBorsaAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="OdaBorsaKayitTarihi" Type="date" />
+    <Property Name="OdaBorsaSicilNo" Type="varchar" MaxLength="20" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="500" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_SAHIS">
+    <Key>
+      <PropertyRef Name="FirmaSahisKey" />
+    </Key>
+    <Property Name="FirmaSahisKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="Soyad" Type="varchar" MaxLength="50" />
+    <Property Name="Ad" Type="varchar" MaxLength="50" />
+    <Property Name="BabaAdi" Type="varchar" MaxLength="50" />
+    <Property Name="DogumYeri" Type="varchar" MaxLength="50" />
+    <Property Name="DogumTarihi" Type="date" />
+    <Property Name="Uyruk" Type="varchar" MaxLength="50" />
+    <Property Name="OgrenimDurumTipKey" Type="tinyint" />
+    <Property Name="Adres" Type="varchar" MaxLength="100" />
+    <Property Name="Tel" Type="varchar" MaxLength="50" />
+    <Property Name="TcKimlikNo" Type="char" MaxLength="11" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_TELEFON_FAX">
+    <Key>
+      <PropertyRef Name="FirmaTelefonFaxKey" />
+    </Key>
+    <Property Name="FirmaTelefonFaxKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="FirmaTelefonFax" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="FirmaTelefonFaxTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_UYARI">
+    <Key>
+      <PropertyRef Name="FirmaUyariKey" />
+    </Key>
+    <Property Name="FirmaUyariKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="FirmaUyari" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="FirmaUyariTarih" Type="date" />
+    <Property Name="Aktif" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_YETKILI">
+    <Key>
+      <PropertyRef Name="FirmaYetkiliKey" />
+    </Key>
+    <Property Name="FirmaYetkiliKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIRMA_YONETIM">
+    <Key>
+      <PropertyRef Name="FirmaYonetimKey" />
+    </Key>
+    <Property Name="FirmaYonetimKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="50" />
+    <Property Name="Unvan" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="FIS_NO">
+    <Key>
+      <PropertyRef Name="FisNoKey" />
+    </Key>
+    <Property Name="FisNoKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Yil" Type="smallint" Nullable="false" />
+    <Property Name="MuhasebeTipKey" Type="int" Nullable="false" />
+    <Property Name="FisTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="OcakNo" Type="int" Nullable="false" />
+    <Property Name="SubatNo" Type="int" Nullable="false" />
+    <Property Name="MartNo" Type="int" Nullable="false" />
+    <Property Name="NisanNo" Type="int" Nullable="false" />
+    <Property Name="MayisNo" Type="int" Nullable="false" />
+    <Property Name="HaziranNo" Type="int" Nullable="false" />
+    <Property Name="TemmuzNo" Type="int" Nullable="false" />
+    <Property Name="AgustosNo" Type="int" Nullable="false" />
+    <Property Name="EylulNo" Type="int" Nullable="false" />
+    <Property Name="EkimNo" Type="int" Nullable="false" />
+    <Property Name="KasimNo" Type="int" Nullable="false" />
+    <Property Name="AralikNo" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="GELEN_GIDEN_EVRAK">
+    <Key>
+      <PropertyRef Name="GelenGidenEvrakKey" />
+    </Key>
+    <Property Name="GelenGidenEvrakKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DosyaGrupKey" Type="int" Nullable="false" />
+    <Property Name="KayitTarihi" Type="date" />
+    <Property Name="EvrakSiraNo" Type="int" />
+    <Property Name="AdSoyad" Type="varchar" MaxLength="50" />
+    <Property Name="Adres" Type="varchar" MaxLength="150" />
+    <Property Name="IlIlceKey" Type="int" />
+    <Property Name="EvrakTarihi" Type="date" />
+    <Property Name="EvrakNo" Type="varchar" MaxLength="50" />
+    <Property Name="YaziOzeti" Type="varchar" MaxLength="150" />
+    <Property Name="EvrakTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="HESAP_PLANI">
+    <Key>
+      <PropertyRef Name="HesapPlaniKey" />
+    </Key>
+    <Property Name="HesapPlaniKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MuhasebeTipKey" Type="int" Nullable="false" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="HesapKodu" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="HesapAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BorcOcak" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcSubat" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcMart" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcNisan" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcMayis" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcHaziran" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcTemmuz" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcAgustos" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcEylul" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcEkim" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcKasim" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="BorcAralik" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="Borc1_" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="Borc2_" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakOcak" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakSubat" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakMart" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakNisan" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakMayis" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakHaziran" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakTemmuz" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakAgustos" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakEylul" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakEkim" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakKasim" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="AlacakAralik" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="Alacak1_" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="Alacak2_" Type="decimal" Nullable="false" Precision="14" Scale="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="KAYIT_TAKIP">
+    <Key>
+      <PropertyRef Name="KayitTakipKey" />
+    </Key>
+    <Property Name="KayitTakipKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="DereceKey" Type="int" />
+    <Property Name="AidatMiktar" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="OdemeTarihi" Type="date" />
+    <Property Name="OdemeMiktar" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="50" />
+    <Property Name="VadeTarihi" Type="date" />
+    <Property Name="CezaTarihi" Type="date" />
+    <Property Name="CezaMiktar" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="MESLEK_GRUP_DEGISIKLIK">
+    <Key>
+      <PropertyRef Name="MeslekGrupDegisiklikKey" />
+    </Key>
+    <Property Name="MeslekGrupDegisiklikKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="MeslekGrupKey" Type="int" Nullable="false" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="YKKTarih" Type="date" />
+    <Property Name="YKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="REHBER">
+    <Key>
+      <PropertyRef Name="RehberKey" />
+    </Key>
+    <Property Name="RehberKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Adi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Soyadi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Tel1" Type="varchar" MaxLength="50" />
+    <Property Name="Tel2" Type="varchar" MaxLength="50" />
+    <Property Name="Tel3" Type="varchar" MaxLength="50" />
+    <Property Name="Fax" Type="varchar" MaxLength="50" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SERMAYE_DEGISIKLIK">
+    <Key>
+      <PropertyRef Name="SermayeDegisiklikKey" />
+    </Key>
+    <Property Name="SermayeDegisiklikKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="Sermaye" Type="decimal" Nullable="false" Scale="4" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="YKKTarih" Type="date" />
+    <Property Name="YKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TASDIK_FASIL_AKTARMA_ACIKLAMA">
+    <Key>
+      <PropertyRef Name="TasdikFasilAktarmaAciklamaKey" />
+    </Key>
+    <Property Name="TasdikFasilAktarmaAciklamaKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TasdikFasilAktarmaTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar(max)" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TESCIL_ORAN">
+    <Key>
+      <PropertyRef Name="TescilOranKey" />
+    </Key>
+    <Property Name="TescilOranKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TescilOrani" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="SimsarOrani" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="Stopaj" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="FonPayi" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="MeraFonu" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="Tavan" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="TahsilatTipKey" Type="tinyint" />
+    <Property Name="MuhasebeTipKey" Type="int" />
+    <Property Name="Satis" Type="decimal" Precision="10" Scale="4" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_ALIS_SATIS_TIP">
+    <Key>
+      <PropertyRef Name="AlisSatisTipKey" />
+    </Key>
+    <Property Name="AlisSatisTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="Kod" Type="char" MaxLength="1" />
+    <Property Name="AlisSatisTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_BEYAN_KAYIT_TIP">
+    <Key>
+      <PropertyRef Name="BeyanKayitTipKey" />
+    </Key>
+    <Property Name="BeyanKayitTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="BeyanKayitTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_BEYAN_TIP">
+    <Key>
+      <PropertyRef Name="BeyanTipKey" />
+    </Key>
+    <Property Name="BeyanTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="BeyanTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_BIRIM_TIP">
+    <Key>
+      <PropertyRef Name="BirimTipKey" />
+    </Key>
+    <Property Name="BirimTipKey" Type="tinyint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="BirimTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_BORSA_SUBE">
+    <Key>
+      <PropertyRef Name="BorsaSubeKey" />
+    </Key>
+    <Property Name="BorsaSubeKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="BorsaSubeAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BorsaSubeSimsariyeKodu" Type="char" MaxLength="5" />
+    <Property Name="BorsaSubeTesciliyeKodu" Type="char" MaxLength="5" />
+    <Property Name="BorsaSubeMeraFonuKodu" Type="char" MaxLength="5" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_DERECE">
+    <Key>
+      <PropertyRef Name="DereceKey" />
+    </Key>
+    <Property Name="DereceKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="3" />
+    <Property Name="Kaydiye" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="Aidat" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="MuhasebeKodu" Type="varchar" MaxLength="5" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_DERECE_CEZA_ORAN">
+    <Key>
+      <PropertyRef Name="DereceCezaOranKey" />
+    </Key>
+    <Property Name="DereceCezaOranKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="Ay1" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay2" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay3" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay4" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay5" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay6" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay7" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay8" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay9" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay10" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay11" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Ay12" Type="decimal" Precision="5" Scale="4" />
+    <Property Name="Taksit1" Type="tinyint" />
+    <Property Name="Taksit2" Type="tinyint" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_DOSYA_GRUP">
+    <Key>
+      <PropertyRef Name="DosyaGrupKey" />
+    </Key>
+    <Property Name="DosyaGrupKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="DosyaGrupAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_EVRAK_TIP">
+    <Key>
+      <PropertyRef Name="EvrakTipKey" />
+    </Key>
+    <Property Name="EvrakTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="EvrakTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_FIRMA_ADRES_TIP">
+    <Key>
+      <PropertyRef Name="FirmaAdresTipKey" />
+    </Key>
+    <Property Name="FirmaAdresTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="FirmaAdresTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_FIRMA_TELEFON_FAX_TIP">
+    <Key>
+      <PropertyRef Name="FirmaTelefonFaxTipKey" />
+    </Key>
+    <Property Name="FirmaTelefonFaxTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="FirmaTelefonFaxTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_FIS_TIP">
+    <Key>
+      <PropertyRef Name="FisTipKey" />
+    </Key>
+    <Property Name="FisTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="FisTipAdi" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_HESAP_PLANI_DOKUM_TIP">
+    <Key>
+      <PropertyRef Name="HesapPlaniDokumTipKey" />
+    </Key>
+    <Property Name="HesapPlaniDokumTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="HesapPlaniDokumTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_IL_ILCE">
+    <Key>
+      <PropertyRef Name="IlIlceKey" />
+    </Key>
+    <Property Name="IlIlceKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="4" />
+    <Property Name="IlIlceAdi" Type="varchar" MaxLength="50" />
+    <Property Name="TobbKodu" Type="char" MaxLength="5" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_KONSOLIDE_TIP">
+    <Key>
+      <PropertyRef Name="KonsolideTipKey" />
+    </Key>
+    <Property Name="KonsolideTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="KonsolideTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_KURULUS_TUR">
+    <Key>
+      <PropertyRef Name="KurulusTurKey" />
+    </Key>
+    <Property Name="KurulusTurKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="3" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="TobbKodu" Type="char" MaxLength="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_MADDE_KOD">
+    <Key>
+      <PropertyRef Name="MaddeKodKey" />
+    </Key>
+    <Property Name="MaddeKodKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="varchar" MaxLength="10" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="Stopaj" Type="bit" />
+    <Property Name="MeraFonu" Type="bit" />
+    <Property Name="MaddeKoduFonu" Type="bit" />
+    <Property Name="Fire" Type="decimal" Precision="2" />
+    <Property Name="BirimKg" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="LabGrubu" Type="decimal" Precision="2" />
+    <Property Name="TmoGrubu" Type="decimal" Precision="2" />
+    <Property Name="StopajYuzdesi" Type="decimal" Precision="4" Scale="1" />
+    <Property Name="TobbKodu" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_MESLEK_GRUP">
+    <Key>
+      <PropertyRef Name="MeslekGrupKey" />
+    </Key>
+    <Property Name="MeslekGrupKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="4" />
+    <Property Name="MeslekAdi" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_MUHASEBE_ADI">
+    <Key>
+      <PropertyRef Name="MuhasebeAdiKey" />
+    </Key>
+    <Property Name="MuhasebeAdiKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="2" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_MUHASEBE_DURUM_TIP">
+    <Key>
+      <PropertyRef Name="MuhasebeDurumTipKey" />
+    </Key>
+    <Property Name="MuhasebeDurumTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="MuhasebeDurumTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_MUHASEBE_TIP">
+    <Key>
+      <PropertyRef Name="MuhasebeTipKey" />
+    </Key>
+    <Property Name="MuhasebeTipKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_OGRENIM_DURUM_TIP">
+    <Key>
+      <PropertyRef Name="OgrenimDurumTipKey" />
+    </Key>
+    <Property Name="OgrenimDurumTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="OgrenimDurumTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_SATIS_SEKLI">
+    <Key>
+      <PropertyRef Name="SatisSekliKey" />
+    </Key>
+    <Property Name="SatisSekliKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="3" />
+    <Property Name="SatisSekliAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SatisSekliUzunAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SatanKey" Type="tinyint" Nullable="false" />
+    <Property Name="AlanKey" Type="tinyint" Nullable="false" />
+    <Property Name="StopajKey" Type="tinyint" Nullable="false" />
+    <Property Name="TescilKey" Type="tinyint" Nullable="false" />
+    <Property Name="SimsarKey" Type="tinyint" Nullable="false" />
+    <Property Name="TipKey" Type="tinyint" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_SICIL_MEMURLUGU">
+    <Key>
+      <PropertyRef Name="SicilMemurluguKey" />
+    </Key>
+    <Property Name="SicilMemurluguKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="3" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_TAHSILAT_TIP">
+    <Key>
+      <PropertyRef Name="TahsilatTipKey" />
+    </Key>
+    <Property Name="TahsilatTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="TahsilatTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_TASDIK_FASIL_AKTARMA_TIP">
+    <Key>
+      <PropertyRef Name="TasdikFasilAktarmaTipKey" />
+    </Key>
+    <Property Name="TasdikFasilAktarmaTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="TasdikFasilAktarmaTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TT_VERGI_DAIRE">
+    <Key>
+      <PropertyRef Name="VergiDaireKey" />
+    </Key>
+    <Property Name="VergiDaireKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" MaxLength="4" />
+    <Property Name="VergiDairesiAdi" Type="varchar" MaxLength="50" />
+    <Property Name="TobbNo" Type="char" MaxLength="5" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_YAZISMA_ADRES">
+    <Key>
+      <PropertyRef Name="YazismaAdresKey" />
+    </Key>
+    <Property Name="YazismaAdresKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="YazismaAdresAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TUCCAR_ASKI">
+    <Key>
+      <PropertyRef Name="TuccarAskiKey" />
+    </Key>
+    <Property Name="TuccarAskiKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="AskiTarihi" Type="date" />
+    <Property Name="AskiKararNo" Type="varchar" MaxLength="50" />
+    <Property Name="AskiAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="BitisTarihi" Type="date" />
+    <Property Name="BitisKararNo" Type="varchar" MaxLength="50" />
+    <Property Name="BitisAciklama" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TUCCAR_DEPO">
+    <Key>
+      <PropertyRef Name="TuccarDepoKey" />
+    </Key>
+    <Property Name="TuccarDepoKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="MaddeKodKey" Type="int" />
+    <Property Name="Devir1" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="Alis1" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="Satis1" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="DigerBorsaAlis1" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="DigerBorsaSatis1" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="Devir2" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="Alis2" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="Satis2" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="DigerBorsaAlis2" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="DigerBorsaSatis2" Type="decimal" Precision="12" Scale="3" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TUCCAR_KEFALET_TEMINAT">
+    <Key>
+      <PropertyRef Name="TuccarKefaletTeminatKey" />
+    </Key>
+    <Property Name="TuccarKefaletTeminatKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarKey" Type="int" Nullable="false" />
+    <Property Name="KefilKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TUCCAR_SICIL">
+    <Key>
+      <PropertyRef Name="TuccarSicilKey" />
+    </Key>
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SicilNo" Type="varchar" MaxLength="6" />
+    <Property Name="Unvan" Type="varchar" MaxLength="2500" />
+    <Property Name="MeslekGrupKey" Type="int" />
+    <Property Name="DereceKey" Type="int" />
+    <Property Name="DereceYil" Type="smallint" />
+    <Property Name="MersisNo" Type="varchar" MaxLength="50" />
+    <Property Name="MerkezSubeMi" Type="bit" Nullable="false" />
+    <Property Name="KayitTescilMi" Type="bit" Nullable="false" />
+    <Property Name="BolgeAdi" Type="varchar" MaxLength="50" />
+    <Property Name="IsciSayisi" Type="varchar" MaxLength="10" />
+    <Property Name="EpostaAdresi" Type="varchar" MaxLength="50" />
+    <Property Name="WebAdresi" Type="varchar" MaxLength="50" />
+    <Property Name="ResenKayitMi" Type="bit" Nullable="false" />
+    <Property Name="NaceKodu1" Type="varchar" MaxLength="20" />
+    <Property Name="NaceKodu2" Type="varchar" MaxLength="50" />
+    <Property Name="KurulusTurKey" Type="int" />
+    <Property Name="SicilMemurluguKey" Type="int" />
+    <Property Name="SicilTarih" Type="date" />
+    <Property Name="SicilKayitNo" Type="varchar" MaxLength="50" />
+    <Property Name="IlIlceKey" Type="int" />
+    <Property Name="KayitTarihi" Type="date" />
+    <Property Name="YKKTarihi" Type="date" />
+    <Property Name="YKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="TerkinTarihi" Type="date" />
+    <Property Name="TerkinYKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="Sermaye" Type="decimal" Scale="4" />
+    <Property Name="VergiDaireKey" Type="int" />
+    <Property Name="VergiNo" Type="char" MaxLength="11" />
+    <Property Name="TCKimlikNo" Type="char" MaxLength="11" />
+    <Property Name="VergiNoEski" Type="char" MaxLength="10" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="1000" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TUCCAR_TAHSIL">
+    <Key>
+      <PropertyRef Name="TuccarTahsilKey" />
+    </Key>
+    <Property Name="TuccarTahsilKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" />
+    <Property Name="TahsilTarihi" Type="date" />
+    <Property Name="TahsilNo" Type="varchar" MaxLength="50" />
+    <Property Name="Miktar" Type="decimal" Precision="13" Scale="2" />
+    <Property Name="VergiDaireKey" Type="int" />
+    <Property Name="Ay" Type="tinyint" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="UNVAN_DEGISIKLIK">
+    <Key>
+      <PropertyRef Name="UnvanDegisiklikKey" />
+    </Key>
+    <Property Name="UnvanDegisiklikKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TuccarSicilKey" Type="int" Nullable="false" />
+    <Property Name="Unvan" Type="varchar" Nullable="false" MaxLength="2500" />
+    <Property Name="Yil" Type="smallint" />
+    <Property Name="YKKTarih" Type="date" />
+    <Property Name="YKKNo" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="YEVMIYE">
+    <Key>
+      <PropertyRef Name="YevmiyeKey" />
+    </Key>
+    <Property Name="YevmiyeKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MuhasebeTipKey" Type="int" Nullable="false" />
+    <Property Name="HesapPlaniKey" Type="int" Nullable="false" />
+    <Property Name="FisTipKey" Type="tinyint" Nullable="false" />
+    <Property Name="FisTarih" Type="date" Nullable="false" />
+    <Property Name="FisNo" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="SatirNo" Type="char" Nullable="false" MaxLength="4" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+    <Property Name="Borc" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="Alacak" Type="decimal" Nullable="false" Precision="16" Scale="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="BORSA_BILGI">
+    <Key>
+      <PropertyRef Name="ProgramBorsaBilgiKey" />
+    </Key>
+    <Property Name="ProgramBorsaBilgiKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramLogo" Type="image" />
+    <Property Name="ProgramBaslik" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BorsaAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOBBKodu" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TOBBKurumTipi" Type="tinyint" Nullable="false" />
+    <Property Name="KurulusTarihi" Type="date" Nullable="false" />
+    <Property Name="IsyeriSicilNo" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="GenelSekreter" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="YonetimKuruluBaskani" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="MeclisBaskani" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="BorsaAdresi" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="MuracaatMercii" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Telefon1" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Telefon2" Type="varchar" MaxLength="20" />
+    <Property Name="Fax1" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Fax2" Type="varchar" MaxLength="20" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="UyeTeminatTipiKey" Type="tinyint" Nullable="false" />
+    <Property Name="GecTescil" Type="bit" Nullable="false" />
+    <Property Name="TesekkulNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="TasTesNo" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="GecTescilBeyan30Gun" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="DUYURU">
+    <Key>
+      <PropertyRef Name="ProgramDuyuruKey" />
+    </Key>
+    <Property Name="ProgramDuyuruKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProgramDuyuruTarih" Type="date" Nullable="false" />
+    <Property Name="ProgramDuyuru" Type="varchar" Nullable="false" MaxLength="250" />
+    <Property Name="ProgramDuyuruAktif" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="LOG">
+    <Key>
+      <PropertyRef Name="LogKey" />
+    </Key>
+    <Property Name="LogKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="Source" Type="varchar(max)" />
+    <Property Name="StackTrace" Type="varchar(max)" />
+    <Property Name="ExceptionType" Type="varchar(max)" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="Url" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="SALON_SATIS_AYAR">
+    <Key>
+      <PropertyRef Name="SalonSatisAyarKey" />
+    </Key>
+    <Property Name="SalonSatisAyarKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="DusmeMiktari" Type="decimal" Nullable="false" Precision="5" Scale="3" />
+    <Property Name="ArtmaMiktari" Type="decimal" Nullable="false" Precision="5" Scale="3" />
+    <Property Name="SayacSuresi" Type="int" Nullable="false" />
+    <Property Name="GeriSayacSuresi" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TT_UYE_TEMINAT_TIP">
+    <Key>
+      <PropertyRef Name="UyeTeminatTipiKey" />
+    </Key>
+    <Property Name="UyeTeminatTipiKey" Type="tinyint" Nullable="false" />
+    <Property Name="UyeTeminatTipAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SATIS">
+    <Key>
+      <PropertyRef Name="SatisKey" />
+    </Key>
+    <Property Name="SatisKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="UrunKey" Type="int" Nullable="false" />
+    <Property Name="Tarih" Type="date" />
+    <Property Name="BaslangicZaman" Type="time" />
+    <Property Name="BitisZaman" Type="time" />
+    <Property Name="BaslangicFiyati" Type="decimal" Nullable="false" Scale="3" />
+    <Property Name="BitisFiyati" Type="decimal" Scale="3" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TEKLIF">
+    <Key>
+      <PropertyRef Name="TeklifKey" />
+    </Key>
+    <Property Name="TeklifKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="SatisKey" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="TarihSaat" Type="datetime" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TESCIL">
+    <Key>
+      <PropertyRef Name="TescilKey" />
+    </Key>
+    <Property Name="TescilKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="TescilParametreKey" Type="int" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TESCIL_KIMLIK">
+    <Key>
+      <PropertyRef Name="TescilKimlikKey" />
+    </Key>
+    <Property Name="TescilKimlikKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="KimlikNo" Type="char" Nullable="false" MaxLength="11" />
+    <Property Name="AdSoyad" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Adres" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_MADDE_KOD1">
+    <Key>
+      <PropertyRef Name="MaddeKodKey" />
+    </Key>
+    <Property Name="MaddeKodKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="varchar" MaxLength="10" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" />
+    <Property Name="Stopaj" Type="bit" />
+    <Property Name="MeraFonu" Type="bit" />
+    <Property Name="MaddeKoduFonu" Type="bit" />
+    <Property Name="Fire" Type="decimal" Precision="2" />
+    <Property Name="BirimKg" Type="decimal" Precision="10" Scale="3" />
+    <Property Name="LabGrubu" Type="decimal" Precision="2" />
+    <Property Name="TmoGrubu" Type="decimal" Precision="2" />
+    <Property Name="StopajYuzdesi" Type="decimal" Precision="4" Scale="1" />
+    <Property Name="TobbKodu" Type="varchar" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_SATICI_URETIM_MERKEZ">
+    <Key>
+      <PropertyRef Name="SaticiUretimMerkezKey" />
+    </Key>
+    <Property Name="SaticiUretimMerkezKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="SaticiUretimMerkeziAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_TESCIL_PARAMETRE">
+    <Key>
+      <PropertyRef Name="TescilParametreKey" />
+    </Key>
+    <Property Name="TescilParametreKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Adi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="AlinabilirMi" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TT_TOBB_KOD">
+    <Key>
+      <PropertyRef Name="TobbKodKey" />
+    </Key>
+    <Property Name="TobbKodKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Kod" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="Derece1" Type="char" MaxLength="8" />
+    <Property Name="Derece2" Type="char" MaxLength="8" />
+    <Property Name="Derece3" Type="char" MaxLength="8" />
+    <Property Name="Yemlik" Type="char" MaxLength="8" />
+    <Property Name="BaremtDisi" Type="char" MaxLength="8" />
+    <Property Name="YemlikKodu" Type="char" MaxLength="6" />
+    <Property Name="BaremDisiKodu" Type="char" MaxLength="6" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="URUN">
+    <Key>
+      <PropertyRef Name="UrunKey" />
+    </Key>
+    <Property Name="UrunKey" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UrunAdi" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="TabanFiyati" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__2057CCD0">
+    <End Role="aspnet_Applications" Type="DBModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="DBModel.Store.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__214BF109">
+    <End Role="aspnet_Users" Type="DBModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="DBModel.Store.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__59904A2C">
+    <End Role="aspnet_Applications" Type="DBModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="DBModel.Store.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__61316BF4">
+    <End Role="aspnet_Paths" Type="DBModel.Store.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="DBModel.Store.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__66EA454A">
+    <End Role="aspnet_Paths" Type="DBModel.Store.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="DBModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__67DE6983">
+    <End Role="aspnet_Users" Type="DBModel.Store.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="DBModel.Store.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__373B3228">
+    <End Role="aspnet_Users" Type="DBModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="DBModel.Store.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__42ACE4D4">
+    <End Role="aspnet_Applications" Type="DBModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="DBModel.Store.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__0C50D423">
+    <End Role="aspnet_Applications" Type="DBModel.Store.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="DBModel.Store.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__RoleI__4959E263">
+    <End Role="aspnet_Roles" Type="DBModel.Store.aspnet_Roles" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="DBModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__UserI__4865BE2A">
+    <End Role="aspnet_Users" Type="DBModel.Store.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="DBModel.Store.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AIDAT_TAKIP_TT_DERECE">
+    <End Role="TT_DERECE" Type="DBModel.Store.TT_DERECE" Multiplicity="0..1" />
+    <End Role="AIDAT_TAKIP" Type="DBModel.Store.AIDAT_TAKIP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_DERECE">
+        <PropertyRef Name="DereceKey" />
+      </Principal>
+      <Dependent Role="AIDAT_TAKIP">
+        <PropertyRef Name="DereceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AIDAT_TAKIP_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="AIDAT_TAKIP" Type="DBModel.Store.AIDAT_TAKIP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="AIDAT_TAKIP">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_ALIS_SATIS_TIP">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_BEYAN_KAYIT_TIP">
+    <End Role="TT_BEYAN_KAYIT_TIP" Type="DBModel.Store.TT_BEYAN_KAYIT_TIP" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_BEYAN_KAYIT_TIP">
+        <PropertyRef Name="BeyanKayitTipKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="BeyanKayitTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_BEYAN_TIP">
+    <End Role="TT_BEYAN_TIP" Type="DBModel.Store.TT_BEYAN_TIP" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_BEYAN_TIP">
+        <PropertyRef Name="BeyanTipKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="BeyanTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_BIRIM_TIP">
+    <End Role="TT_BIRIM_TIP" Type="DBModel.Store.TT_BIRIM_TIP" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_BIRIM_TIP">
+        <PropertyRef Name="BirimTipKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="BirimTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_BORSA_SUBE">
+    <End Role="TT_BORSA_SUBE" Type="DBModel.Store.TT_BORSA_SUBE" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_BORSA_SUBE">
+        <PropertyRef Name="BorsaSubeKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="BorsaSubeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_MADDE_KOD">
+    <End Role="TT_MADDE_KOD" Type="DBModel.Store.TT_MADDE_KOD" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MADDE_KOD">
+        <PropertyRef Name="MaddeKodKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="MaddeKodKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TT_SATIS_SEKLI">
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="SatisSekliKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="SatisSekliKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_BEYAN_TUCCAR_SICIL1">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="BEYAN" Type="DBModel.Store.BEYAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="BEYAN">
+        <PropertyRef Name="BeyannameKarsiFirmaTuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DERECE_DEGISIKLIK_TT_DERECE">
+    <End Role="TT_DERECE" Type="DBModel.Store.TT_DERECE" Multiplicity="0..1" />
+    <End Role="DERECE_DEGISIKLIK" Type="DBModel.Store.DERECE_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_DERECE">
+        <PropertyRef Name="DereceKey" />
+      </Principal>
+      <Dependent Role="DERECE_DEGISIKLIK">
+        <PropertyRef Name="DereceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DERECE_DEGISIKLIK_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="DERECE_DEGISIKLIK" Type="DBModel.Store.DERECE_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="DERECE_DEGISIKLIK">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_ADRES_TT_FIRMA_ADRES_TIP">
+    <End Role="TT_FIRMA_ADRES_TIP" Type="DBModel.Store.TT_FIRMA_ADRES_TIP" Multiplicity="0..1" />
+    <End Role="FIRMA_ADRES" Type="DBModel.Store.FIRMA_ADRES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_FIRMA_ADRES_TIP">
+        <PropertyRef Name="FirmaAdresTipKey" />
+      </Principal>
+      <Dependent Role="FIRMA_ADRES">
+        <PropertyRef Name="FirmaAdresTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_ADRES_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="FIRMA_ADRES" Type="DBModel.Store.FIRMA_ADRES" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_ADRES">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_DIGER_FAALIYET_KOD_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="FIRMA_DIGER_FAALIYET_KOD" Type="DBModel.Store.FIRMA_DIGER_FAALIYET_KOD" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_DIGER_FAALIYET_KOD">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_FAALIYET_TT_MADDE_KOD">
+    <End Role="TT_MADDE_KOD" Type="DBModel.Store.TT_MADDE_KOD" Multiplicity="0..1" />
+    <End Role="FIRMA_FAALIYET" Type="DBModel.Store.FIRMA_FAALIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MADDE_KOD">
+        <PropertyRef Name="MaddeKodKey" />
+      </Principal>
+      <Dependent Role="FIRMA_FAALIYET">
+        <PropertyRef Name="MaddeKodKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_FAALIYET_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="FIRMA_FAALIYET" Type="DBModel.Store.FIRMA_FAALIYET" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_FAALIYET">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_KAYITLI_ODA_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="FIRMA_KAYITLI_ODA" Type="DBModel.Store.FIRMA_KAYITLI_ODA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_KAYITLI_ODA">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_SAHIS_TT_OGRENIM_DURUM_TIP">
+    <End Role="TT_OGRENIM_DURUM_TIP" Type="DBModel.Store.TT_OGRENIM_DURUM_TIP" Multiplicity="0..1" />
+    <End Role="FIRMA_SAHIS" Type="DBModel.Store.FIRMA_SAHIS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_OGRENIM_DURUM_TIP">
+        <PropertyRef Name="OgrenimDurumTipKey" />
+      </Principal>
+      <Dependent Role="FIRMA_SAHIS">
+        <PropertyRef Name="OgrenimDurumTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_SAHIS_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="FIRMA_SAHIS" Type="DBModel.Store.FIRMA_SAHIS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_SAHIS">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_TELEFON_FAX_TT_FIRMA_TELEFON_FAX_TIP">
+    <End Role="TT_FIRMA_TELEFON_FAX_TIP" Type="DBModel.Store.TT_FIRMA_TELEFON_FAX_TIP" Multiplicity="1" />
+    <End Role="FIRMA_TELEFON_FAX" Type="DBModel.Store.FIRMA_TELEFON_FAX" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_FIRMA_TELEFON_FAX_TIP">
+        <PropertyRef Name="FirmaTelefonFaxTipKey" />
+      </Principal>
+      <Dependent Role="FIRMA_TELEFON_FAX">
+        <PropertyRef Name="FirmaTelefonFaxTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_TELEFON_FAX_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="FIRMA_TELEFON_FAX" Type="DBModel.Store.FIRMA_TELEFON_FAX" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_TELEFON_FAX">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_UYARI_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="FIRMA_UYARI" Type="DBModel.Store.FIRMA_UYARI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_UYARI">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_YETKILI_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="FIRMA_YETKILI" Type="DBModel.Store.FIRMA_YETKILI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_YETKILI">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIRMA_YONETIM_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="FIRMA_YONETIM" Type="DBModel.Store.FIRMA_YONETIM" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="FIRMA_YONETIM">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIS_NO_TT_FIS_TIP">
+    <End Role="TT_FIS_TIP" Type="DBModel.Store.TT_FIS_TIP" Multiplicity="1" />
+    <End Role="FIS_NO" Type="DBModel.Store.FIS_NO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_FIS_TIP">
+        <PropertyRef Name="FisTipKey" />
+      </Principal>
+      <Dependent Role="FIS_NO">
+        <PropertyRef Name="FisTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_FIS_NO_TT_MUHASEBE_TIP">
+    <End Role="TT_MUHASEBE_TIP" Type="DBModel.Store.TT_MUHASEBE_TIP" Multiplicity="1" />
+    <End Role="FIS_NO" Type="DBModel.Store.FIS_NO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MUHASEBE_TIP">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Principal>
+      <Dependent Role="FIS_NO">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GELEN_GIDEN_EVRAK_TT_DOSYA_GRUP">
+    <End Role="TT_DOSYA_GRUP" Type="DBModel.Store.TT_DOSYA_GRUP" Multiplicity="1" />
+    <End Role="GELEN_GIDEN_EVRAK" Type="DBModel.Store.GELEN_GIDEN_EVRAK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_DOSYA_GRUP">
+        <PropertyRef Name="DosyaGrupKey" />
+      </Principal>
+      <Dependent Role="GELEN_GIDEN_EVRAK">
+        <PropertyRef Name="DosyaGrupKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GELEN_GIDEN_EVRAK_TT_EVRAK_TIP">
+    <End Role="TT_EVRAK_TIP" Type="DBModel.Store.TT_EVRAK_TIP" Multiplicity="1" />
+    <End Role="GELEN_GIDEN_EVRAK" Type="DBModel.Store.GELEN_GIDEN_EVRAK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_EVRAK_TIP">
+        <PropertyRef Name="EvrakTipKey" />
+      </Principal>
+      <Dependent Role="GELEN_GIDEN_EVRAK">
+        <PropertyRef Name="EvrakTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GELEN_GIDEN_EVRAK_TT_IL_ILCE">
+    <End Role="TT_IL_ILCE" Type="DBModel.Store.TT_IL_ILCE" Multiplicity="0..1" />
+    <End Role="GELEN_GIDEN_EVRAK" Type="DBModel.Store.GELEN_GIDEN_EVRAK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_IL_ILCE">
+        <PropertyRef Name="IlIlceKey" />
+      </Principal>
+      <Dependent Role="GELEN_GIDEN_EVRAK">
+        <PropertyRef Name="IlIlceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HESAP_PLANI_TT_MUHASEBE_TIP">
+    <End Role="TT_MUHASEBE_TIP" Type="DBModel.Store.TT_MUHASEBE_TIP" Multiplicity="1" />
+    <End Role="HESAP_PLANI" Type="DBModel.Store.HESAP_PLANI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MUHASEBE_TIP">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Principal>
+      <Dependent Role="HESAP_PLANI">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KAYIT_TAKIP_TT_DERECE">
+    <End Role="TT_DERECE" Type="DBModel.Store.TT_DERECE" Multiplicity="0..1" />
+    <End Role="KAYIT_TAKIP" Type="DBModel.Store.KAYIT_TAKIP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_DERECE">
+        <PropertyRef Name="DereceKey" />
+      </Principal>
+      <Dependent Role="KAYIT_TAKIP">
+        <PropertyRef Name="DereceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KAYIT_TAKIP_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="KAYIT_TAKIP" Type="DBModel.Store.KAYIT_TAKIP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="KAYIT_TAKIP">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MESLEK_GRUP_DEGISIKLIK_TT_MESLEK_GRUP">
+    <End Role="TT_MESLEK_GRUP" Type="DBModel.Store.TT_MESLEK_GRUP" Multiplicity="1" />
+    <End Role="MESLEK_GRUP_DEGISIKLIK" Type="DBModel.Store.MESLEK_GRUP_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MESLEK_GRUP">
+        <PropertyRef Name="MeslekGrupKey" />
+      </Principal>
+      <Dependent Role="MESLEK_GRUP_DEGISIKLIK">
+        <PropertyRef Name="MeslekGrupKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MESLEK_GRUP_DEGISIKLIK_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="MESLEK_GRUP_DEGISIKLIK" Type="DBModel.Store.MESLEK_GRUP_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="MESLEK_GRUP_DEGISIKLIK">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PROGRAM_BORSA_BILGI_TT_UYE_TEMINAT_TIP">
+    <End Role="TT_UYE_TEMINAT_TIP" Type="DBModel.Store.TT_UYE_TEMINAT_TIP" Multiplicity="1" />
+    <End Role="BORSA_BILGI" Type="DBModel.Store.BORSA_BILGI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_UYE_TEMINAT_TIP">
+        <PropertyRef Name="UyeTeminatTipiKey" />
+      </Principal>
+      <Dependent Role="BORSA_BILGI">
+        <PropertyRef Name="UyeTeminatTipiKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SATIS_URUN">
+    <End Role="URUN" Type="DBModel.Store.URUN" Multiplicity="1" />
+    <End Role="SATIS" Type="DBModel.Store.SATIS" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="URUN">
+        <PropertyRef Name="UrunKey" />
+      </Principal>
+      <Dependent Role="SATIS">
+        <PropertyRef Name="UrunKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SERMAYE_DEGISIKLIK_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="SERMAYE_DEGISIKLIK" Type="DBModel.Store.SERMAYE_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="SERMAYE_DEGISIKLIK">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TASDIK_FASIL_AKTARMA_ACIKLAMA_TT_TASDIK_FASIL_AKTARMA_TIP">
+    <End Role="TT_TASDIK_FASIL_AKTARMA_TIP" Type="DBModel.Store.TT_TASDIK_FASIL_AKTARMA_TIP" Multiplicity="1" />
+    <End Role="TASDIK_FASIL_AKTARMA_ACIKLAMA" Type="DBModel.Store.TASDIK_FASIL_AKTARMA_ACIKLAMA" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_TASDIK_FASIL_AKTARMA_TIP">
+        <PropertyRef Name="TasdikFasilAktarmaTipKey" />
+      </Principal>
+      <Dependent Role="TASDIK_FASIL_AKTARMA_ACIKLAMA">
+        <PropertyRef Name="TasdikFasilAktarmaTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TEKLIF_SATIS">
+    <End Role="SATIS" Type="DBModel.Store.SATIS" Multiplicity="1" />
+    <End Role="TEKLIF" Type="DBModel.Store.TEKLIF" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SATIS">
+        <PropertyRef Name="SatisKey" />
+      </Principal>
+      <Dependent Role="TEKLIF">
+        <PropertyRef Name="SatisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TESCIL_ORAN_TT_MUHASEBE_TIP">
+    <End Role="TT_MUHASEBE_TIP" Type="DBModel.Store.TT_MUHASEBE_TIP" Multiplicity="0..1" />
+    <End Role="TESCIL_ORAN" Type="DBModel.Store.TESCIL_ORAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MUHASEBE_TIP">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Principal>
+      <Dependent Role="TESCIL_ORAN">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TESCIL_ORAN_TT_TAHSILAT_TIP">
+    <End Role="TT_TAHSILAT_TIP" Type="DBModel.Store.TT_TAHSILAT_TIP" Multiplicity="0..1" />
+    <End Role="TESCIL_ORAN" Type="DBModel.Store.TESCIL_ORAN" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_TAHSILAT_TIP">
+        <PropertyRef Name="TahsilatTipKey" />
+      </Principal>
+      <Dependent Role="TESCIL_ORAN">
+        <PropertyRef Name="TahsilatTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TESCIL_TT_TESCIL_PARAMETRE">
+    <End Role="TT_TESCIL_PARAMETRE" Type="DBModel.Store.TT_TESCIL_PARAMETRE" Multiplicity="0..1" />
+    <End Role="TESCIL" Type="DBModel.Store.TESCIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_TESCIL_PARAMETRE">
+        <PropertyRef Name="TescilParametreKey" />
+      </Principal>
+      <Dependent Role="TESCIL">
+        <PropertyRef Name="TescilParametreKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="SatanKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP1">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="AlanKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP2">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="StopajKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP3">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="TescilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP4">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="SimsarKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP5">
+    <End Role="TT_ALIS_SATIS_TIP" Type="DBModel.Store.TT_ALIS_SATIS_TIP" Multiplicity="1" />
+    <End Role="TT_SATIS_SEKLI" Type="DBModel.Store.TT_SATIS_SEKLI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_ALIS_SATIS_TIP">
+        <PropertyRef Name="AlisSatisTipKey" />
+      </Principal>
+      <Dependent Role="TT_SATIS_SEKLI">
+        <PropertyRef Name="TipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_ASKI_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="TUCCAR_ASKI" Type="DBModel.Store.TUCCAR_ASKI" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_ASKI">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_DEPO_TT_MADDE_KOD">
+    <End Role="TT_MADDE_KOD" Type="DBModel.Store.TT_MADDE_KOD" Multiplicity="0..1" />
+    <End Role="TUCCAR_DEPO" Type="DBModel.Store.TUCCAR_DEPO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MADDE_KOD">
+        <PropertyRef Name="MaddeKodKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_DEPO">
+        <PropertyRef Name="MaddeKodKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_DEPO_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="TUCCAR_DEPO" Type="DBModel.Store.TUCCAR_DEPO" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_DEPO">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="TUCCAR_KEFALET_TEMINAT" Type="DBModel.Store.TUCCAR_KEFALET_TEMINAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_KEFALET_TEMINAT">
+        <PropertyRef Name="TuccarKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL1">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="TUCCAR_KEFALET_TEMINAT" Type="DBModel.Store.TUCCAR_KEFALET_TEMINAT" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_KEFALET_TEMINAT">
+        <PropertyRef Name="KefilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_DERECE">
+    <End Role="TT_DERECE" Type="DBModel.Store.TT_DERECE" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_DERECE">
+        <PropertyRef Name="DereceKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="DereceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_IL_ILCE">
+    <End Role="TT_IL_ILCE" Type="DBModel.Store.TT_IL_ILCE" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_IL_ILCE">
+        <PropertyRef Name="IlIlceKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="IlIlceKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_KURULUS_TUR">
+    <End Role="TT_KURULUS_TUR" Type="DBModel.Store.TT_KURULUS_TUR" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_KURULUS_TUR">
+        <PropertyRef Name="KurulusTurKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="KurulusTurKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_MESLEK_GRUP">
+    <End Role="TT_MESLEK_GRUP" Type="DBModel.Store.TT_MESLEK_GRUP" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MESLEK_GRUP">
+        <PropertyRef Name="MeslekGrupKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="MeslekGrupKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_SICIL_MEMURLUGU">
+    <End Role="TT_SICIL_MEMURLUGU" Type="DBModel.Store.TT_SICIL_MEMURLUGU" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_SICIL_MEMURLUGU">
+        <PropertyRef Name="SicilMemurluguKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="SicilMemurluguKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_SICIL_TT_VERGI_DAIRE">
+    <End Role="TT_VERGI_DAIRE" Type="DBModel.Store.TT_VERGI_DAIRE" Multiplicity="0..1" />
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_VERGI_DAIRE">
+        <PropertyRef Name="VergiDaireKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_SICIL">
+        <PropertyRef Name="VergiDaireKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_TAHSIL_TT_VERGI_DAIRE">
+    <End Role="TT_VERGI_DAIRE" Type="DBModel.Store.TT_VERGI_DAIRE" Multiplicity="0..1" />
+    <End Role="TUCCAR_TAHSIL" Type="DBModel.Store.TUCCAR_TAHSIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_VERGI_DAIRE">
+        <PropertyRef Name="VergiDaireKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_TAHSIL">
+        <PropertyRef Name="VergiDaireKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TUCCAR_TAHSIL_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="0..1" />
+    <End Role="TUCCAR_TAHSIL" Type="DBModel.Store.TUCCAR_TAHSIL" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="TUCCAR_TAHSIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UNVAN_DEGISIKLIK_TUCCAR_SICIL">
+    <End Role="TUCCAR_SICIL" Type="DBModel.Store.TUCCAR_SICIL" Multiplicity="1" />
+    <End Role="UNVAN_DEGISIKLIK" Type="DBModel.Store.UNVAN_DEGISIKLIK" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TUCCAR_SICIL">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Principal>
+      <Dependent Role="UNVAN_DEGISIKLIK">
+        <PropertyRef Name="TuccarSicilKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YEVMIYE_HESAP_PLANI">
+    <End Role="HESAP_PLANI" Type="DBModel.Store.HESAP_PLANI" Multiplicity="1" />
+    <End Role="YEVMIYE" Type="DBModel.Store.YEVMIYE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HESAP_PLANI">
+        <PropertyRef Name="HesapPlaniKey" />
+      </Principal>
+      <Dependent Role="YEVMIYE">
+        <PropertyRef Name="HesapPlaniKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YEVMIYE_TT_FIS_TIP">
+    <End Role="TT_FIS_TIP" Type="DBModel.Store.TT_FIS_TIP" Multiplicity="1" />
+    <End Role="YEVMIYE" Type="DBModel.Store.YEVMIYE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_FIS_TIP">
+        <PropertyRef Name="FisTipKey" />
+      </Principal>
+      <Dependent Role="YEVMIYE">
+        <PropertyRef Name="FisTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_YEVMIYE_TT_MUHASEBE_TIP">
+    <End Role="TT_MUHASEBE_TIP" Type="DBModel.Store.TT_MUHASEBE_TIP" Multiplicity="1" />
+    <End Role="YEVMIYE" Type="DBModel.Store.YEVMIYE" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TT_MUHASEBE_TIP">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Principal>
+      <Dependent Role="YEVMIYE">
+        <PropertyRef Name="MuhasebeTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

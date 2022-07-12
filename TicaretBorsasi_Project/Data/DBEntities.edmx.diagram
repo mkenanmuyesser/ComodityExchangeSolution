@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="88d047944e514769b1320e59c9f20db2" Name="Diagram1" ZoomLevel="76">
+        <EntityTypeShape EntityType="DBModel.aspnet_Applications" Width="1.5" PointX="10.561810578481206" PointY="15.847766719687622" />
+        <EntityTypeShape EntityType="DBModel.aspnet_Membership" Width="1.5" PointX="5.6594523348191066" PointY="26.416158301018253" />
+        <EntityTypeShape EntityType="DBModel.aspnet_Paths" Width="1.5" PointX="8.7381867825697128" PointY="2.5491896134564604" />
+        <EntityTypeShape EntityType="DBModel.aspnet_PersonalizationAllUsers" Width="1.5" PointX="10.19909887863281" PointY="1.3965564823693393" />
+        <EntityTypeShape EntityType="DBModel.aspnet_PersonalizationPerUser" Width="1.5" PointX="5.3537971104280073" PointY="10.237518345116413" />
+        <EntityTypeShape EntityType="DBModel.aspnet_Profile" Width="1.5" PointX="8.58669553910694" PointY="15.404138318916846" />
+        <EntityTypeShape EntityType="DBModel.aspnet_Roles" Width="1.5" PointX="2.4576749906212441" PointY="1.3615723407648375" />
+        <EntityTypeShape EntityType="DBModel.aspnet_SchemaVersions" Width="1.5" PointX="1.53248984996811" PointY="5.6272672888018507" />
+        <EntityTypeShape EntityType="DBModel.aspnet_Users" Width="1.5" PointX="7.6552453337494493" PointY="31.035440712718032" />
+        <EntityTypeShape EntityType="DBModel.aspnet_WebEvent_Events" Width="1.5" PointX="5.8072319542091488" PointY="25.592258733507368" />
+        <EntityTypeShape EntityType="DBModel.sysdiagram" Width="1.5" PointX="0.504836445909383" PointY="27.745251787707794" />
+        <EntityTypeShape EntityType="DBModel.AIDAT_TAKIP" Width="1.5" PointX="4.8638402525632829" PointY="20.99299649381684" />
+        <EntityTypeShape EntityType="DBModel.BANKA_MEVDUAT" Width="1.5" PointX="10.62171265418721" PointY="13.260713523840863" />
+        <EntityTypeShape EntityType="DBModel.BEYAN" Width="1.5" PointX="0.47318359672705806" PointY="31.681787818522093" />
+        <EntityTypeShape EntityType="DBModel.DERECE_DEGISIKLIK" Width="1.5" PointX="7.1251243684092174" PointY="27.547388596249458" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_ADRES" Width="1.5" PointX="7.4131435767808664" PointY="9.4316766753008938" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_DIGER_FAALIYET_KOD" Width="1.5" PointX="1.524468022177214" PointY="11.447442253794261" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_FAALIYET" Width="1.5" PointX="9.36804976378011" PointY="23.203840907292367" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_KAYITLI_ODA" Width="1.5" PointX="8.725935876707517" PointY="16.72600378874969" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_SAHIS" Width="1.5" PointX="9.1739632138861182" PointY="23.457760732368456" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_TELEFON_FAX" Width="1.5" PointX="7.5461409331979876" PointY="1.2525642967096364" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_UYARI" Width="1.5" PointX="4.1945243627738789" PointY="3.2875516876986026" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_YETKILI" Width="1.5" PointX="0.74636480246966919" PointY="13.089427775279352" />
+        <EntityTypeShape EntityType="DBModel.FIRMA_YONETIM" Width="1.5" PointX="10.435238923148829" PointY="12.99595268675869" />
+        <EntityTypeShape EntityType="DBModel.FIS_NO" Width="1.5" PointX="4.1850202736375017" PointY="12.356294816525791" />
+        <EntityTypeShape EntityType="DBModel.GELEN_GIDEN_EVRAK" Width="1.5" PointX="2.8443052949590166" PointY="1.5095385022040171" />
+        <EntityTypeShape EntityType="DBModel.HESAP_PLANI" Width="1.5" PointX="8.4212659673864323" PointY="2.25088420615107" />
+        <EntityTypeShape EntityType="DBModel.KAYIT_TAKIP" Width="1.5" PointX="10.779308476848206" PointY="0.41957642157542352" />
+        <EntityTypeShape EntityType="DBModel.MESLEK_GRUP_DEGISIKLIK" Width="1.5" PointX="1.0790722673195752" PointY="26.098876399034111" />
+        <EntityTypeShape EntityType="DBModel.REHBER" Width="1.5" PointX="11.284346708694635" PointY="10.041117896345034" />
+        <EntityTypeShape EntityType="DBModel.SERMAYE_DEGISIKLIK" Width="1.5" PointX="0.4827625083191146" PointY="27.515809191165403" />
+        <EntityTypeShape EntityType="DBModel.TASDIK_FASIL_AKTARMA_ACIKLAMA" Width="1.5" PointX="5.3985843124792838" PointY="18.729403698225227" />
+        <EntityTypeShape EntityType="DBModel.TESCIL_ORAN" Width="1.5" PointX="8.4259258026377886" PointY="13.466178095650943" />
+        <EntityTypeShape EntityType="DBModel.TT_ALIS_SATIS_TIP" Width="1.5" PointX="4.2520838474166034" PointY="27.106357721195725" />
+        <EntityTypeShape EntityType="DBModel.TT_BEYAN_KAYIT_TIP" Width="1.5" PointX="3.1425398640067037" PointY="12.882798692622593" />
+        <EntityTypeShape EntityType="DBModel.TT_BEYAN_TIP" Width="1.5" PointX="5.3842893565931771" PointY="3.6879837679155094" />
+        <EntityTypeShape EntityType="DBModel.TT_BIRIM_TIP" Width="1.5" PointX="2.4643270533831449" PointY="24.028191145522609" />
+        <EntityTypeShape EntityType="DBModel.TT_BORSA_SUBE" Width="1.5" PointX="2.0509560918672736" PointY="0.093666225715384924" />
+        <EntityTypeShape EntityType="DBModel.TT_DERECE" Width="1.5" PointX="6.2099450576165438" PointY="9.6826889858034857" />
+        <EntityTypeShape EntityType="DBModel.TT_DERECE_CEZA_ORAN" Width="1.5" PointX="7.1260088827116466" PointY="15.235139302553208" />
+        <EntityTypeShape EntityType="DBModel.TT_DOSYA_GRUP" Width="1.5" PointX="6.5375286482914952" PointY="20.265870237846798" />
+        <EntityTypeShape EntityType="DBModel.TT_EVRAK_TIP" Width="1.5" PointX="7.6956501583082844" PointY="6.6440368325654591" />
+        <EntityTypeShape EntityType="DBModel.TT_FIRMA_ADRES_TIP" Width="1.5" PointX="7.4859654286345307" PointY="18.258844369211626" />
+        <EntityTypeShape EntityType="DBModel.TT_FIRMA_TELEFON_FAX_TIP" Width="1.5" PointX="7.1156127858514022" PointY="1.8143638529881667" />
+        <EntityTypeShape EntityType="DBModel.TT_FIS_TIP" Width="1.5" PointX="5.5134823683246426" PointY="24.561889615171538" />
+        <EntityTypeShape EntityType="DBModel.TT_HESAP_PLANI_DOKUM_TIP" Width="1.5" PointX="7.6223680729150622" PointY="29.1702859388526" />
+        <EntityTypeShape EntityType="DBModel.TT_IL_ILCE" Width="1.5" PointX="6.9879047120864994" PointY="14.422784007351279" />
+        <EntityTypeShape EntityType="DBModel.TT_KONSOLIDE_TIP" Width="1.5" PointX="8.3138977663190552" PointY="24.607233297362566" />
+        <EntityTypeShape EntityType="DBModel.TT_KURULUS_TUR" Width="1.5" PointX="7.07112729878683" PointY="24.455994602505115" />
+        <EntityTypeShape EntityType="DBModel.TT_MADDE_KOD" Width="1.5" PointX="4.8069060802491874" PointY="20.524128044268178" />
+        <EntityTypeShape EntityType="DBModel.TT_MESLEK_GRUP" Width="1.5" PointX="0.65645156831315321" PointY="0.72094607386782117" />
+        <EntityTypeShape EntityType="DBModel.TT_MUHASEBE_ADI" Width="1.5" PointX="1.7309423935278052" PointY="30.277255370410742" />
+        <EntityTypeShape EntityType="DBModel.TT_MUHASEBE_DURUM_TIP" Width="1.5" PointX="11.249321199603994" PointY="3.8968303519752019" />
+        <EntityTypeShape EntityType="DBModel.TT_MUHASEBE_TIP" Width="1.5" PointX="10.101749884943361" PointY="30.428518100841213" />
+        <EntityTypeShape EntityType="DBModel.TT_OGRENIM_DURUM_TIP" Width="1.5" PointX="10.793125485439377" PointY="28.651156379213162" />
+        <EntityTypeShape EntityType="DBModel.TT_SATIS_SEKLI" Width="1.5" PointX="5.94739610047424" PointY="25.194837060382049" />
+        <EntityTypeShape EntityType="DBModel.TT_SICIL_MEMURLUGU" Width="1.5" PointX="2.6610697669261461" PointY="14.856451920632484" />
+        <EntityTypeShape EntityType="DBModel.TT_TAHSILAT_TIP" Width="1.5" PointX="9.2278905628378922" PointY="13.021496451004174" />
+        <EntityTypeShape EntityType="DBModel.TT_TASDIK_FASIL_AKTARMA_TIP" Width="1.5" PointX="2.6227782883787425" PointY="7.7521880007126311" />
+        <EntityTypeShape EntityType="DBModel.TT_VERGI_DAIRE" Width="1.5" PointX="11.537560958199929" PointY="4.2102911044891416" />
+        <EntityTypeShape EntityType="DBModel.TT_YAZISMA_ADRES" Width="1.5" PointX="9.9342040000177" PointY="9.5245264067894428" />
+        <EntityTypeShape EntityType="DBModel.TUCCAR_ASKI" Width="1.5" PointX="4.6514017771237537" PointY="15.81821668884634" />
+        <EntityTypeShape EntityType="DBModel.TUCCAR_DEPO" Width="1.5" PointX="9.20868143681841" PointY="17.18781901206254" />
+        <EntityTypeShape EntityType="DBModel.TUCCAR_KEFALET_TEMINAT" Width="1.5" PointX="6.3950892008818174" PointY="24.148754801670442" />
+        <EntityTypeShape EntityType="DBModel.TUCCAR_SICIL" Width="1.5" PointX="0.69667391325192241" PointY="12.861982947616831" />
+        <EntityTypeShape EntityType="DBModel.TUCCAR_TAHSIL" Width="1.5" PointX="4.9639975358564392" PointY="24.103858884472334" />
+        <EntityTypeShape EntityType="DBModel.UNVAN_DEGISIKLIK" Width="1.5" PointX="10.82410228942712" PointY="30.478562309629545" />
+        <EntityTypeShape EntityType="DBModel.YEVMIYE" Width="1.5" PointX="5.0567256701442993" PointY="16.7124636549095" />
+        <EntityTypeShape EntityType="DBModel.BORSA_BILGI" Width="1.5" PointX="5.8687589456647444" PointY="22.244478385078011" />
+        <EntityTypeShape EntityType="DBModel.DUYURU" Width="1.5" PointX="3.2421926126080534" PointY="16.065744124383546" />
+        <EntityTypeShape EntityType="DBModel.LOG" Width="1.5" PointX="8.7453167535109984" PointY="20.546449328095861" />
+        <EntityTypeShape EntityType="DBModel.SALON_SATIS_AYAR" Width="1.5" PointX="1.8872609594311849" PointY="18.051463269652547" />
+        <EntityTypeShape EntityType="DBModel.TT_UYE_TEMINAT_TIP" Width="1.5" PointX="3.2633125052150866" PointY="27.131477800724785" />
+        <EntityTypeShape EntityType="DBModel.SATI" Width="1.5" PointX="8.2777874601435784" PointY="3.7779606449315142" />
+        <EntityTypeShape EntityType="DBModel.TEKLIF" Width="1.5" PointX="8.1806534399188386" PointY="9.14889759251331" />
+        <EntityTypeShape EntityType="DBModel.TESCIL" Width="1.5" PointX="6.60493419813222" PointY="11.104151462718916" />
+        <EntityTypeShape EntityType="DBModel.TESCIL_KIMLIK" Width="1.5" PointX="9.6334370177394888" PointY="8.6081251095086913" />
+        <EntityTypeShape EntityType="DBModel.TT_MADDE_KOD1" Width="1.5" PointX="9.7623440165828654" PointY="24.2260111087123" />
+        <EntityTypeShape EntityType="DBModel.TT_SATICI_URETIM_MERKEZ" Width="1.5" PointX="7.6189530005766795" PointY="20.797629693894475" />
+        <EntityTypeShape EntityType="DBModel.TT_TESCIL_PARAMETRE" Width="1.5" PointX="2.1452893270856186" PointY="12.810370853548111" />
+        <EntityTypeShape EntityType="DBModel.TT_TOBB_KOD" Width="1.5" PointX="7.0662221811088841" PointY="2.789244891511856" />
+        <EntityTypeShape EntityType="DBModel.URUN" Width="1.5" PointX="10.714020374563532" PointY="15.919685013554844" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Me__Appli__2057CCD0" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Pa__Appli__59904A2C" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Ro__Appli__42ACE4D4" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Us__Appli__0C50D423" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Me__UserI__214BF109" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Pe__PathI__61316BF4" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Pe__PathI__66EA454A" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Pe__UserI__67DE6983" />
+        <AssociationConnector Association="DBModel.FK__aspnet_Pr__UserI__373B3228" />
+        <AssociationConnector Association="DBModel.FK_AIDAT_TAKIP_TT_DERECE" />
+        <AssociationConnector Association="DBModel.FK_AIDAT_TAKIP_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_ALIS_SATIS_TIP" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_BEYAN_KAYIT_TIP" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_BEYAN_TIP" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_BIRIM_TIP" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_BORSA_SUBE" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_MADDE_KOD" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TT_SATIS_SEKLI" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_BEYAN_TUCCAR_SICIL1" />
+        <AssociationConnector Association="DBModel.FK_DERECE_DEGISIKLIK_TT_DERECE" />
+        <AssociationConnector Association="DBModel.FK_DERECE_DEGISIKLIK_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_ADRES_TT_FIRMA_ADRES_TIP" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_ADRES_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_DIGER_FAALIYET_KOD_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_FAALIYET_TT_MADDE_KOD" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_FAALIYET_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_KAYITLI_ODA_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_SAHIS_TT_OGRENIM_DURUM_TIP" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_SAHIS_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_TELEFON_FAX_TT_FIRMA_TELEFON_FAX_TIP" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_TELEFON_FAX_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_UYARI_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_YETKILI_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIRMA_YONETIM_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_FIS_NO_TT_FIS_TIP" />
+        <AssociationConnector Association="DBModel.FK_FIS_NO_TT_MUHASEBE_TIP" />
+        <AssociationConnector Association="DBModel.FK_GELEN_GIDEN_EVRAK_TT_DOSYA_GRUP" />
+        <AssociationConnector Association="DBModel.FK_GELEN_GIDEN_EVRAK_TT_EVRAK_TIP" />
+        <AssociationConnector Association="DBModel.FK_GELEN_GIDEN_EVRAK_TT_IL_ILCE" />
+        <AssociationConnector Association="DBModel.FK_HESAP_PLANI_TT_MUHASEBE_TIP" />
+        <AssociationConnector Association="DBModel.FK_YEVMIYE_HESAP_PLANI" />
+        <AssociationConnector Association="DBModel.FK_KAYIT_TAKIP_TT_DERECE" />
+        <AssociationConnector Association="DBModel.FK_KAYIT_TAKIP_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_MESLEK_GRUP_DEGISIKLIK_TT_MESLEK_GRUP" />
+        <AssociationConnector Association="DBModel.FK_MESLEK_GRUP_DEGISIKLIK_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_SERMAYE_DEGISIKLIK_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_TASDIK_FASIL_AKTARMA_ACIKLAMA_TT_TASDIK_FASIL_AKTARMA_TIP" />
+        <AssociationConnector Association="DBModel.FK_TESCIL_ORAN_TT_MUHASEBE_TIP" />
+        <AssociationConnector Association="DBModel.FK_TESCIL_ORAN_TT_TAHSILAT_TIP" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP1" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP2" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP3" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP4" />
+        <AssociationConnector Association="DBModel.FK_TT_SATIS_SEKLI_TT_ALIS_SATIS_TIP5" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_DERECE" />
+        <AssociationConnector Association="DBModel.FK_YEVMIYE_TT_FIS_TIP" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_IL_ILCE" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_KURULUS_TUR" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_DEPO_TT_MADDE_KOD" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_MESLEK_GRUP" />
+        <AssociationConnector Association="DBModel.FK_YEVMIYE_TT_MUHASEBE_TIP" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_SICIL_MEMURLUGU" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_SICIL_TT_VERGI_DAIRE" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_TAHSIL_TT_VERGI_DAIRE" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_ASKI_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_DEPO_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_KEFALET_TEMINAT_TUCCAR_SICIL1" />
+        <AssociationConnector Association="DBModel.FK_TUCCAR_TAHSIL_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_UNVAN_DEGISIKLIK_TUCCAR_SICIL" />
+        <AssociationConnector Association="DBModel.FK_PROGRAM_BORSA_BILGI_TT_UYE_TEMINAT_TIP" />
+        <AssociationConnector Association="DBModel.FK_SATIS_URUN" />
+        <AssociationConnector Association="DBModel.FK_TEKLIF_SATIS" />
+        <AssociationConnector Association="DBModel.FK_TESCIL_TT_TESCIL_PARAMETRE" />
+        <AssociationConnector Association="DBModel.aspnet_UsersInRoles" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

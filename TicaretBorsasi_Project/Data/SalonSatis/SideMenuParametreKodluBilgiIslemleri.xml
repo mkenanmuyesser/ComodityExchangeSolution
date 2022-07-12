@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Derece Tablosu" NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/DereceIslemleri.aspx" />
+  <group Text="İl ve İlçe Adları"
+         NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/IlIlceIslemleri.aspx" />
+  <group Text="Vergi Daireleri"
+         NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/VergiDaireIslemleri.aspx" />
+  <group Text="Kuruluş Türleri"
+         NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/KurulusTurIslemleri.aspx" />
+  <group Text="Ticaret Sicil Memurluğu"
+         NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/TicaretSicilMemurluguIslemleri.aspx" />
+  <group Text="Meslek Grupları"
+         NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/MeslekGrupIslemleri.aspx" />
+  <group Text="Madde Kodları" NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/MaddeKodIslemleri.aspx" />
+</menu>

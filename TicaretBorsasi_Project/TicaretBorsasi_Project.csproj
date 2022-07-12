@@ -1,0 +1,2391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7EB2F373-36B4-401C-8A89-DB272A0F4ABC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TicaretBorsasi_Project</RootNamespace>
+    <AssemblyName>TicaretBorsasi_Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Extensions, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Service, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Web, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.2.0\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.2.0\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.2.1.0\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.1.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Css\animate.css" />
+    <Content Include="Content\Css\bootstrap-theme.css" />
+    <Content Include="Content\Css\bootstrap-theme.min.css" />
+    <Content Include="Content\Css\bootstrap.css" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\custom.css" />
+    <Content Include="Content\Css\font-awesome.css" />
+    <Content Include="Content\Css\jquery.gritter.css" />
+    <Content Include="Content\Css\patterns\header-profile-skin-1.png" />
+    <Content Include="Content\Css\patterns\header-profile-skin-2.png" />
+    <Content Include="Content\Css\patterns\header-profile-skin-3.png" />
+    <Content Include="Content\Css\patterns\header-profile.png" />
+    <Content Include="Content\Css\patterns\shattered.png" />
+    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Css\style.css" />
+    <Content Include="Content\Css\toastr.min.css" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\backgrounds\daire_bos_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_bos_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_sari_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_sari_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_sarı.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil_orta.png" />
+    <Content Include="Content\Images\backgrounds\salon_satis_bacground.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\Icons\back.png" />
+    <Content Include="Content\Images\Icons\cancel.png" />
+    <Content Include="Content\Images\Icons\delete.png" />
+    <Content Include="Content\Images\Icons\detail.png" />
+    <Content Include="Content\Images\Icons\edit.png" />
+    <Content Include="Content\Images\Icons\empty.png" />
+    <Content Include="Content\Images\Icons\green_tick_2.png" />
+    <Content Include="Content\Images\Icons\warning.png" />
+    <Content Include="Content\Images\Icons\red_erase.png" />
+    <Content Include="Content\Images\Icons\save.png" />
+    <Content Include="Content\Images\Icons\male.png" />
+    <Content Include="Content\Images\Icons\send.png" />
+    <Content Include="Content\Images\Icons\green_tick.png" />
+    <Content Include="Content\Images\Icons\warning_2.png" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Scripts\bootstrap.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Scripts\inspinia.js" />
+    <Content Include="Content\Scripts\jclock.js" />
+    <Content Include="Content\Scripts\jquery-1.9.1.js" />
+    <Content Include="Content\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Content\Scripts\jquery-2.1.1.js" />
+    <Content Include="Content\Scripts\jquery.metisMenu.js" />
+    <Content Include="Content\Scripts\jquery.slimscroll.min.js" />
+    <Content Include="Content\Scripts\npm.js" />
+    <Content Include="Content\Scripts\pace.min.js" />
+    <Content Include="Data\MerkezBorsa\SideMenuBordroIslemleri.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\MerkezBorsa\SideMenuMuhtelifIslemler.xml" />
+    <Content Include="Data\MerkezBorsa\SideMenuMuhasebeIslemleri.xml" />
+    <Content Include="Data\MerkezBorsa\SideMenuBeyannameTescilIslemleri.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\MerkezBorsa\SideMenuParametreKodluBilgiIslemleri.xml" />
+    <Content Include="Data\MerkezBorsa\SideMenuTuccarIslemleri.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\ProgramIslem\SideMenuProgramIslemleri.xml" />
+    <Content Include="Data\SalonSatis\SideMenuTuccarIslemleri.xml" />
+    <Content Include="Data\SalonSatis\SideMenuLabSatisListeler.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\SalonSatis\SideMenuParametreKodluBilgiIslemleri.xml" />
+    <Content Include="Data\SalonSatis\SideMenuMuhtelifIslemler.xml" />
+    <Content Include="Data\SalonSatis\SideMenuSatisIslemleri.xml" />
+    <Content Include="Data\TopMenu.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Genel\Bootstrap example\agile_board.html" />
+    <Content Include="Genel\Bootstrap example\Angular\css\animate.css" />
+    <Content Include="Genel\Bootstrap example\Angular\css\bootstrap.min.css" />
+    <Content Include="Genel\Bootstrap example\Angular\css\patterns\header-profile-skin-1.png" />
+    <Content Include="Genel\Bootstrap example\Angular\css\patterns\header-profile-skin-2.png" />
+    <Content Include="Genel\Bootstrap example\Angular\css\patterns\header-profile-skin-3.png" />
+    <Content Include="Genel\Bootstrap example\Angular\css\patterns\header-profile.png" />
+    <Content Include="Genel\Bootstrap example\Angular\css\patterns\shattered.png" />
+    <Content Include="Genel\Bootstrap example\Angular\css\style.css" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\css\font-awesome.css" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="Genel\Bootstrap example\Angular\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Genel\Bootstrap example\Angular\index.html" />
+    <Content Include="Genel\Bootstrap example\Angular\js\angular-translate\angular-translate.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\angular\angular.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\app.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\bootstrap\bootstrap.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\bootstrap\ui-bootstrap-tpls-0.12.0.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\config.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\controllers.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\directives.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\inspinia.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\jquery\jquery-2.1.1.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\angular-idle\angular-idle.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\jquery-ui\jquery-ui.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\oclazyload\dist\ocLazyLoad.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\pace\pace.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\translations.js" />
+    <Content Include="Genel\Bootstrap example\Angular\js\ui-router\angular-ui-router.min.js" />
+    <Content Include="Genel\Bootstrap example\article.html" />
+    <Content Include="Genel\Bootstrap example\badges_labels.html" />
+    <Content Include="Genel\Bootstrap example\basic_gallery.html" />
+    <Content Include="Genel\Bootstrap example\blog.html" />
+    <Content Include="Genel\Bootstrap example\buttons.html" />
+    <Content Include="Genel\Bootstrap example\calendar.html" />
+    <Content Include="Genel\Bootstrap example\carousel.html" />
+    <Content Include="Genel\Bootstrap example\chat_view.html" />
+    <Content Include="Genel\Bootstrap example\clients.html" />
+    <Content Include="Genel\Bootstrap example\code_editor.html" />
+    <Content Include="Genel\Bootstrap example\contacts.html" />
+    <Content Include="Genel\Bootstrap example\css\animate.css" />
+    <Content Include="Genel\Bootstrap example\css\bootstrap.min.css" />
+    <Content Include="Genel\Bootstrap example\css\patterns\header-profile-skin-1.png" />
+    <Content Include="Genel\Bootstrap example\css\patterns\header-profile-skin-2.png" />
+    <Content Include="Genel\Bootstrap example\css\patterns\header-profile-skin-3.png" />
+    <Content Include="Genel\Bootstrap example\css\patterns\header-profile.png" />
+    <Content Include="Genel\Bootstrap example\css\patterns\shattered.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\css\blueimp-gallery.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\error.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\error.svg" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\loading.gif" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\play-pause.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\play-pause.svg" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\video-play.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\blueimp\img\video-play.svg" />
+    <Content Include="Genel\Bootstrap example\css\plugins\chosen\chosen-sprite%402x.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\chosen\chosen-sprite.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\chosen\chosen.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\codemirror\ambiance.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\codemirror\codemirror.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\colorpicker\bootstrap-colorpicker.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\cropper\cropper.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\datapicker\datepicker3.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\dataTables\dataTables.bootstrap.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\dataTables\dataTables.responsive.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\dataTables\dataTables.tableTools.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\dropzone\basic.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\dropzone\dropzone.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\fullcalendar\fullcalendar.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\fullcalendar\fullcalendar.print.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\iCheck\custom.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\iCheck\green%402x.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\iCheck\green.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\bootstrap-colorpicker\alpha-horizontal.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\bootstrap-colorpicker\alpha.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\bootstrap-colorpicker\hue-horizontal.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\bootstrap-colorpicker\hue.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\bootstrap-colorpicker\saturation.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\sort_asc.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\sort_desc.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\sprite-skin-flat.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\spritemap%402x.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\images\spritemap.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\ionRangeSlider\ion.rangeSlider.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\ionRangeSlider\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jasny\jasny-bootstrap.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jqGrid\ui.jqgrid.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-icons_222222_256x240.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-icons_454545_256x240.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-icons_888888_256x240.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jQueryUI\jquery-ui-1.10.4.custom.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\jsTree\style.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\morris\morris-0.4.3.min.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\nouslider\jquery.nouislider.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\steps\jquery.steps.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\summernote\summernote-bs3.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\summernote\summernote.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\switchery\switchery.css" />
+    <Content Include="Genel\Bootstrap example\css\plugins\toastr\toastr.min.css" />
+    <Content Include="Genel\Bootstrap example\css\style.css" />
+    <Content Include="Genel\Bootstrap example\css_animation.html" />
+    <Content Include="Genel\Bootstrap example\dashboard_2.html" />
+    <Content Include="Genel\Bootstrap example\dashboard_3.html" />
+    <Content Include="Genel\Bootstrap example\dashboard_4.html" />
+    <Content Include="Genel\Bootstrap example\dashboard_4_1.html" />
+    <Content Include="Genel\Bootstrap example\diff.html" />
+    <Content Include="Genel\Bootstrap example\draggable_panels.html" />
+    <Content Include="Genel\Bootstrap example\email_template.html" />
+    <Content Include="Genel\Bootstrap example\email_templates\action.html" />
+    <Content Include="Genel\Bootstrap example\email_templates\alert.html" />
+    <Content Include="Genel\Bootstrap example\email_templates\billing.html" />
+    <Content Include="Genel\Bootstrap example\email_templates\img\header.jpg" />
+    <Content Include="Genel\Bootstrap example\email_templates\styles.css" />
+    <Content Include="Genel\Bootstrap example\empty_page.html" />
+    <Content Include="Genel\Bootstrap example\faq.html" />
+    <Content Include="Genel\Bootstrap example\file_manager.html" />
+    <Content Include="Genel\Bootstrap example\font-awesome\css\font-awesome.css" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Genel\Bootstrap example\forgot_password.html" />
+    <Content Include="Genel\Bootstrap example\form_advanced.html" />
+    <Content Include="Genel\Bootstrap example\form_basic.html" />
+    <Content Include="Genel\Bootstrap example\form_editors.html" />
+    <Content Include="Genel\Bootstrap example\form_file_upload.html" />
+    <Content Include="Genel\Bootstrap example\form_wizard.html" />
+    <Content Include="Genel\Bootstrap example\forum_main.html" />
+    <Content Include="Genel\Bootstrap example\forum_post.html" />
+    <Content Include="Genel\Bootstrap example\full_height.html" />
+    <Content Include="Genel\Bootstrap example\google_maps.html" />
+    <Content Include="Genel\Bootstrap example\graph_chartjs.html" />
+    <Content Include="Genel\Bootstrap example\graph_flot.html" />
+    <Content Include="Genel\Bootstrap example\graph_morris.html" />
+    <Content Include="Genel\Bootstrap example\graph_peity.html" />
+    <Content Include="Genel\Bootstrap example\graph_rickshaw.html" />
+    <Content Include="Genel\Bootstrap example\graph_sparkline.html" />
+    <Content Include="Genel\Bootstrap example\grid_options.html" />
+    <Content Include="Genel\Bootstrap example\icons.html" />
+    <Content Include="Genel\Bootstrap example\idle_timer.html" />
+    <Content Include="Genel\Bootstrap example\img\a1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a3.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a4.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a5.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a6.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a7.jpg" />
+    <Content Include="Genel\Bootstrap example\img\a8.jpg" />
+    <Content Include="Genel\Bootstrap example\img\angular_logo.png" />
+    <Content Include="Genel\Bootstrap example\img\dashbard4_1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\dashbard4_2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\email_1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\email_2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\email_3.jpg" />
+    <Content Include="Genel\Bootstrap example\img\full_height.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\10.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\10s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\11.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\11s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\12.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\12s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\1s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\2s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\3.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\3s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\4.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\4s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\5.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\5s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\6.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\6s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\7.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\7s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\8.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\8s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\9.jpg" />
+    <Content Include="Genel\Bootstrap example\img\gallery\9s.jpg" />
+    <Content Include="Genel\Bootstrap example\img\html_logo.png" />
+    <Content Include="Genel\Bootstrap example\img\mvc_logo.png" />
+    <Content Include="Genel\Bootstrap example\img\off_canvas.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p3.jpg" />
+    <Content Include="Genel\Bootstrap example\img\profile.jpg" />
+    <Content Include="Genel\Bootstrap example\img\profile_big.jpg" />
+    <Content Include="Genel\Bootstrap example\img\profile_small.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p_big1.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p_big2.jpg" />
+    <Content Include="Genel\Bootstrap example\img\p_big3.jpg" />
+    <Content Include="Genel\Bootstrap example\img\rails_logo.png" />
+    <Content Include="Genel\Bootstrap example\img\zender_logo.png" />
+    <Content Include="Genel\Bootstrap example\index-2.html" />
+    <Content Include="Genel\Bootstrap example\index.html" />
+    <Content Include="Genel\Bootstrap example\invoice.html" />
+    <Content Include="Genel\Bootstrap example\invoice_print.html" />
+    <Content Include="Genel\Bootstrap example\issue_tracker.html" />
+    <Content Include="Genel\Bootstrap example\jq_grid.html" />
+    <Content Include="Genel\Bootstrap example\js\bootstrap.js" />
+    <Content Include="Genel\Bootstrap example\js\bootstrap.min.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\chartjs-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\flot-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\morris-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\peity-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\rickshaw-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\demo\sparkline-demo.js" />
+    <Content Include="Genel\Bootstrap example\js\inspinia.js" />
+    <Content Include="Genel\Bootstrap example\js\jquery-2.1.1.js" />
+    <Content Include="Genel\Bootstrap example\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="Genel\Bootstrap example\js\jquery-ui.custom.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\blueimp\jquery.blueimp-gallery.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\chartJs\Chart.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\chosen\chosen.jquery.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\codemirror\codemirror.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\cropper\cropper.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\datapicker\bootstrap-datepicker.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\dataTables\dataTables.responsive.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\dataTables\dataTables.tableTools.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\diff_match_patch\javascript\diff_match_patch.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\dropzone\dropzone.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\easypiechart\jquery.easypiechart.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\curvedLines.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.spline.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.symbol.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.time.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\fullcalendar\moment.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\gritter\images\gritter-light.png" />
+    <Content Include="Genel\Bootstrap example\js\plugins\gritter\images\gritter.png" />
+    <Content Include="Genel\Bootstrap example\js\plugins\gritter\images\ie-spacer.gif" />
+    <Content Include="Genel\Bootstrap example\js\plugins\gritter\jquery.gritter.css" />
+    <Content Include="Genel\Bootstrap example\js\plugins\gritter\jquery.gritter.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\iCheck\icheck.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\idle-timer\idle-timer.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\ionRangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jasny\jasny-bootstrap.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jeditable\jquery.jeditable.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jsKnob\jquery.knob.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jsTree\jstree.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\morris\morris.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\nestable\jquery.nestable.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\nouslider\jquery.nouislider.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\pace\pace.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\peity\jquery.peity.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\rickshaw\rickshaw.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\rickshaw\vendor\d3.v3.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\staps\jquery.steps.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\summernote\summernote.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\switchery\switchery.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\tinycon\tinycon.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\toastr\toastr.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\validate\jquery.validate.min.js" />
+    <Content Include="Genel\Bootstrap example\js\plugins\video\responsible-video.js" />
+    <Content Include="Genel\Bootstrap example\layouts.html" />
+    <Content Include="Genel\Bootstrap example\lockscreen.html" />
+    <Content Include="Genel\Bootstrap example\login.html" />
+    <Content Include="Genel\Bootstrap example\login_two_columns.html" />
+    <Content Include="Genel\Bootstrap example\mailbox.html" />
+    <Content Include="Genel\Bootstrap example\mail_compose.html" />
+    <Content Include="Genel\Bootstrap example\mail_detail.html" />
+    <Content Include="Genel\Bootstrap example\modal_window.html" />
+    <Content Include="Genel\Bootstrap example\nestable_list.html" />
+    <Content Include="Genel\Bootstrap example\notifications.html" />
+    <Content Include="Genel\Bootstrap example\off_canvas_menu.html" />
+    <Content Include="Genel\Bootstrap example\package.html" />
+    <Content Include="Genel\Bootstrap example\pin_board.html" />
+    <Content Include="Genel\Bootstrap example\profile.html" />
+    <Content Include="Genel\Bootstrap example\projects.html" />
+    <Content Include="Genel\Bootstrap example\project_detail.html" />
+    <Content Include="Genel\Bootstrap example\register.html" />
+    <Content Include="Genel\SalonSatisKullanici.aspx" />
+    <Content Include="Genel\Bootstrap example\search_results.html" />
+    <Content Include="Genel\Bootstrap example\spinners.html" />
+    <Content Include="Genel\Bootstrap example\table_basic.html" />
+    <Content Include="Genel\Bootstrap example\table_data_tables.html" />
+    <Content Include="Genel\Bootstrap example\tabs_panels.html" />
+    <Content Include="Genel\Bootstrap example\teams_board.html" />
+    <Content Include="Genel\Bootstrap example\timeline.html" />
+    <Content Include="Genel\Bootstrap example\timeline_2.html" />
+    <Content Include="Genel\Bootstrap example\tinycon.html" />
+    <Content Include="Genel\Bootstrap example\toastr_notifications.html" />
+    <Content Include="Genel\Bootstrap example\tree_view.html" />
+    <Content Include="Genel\Bootstrap example\typography.html" />
+    <Content Include="Genel\Bootstrap example\validation.html" />
+    <Content Include="Genel\Bootstrap example\video.html" />
+    <Content Include="Genel\Bootstrap example\widgets.html" />
+    <Content Include="Global.asax" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Program\AnaMenu.aspx" />
+    <Content Include="Program\Hata.aspx" />
+    <Content Include="Program\SalonSatis\LabSatisListeleri\AnaMenuLabSatisListeleri.aspx" />
+    <Content Include="Program\SalonSatis\LabSatisListeleri\DereceYemlikBaremDisiNo.aspx" />
+    <Content Include="Program\SalonSatis\LabSatisListeleri\RaporLabSatisListeleri.aspx" />
+    <Content Include="Program\SalonSatis\LabSatisListeleri\OtomatikSatisDetaylari.aspx" />
+    <Content Include="Program\SalonSatis\LabSatisListeleri\YemlikBaremDisiKodlar.aspx" />
+    <Content Include="Program\SalonSatis\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx" />
+    <Content Include="Program\SalonSatis\MuhtelifIslemler\BorsaSubeleri.aspx" />
+    <Content Include="Program\SalonSatis\MuhtelifIslemler\OtomatikSatisAyarlari.aspx" />
+    <Content Include="Program\SalonSatis\MuhtelifIslemler\TartiUcretleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\AnaMenuSatisIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\AnaMenuBeyannameTescilIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameIstihbarat.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanYevmiyeListeleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTahsilatBordro.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilGelirleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameKesintiListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameSatisSekilleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilDefteri.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilOran.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilNoTakip.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakip.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakipDetay.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameMustahsilTarama.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanTarama.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilUcretTavanAsanlar.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBorsaBeyanGelirleriKontrolu.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilSatOrgToplam.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameEmtiaKodluTesSimToplam.aspx" />
+    <Content Include="Program\MerkezBorsa\BeyannameTescilIslemleri\RaporBeyannameTescilIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BordroIslemleri\AnaMenuBordroIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\BordroIslemleri\RaporBordroIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\AnaMenuMuhasebeIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatArama.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceArama.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeGunlukGirisCikislar.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeFisListeleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeBilanco.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeDefteriKebir.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeYardimciDefter.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKonsolide.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKasaRaporu.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeButceliMizan.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisNoDegistirme.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisArama.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeMizan.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeHesapPlani.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\RaporMuhasebeIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeKesintiListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTescilGelirleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTahsilatBordro.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBeyanYevmiyeListeleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeAdIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapBakiyesi.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniArama.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTasdikFasilAktarma.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\BorsaSubeleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\GelenEvrakIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\GidenEvrakIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\YazismaAdresleri.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\TelefonRehberi.aspx" />
+    <Content Include="Program\MerkezBorsa\MuhtelifIslemler\DosyaGrupIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\PopUp\RaporPopUp.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\RaporTuccarIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajBakiyeKontrolu.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahsilatKontrolu.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahakkukKontrolu.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlinacakUyeListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarBeyanDepoYaratma.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatOdemeListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatTahakkuku.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatOdemesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatCezaHesabi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatCezaOranlari.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresEtiketiIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSecimListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarTicaretSicilMemurluguListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeKayitTahakkuku.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarVergiDairesiUyeAidatDagilimiListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatGenelDurum.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatDereceDegistirme.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatBeyanListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariYilAidatListesi.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarKefaletTeminatIslemleri.aspx" />
+    <Content Include="Program\ProgramIslem\AnaMenuProgramIslem.aspx" />
+    <Content Include="Program\ProgramIslem\RolIslemleri.aspx" />
+    <Content Include="Program\ProgramIslem\Duyurular.aspx" />
+    <Content Include="Program\ProgramIslem\KullaniciIslemleri.aspx" />
+    <Content Include="Program\ProgramIslem\BorsaBilgileri.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\AnalizHizmetUcretleri.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\NumuneArama.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\NumuneKayit.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TMOBaslangicAlimFiyatlari.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteArama.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteKayit.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TMOAnalizIlaveAciklamalari.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteFiyatListesi.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\VerilenVerilmeyenMallar.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TSELabParametreArama.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\TSELabParametreKayit.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\UretimMerkezleri.aspx" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\SatisEkrani.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresTelFaxIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlmaIslemleri.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoArama.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiArama.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiKayit.aspx" />
+    <Content Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeDagilimlari.aspx" />
+    <Content Include="Content\Css\bootstrap-theme.css.map" />
+    <Content Include="Content\Css\bootstrap.css.map" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.woff2" />
+    <None Include="Content\Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery-1.6.4.js" />
+    <Content Include="Content\Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Content\Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Content\Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Content\Scripts\jquery.color-2.1.2.min.js" />
+    <Content Include="Content\Scripts\SignalR.Kullanici.js" />
+    <Content Include="Content\Scripts\SignalR.Satis.js" />
+    <Content Include="Content\Css\StockTicker.css" />
+    <Content Include="Program\SalonSatis\SatisIslemleri\LaboratuarParametreleri.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoArama.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoKayit.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarKoltukTanimlari.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiArama.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiKayit.aspx" />
+    <Content Include="Program\SalonSatis\TuccarIslemleri\TuccarTuccarlarListesi.aspx" />
+    <Content Include="User_Control\Ortak\MuhtelifBorsaSubeleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluDereceIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluIlIlceIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluKurulusTurIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluMeslekGrupIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluTicaretSicilMemurluguIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\ParametreKodluVergiDaireIslemleriUserControl.ascx" />
+    <Content Include="User_Control\Ortak\TuccarSicilBilgiAramaUserControl.ascx" />
+    <Content Include="User_Control\Ortak\TuccarSicilBilgiKayitUserControl.ascx" />
+    <Content Include="User_Control\Ortak\TuccarSicilMemurluguListesiUserControl.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Master_Page\Main.master" />
+    <Content Include="Master_Page\Root.master" />
+    <Content Include="Program\Web.config" />
+    <Content Include="Master_Page\Light.master" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="Data\DBEntities.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBEntities.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Data\DBEntities.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBEntities.edmx</DependentUpon>
+      <LastGenOutput>DBEntities.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\DBEntities.edmx.diagram">
+      <DependentUpon>DBEntities.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data\DBEntities.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBEntities.edmx</DependentUpon>
+      <LastGenOutput>DBEntities.cs</LastGenOutput>
+    </Content>
+    <Content Include="Genel\Web.config" />
+    <Content Include="Content\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="Genel\Bootstrap example\Angular\font-awesome\fonts\fontawesome-webfonte0a5.woff2" />
+    <Content Include="Genel\Bootstrap example\Angular\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Genel\Bootstrap example\Angular\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Genel\Bootstrap example\Angular\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Genel\Bootstrap example\Angular\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="Genel\Bootstrap example\font-awesome\fonts\fontawesome-webfonte0a5.woff2" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Genel\Bootstrap example\fonts\glyphicons-halflings-regulard41d.eot" />
+    <None Include="Properties\PublishProfiles\Lenovo.pubxml" />
+    <Content Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </Content>
+    <Content Include="Content\Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class\Business\AidatBS.cs" />
+    <Compile Include="Class\Business\MuhasebeBS.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\AidatCezaHesapType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\AidatTaksitType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\AskiType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\BeyannameIstihbaratType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\BeyannameTescilType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\MustahsilTaramaType.cs" />
+    <Compile Include="Class\CustomType\SalonSatis\SatisEkran.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\UyeAidatBeyanType.cs" />
+    <Compile Include="Class\CustomType\MerkezBorsa\UyeDagilimType.cs" />
+    <Compile Include="Class\Helper\PageHelper.cs" />
+    <Compile Include="Class\Query\BeyannameIstihbaratQuery.cs" />
+    <Compile Include="Class\Query\BeyannameTescilQuery.cs" />
+    <Compile Include="Class\Query\MustahsilTaramaQuery.cs" />
+    <Compile Include="Class\Query\TuccarUyeDagilimQuery.cs" />
+    <Compile Include="Data\AIDAT_TAKIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Applications.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Membership.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Paths.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Profile.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Roles.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_SchemaVersions.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Users.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_WebEvent_Events.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BANKA_MEVDUAT.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BEYAN.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BORSA_BILGI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBEntities.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBEntities.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBEntities.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBEntities.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBEntities.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DERECE_DEGISIKLIK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DUYURU.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_ADRES.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_DIGER_FAALIYET_KOD.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_FAALIYET.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_KAYITLI_ODA.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_SAHIS.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_TELEFON_FAX.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_UYARI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_YETKILI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIRMA_YONETIM.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\FIS_NO.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\GELEN_GIDEN_EVRAK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\HESAP_PLANI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KAYIT_TAKIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LOG.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\MESLEK_GRUP_DEGISIKLIK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\REHBER.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SALON_SATIS_AYAR.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SATI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SERMAYE_DEGISIKLIK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TASDIK_FASIL_AKTARMA_ACIKLAMA.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TEKLIF.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TESCIL.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TESCIL_KIMLIK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TESCIL_ORAN.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_ALIS_SATIS_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_BEYAN_KAYIT_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_BEYAN_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_BIRIM_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_BORSA_SUBE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_DERECE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_DERECE_CEZA_ORAN.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_DOSYA_GRUP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_EVRAK_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_FIRMA_ADRES_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_FIRMA_TELEFON_FAX_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_FIS_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_HESAP_PLANI_DOKUM_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_IL_ILCE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_KONSOLIDE_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_KURULUS_TUR.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MADDE_KOD.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MADDE_KOD1.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MESLEK_GRUP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MUHASEBE_ADI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MUHASEBE_DURUM_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_MUHASEBE_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_OGRENIM_DURUM_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_SATICI_URETIM_MERKEZ.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_SATIS_SEKLI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_SICIL_MEMURLUGU.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_TAHSILAT_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_TASDIK_FASIL_AKTARMA_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_TESCIL_PARAMETRE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_TOBB_KOD.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_UYE_TEMINAT_TIP.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_VERGI_DAIRE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TT_YAZISMA_ADRES.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TUCCAR_ASKI.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TUCCAR_DEPO.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TUCCAR_KEFALET_TEMINAT.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TUCCAR_SICIL.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\TUCCAR_TAHSIL.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\UNVAN_DEGISIKLIK.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\URUN.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\YEVMIYE.cs">
+      <DependentUpon>DBEntities.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Genel\SalonSatisKullanici.aspx.cs">
+      <DependentUpon>SalonSatisKullanici.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Genel\SalonSatisKullanici.aspx.designer.cs">
+      <DependentUpon>SalonSatisKullanici.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page\Light.master.cs">
+      <DependentUpon>Light.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page\Light.master.designer.cs">
+      <DependentUpon>Light.master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page\Main.master.cs">
+      <DependentUpon>Main.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page\Main.master.designer.cs">
+      <DependentUpon>Main.master</DependentUpon>
+    </Compile>
+    <Compile Include="Master_Page\Root.master.cs">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master_Page\Root.master.designer.cs">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Program\AnaMenu.aspx.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\AnaMenu.aspx.designer.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\Hata.aspx.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\Hata.aspx.designer.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\AnaMenuLabSatisListeleri.aspx.cs">
+      <DependentUpon>AnaMenuLabSatisListeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\AnaMenuLabSatisListeleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuLabSatisListeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\DereceYemlikBaremDisiNo.aspx.cs">
+      <DependentUpon>DereceYemlikBaremDisiNo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\DereceYemlikBaremDisiNo.aspx.designer.cs">
+      <DependentUpon>DereceYemlikBaremDisiNo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\RaporLabSatisListeleri.aspx.cs">
+      <DependentUpon>RaporLabSatisListeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\RaporLabSatisListeleri.aspx.designer.cs">
+      <DependentUpon>RaporLabSatisListeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\OtomatikSatisDetaylari.aspx.cs">
+      <DependentUpon>OtomatikSatisDetaylari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\OtomatikSatisDetaylari.aspx.designer.cs">
+      <DependentUpon>OtomatikSatisDetaylari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\YemlikBaremDisiKodlar.aspx.cs">
+      <DependentUpon>YemlikBaremDisiKodlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\LabSatisListeleri\YemlikBaremDisiKodlar.aspx.designer.cs">
+      <DependentUpon>YemlikBaremDisiKodlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx.cs">
+      <DependentUpon>AnaMenuMuhtelifIslemler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx.designer.cs">
+      <DependentUpon>AnaMenuMuhtelifIslemler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\BorsaSubeleri.aspx.cs">
+      <DependentUpon>BorsaSubeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\BorsaSubeleri.aspx.designer.cs">
+      <DependentUpon>BorsaSubeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\OtomatikSatisAyarlari.aspx.cs">
+      <DependentUpon>OtomatikSatisAyarlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\OtomatikSatisAyarlari.aspx.designer.cs">
+      <DependentUpon>OtomatikSatisAyarlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\TartiUcretleri.aspx.cs">
+      <DependentUpon>TartiUcretleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\MuhtelifIslemler\TartiUcretleri.aspx.designer.cs">
+      <DependentUpon>TartiUcretleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuParametreKodluBilgiIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuParametreKodluBilgiIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx.cs">
+      <DependentUpon>DereceIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx.designer.cs">
+      <DependentUpon>DereceIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx.cs">
+      <DependentUpon>IlIlceIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx.designer.cs">
+      <DependentUpon>IlIlceIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx.cs">
+      <DependentUpon>KurulusTurIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx.designer.cs">
+      <DependentUpon>KurulusTurIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx.cs">
+      <DependentUpon>MaddeKodIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx.designer.cs">
+      <DependentUpon>MaddeKodIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx.cs">
+      <DependentUpon>MeslekGrupIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx.designer.cs">
+      <DependentUpon>MeslekGrupIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx.cs">
+      <DependentUpon>TicaretSicilMemurluguIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx.designer.cs">
+      <DependentUpon>TicaretSicilMemurluguIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx.cs">
+      <DependentUpon>VergiDaireIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx.designer.cs">
+      <DependentUpon>VergiDaireIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\AnaMenuSatisIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuSatisIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\AnaMenuSatisIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuSatisIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\AnaMenuBeyannameTescilIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuBeyannameTescilIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\AnaMenuBeyannameTescilIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuBeyannameTescilIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilIslemleri.aspx.cs">
+      <DependentUpon>BeyannameTescilIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilIslemleri.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameIstihbarat.aspx.cs">
+      <DependentUpon>BeyannameIstihbarat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameIstihbarat.aspx.designer.cs">
+      <DependentUpon>BeyannameIstihbarat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanYevmiyeListeleri.aspx.cs">
+      <DependentUpon>BeyannameBeyanYevmiyeListeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanYevmiyeListeleri.aspx.designer.cs">
+      <DependentUpon>BeyannameBeyanYevmiyeListeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTahsilatBordro.aspx.cs">
+      <DependentUpon>BeyannameTahsilatBordro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTahsilatBordro.aspx.designer.cs">
+      <DependentUpon>BeyannameTahsilatBordro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilGelirleri.aspx.cs">
+      <DependentUpon>BeyannameTescilGelirleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilGelirleri.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilGelirleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameKesintiListesi.aspx.cs">
+      <DependentUpon>BeyannameKesintiListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameKesintiListesi.aspx.designer.cs">
+      <DependentUpon>BeyannameKesintiListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameSatisSekilleri.aspx.cs">
+      <DependentUpon>BeyannameSatisSekilleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameSatisSekilleri.aspx.designer.cs">
+      <DependentUpon>BeyannameSatisSekilleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilDefteri.aspx.cs">
+      <DependentUpon>BeyannameTescilDefteri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilDefteri.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilDefteri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilOran.aspx.cs">
+      <DependentUpon>BeyannameTescilOran.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilOran.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilOran.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilNoTakip.aspx.cs">
+      <DependentUpon>BeyannameTescilNoTakip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilNoTakip.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilNoTakip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakip.aspx.cs">
+      <DependentUpon>BeyannameTuccarTescilTakip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakip.aspx.designer.cs">
+      <DependentUpon>BeyannameTuccarTescilTakip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakipDetay.aspx.cs">
+      <DependentUpon>BeyannameTuccarTescilTakipDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTuccarTescilTakipDetay.aspx.designer.cs">
+      <DependentUpon>BeyannameTuccarTescilTakipDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameMustahsilTarama.aspx.cs">
+      <DependentUpon>BeyannameMustahsilTarama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameMustahsilTarama.aspx.designer.cs">
+      <DependentUpon>BeyannameMustahsilTarama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanTarama.aspx.cs">
+      <DependentUpon>BeyannameBeyanTarama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBeyanTarama.aspx.designer.cs">
+      <DependentUpon>BeyannameBeyanTarama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilUcretTavanAsanlar.aspx.cs">
+      <DependentUpon>BeyannameTescilUcretTavanAsanlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilUcretTavanAsanlar.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilUcretTavanAsanlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBorsaBeyanGelirleriKontrolu.aspx.cs">
+      <DependentUpon>BeyannameBorsaBeyanGelirleriKontrolu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameBorsaBeyanGelirleriKontrolu.aspx.designer.cs">
+      <DependentUpon>BeyannameBorsaBeyanGelirleriKontrolu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilSatOrgToplam.aspx.cs">
+      <DependentUpon>BeyannameTescilSatOrgToplam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameTescilSatOrgToplam.aspx.designer.cs">
+      <DependentUpon>BeyannameTescilSatOrgToplam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameEmtiaKodluTesSimToplam.aspx.cs">
+      <DependentUpon>BeyannameEmtiaKodluTesSimToplam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\BeyannameEmtiaKodluTesSimToplam.aspx.designer.cs">
+      <DependentUpon>BeyannameEmtiaKodluTesSimToplam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\RaporBeyannameTescilIslemleri.aspx.cs">
+      <DependentUpon>RaporBeyannameTescilIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BeyannameTescilIslemleri\RaporBeyannameTescilIslemleri.aspx.designer.cs">
+      <DependentUpon>RaporBeyannameTescilIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BordroIslemleri\AnaMenuBordroIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuBordroIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BordroIslemleri\AnaMenuBordroIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuBordroIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BordroIslemleri\RaporBordroIslemleri.aspx.cs">
+      <DependentUpon>RaporBordroIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\BordroIslemleri\RaporBordroIslemleri.aspx.designer.cs">
+      <DependentUpon>RaporBordroIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\AnaMenuMuhasebeIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuMuhasebeIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\AnaMenuMuhasebeIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuMuhasebeIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatArama.aspx.cs">
+      <DependentUpon>MuhasebeBankaMevduatArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatArama.aspx.designer.cs">
+      <DependentUpon>MuhasebeBankaMevduatArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatKayit.aspx.cs">
+      <DependentUpon>MuhasebeBankaMevduatKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBankaMevduatKayit.aspx.designer.cs">
+      <DependentUpon>MuhasebeBankaMevduatKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceArama.aspx.cs">
+      <DependentUpon>MuhasebeButceArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceArama.aspx.designer.cs">
+      <DependentUpon>MuhasebeButceArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceKayit.aspx.cs">
+      <DependentUpon>MuhasebeButceKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeButceKayit.aspx.designer.cs">
+      <DependentUpon>MuhasebeButceKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeGunlukGirisCikislar.aspx.cs">
+      <DependentUpon>MuhasebeListeGunlukGirisCikislar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeGunlukGirisCikislar.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeGunlukGirisCikislar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeFisListeleri.aspx.cs">
+      <DependentUpon>MuhasebeListeFisListeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeFisListeleri.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeFisListeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeBilanco.aspx.cs">
+      <DependentUpon>MuhasebeListeBilanco.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeBilanco.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeBilanco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeDefteriKebir.aspx.cs">
+      <DependentUpon>MuhasebeListeDefteriKebir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeDefteriKebir.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeDefteriKebir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeYardimciDefter.aspx.cs">
+      <DependentUpon>MuhasebeListeYardimciDefter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeYardimciDefter.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeYardimciDefter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKonsolide.aspx.cs">
+      <DependentUpon>MuhasebeListeKonsolide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKonsolide.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeKonsolide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKasaRaporu.aspx.cs">
+      <DependentUpon>MuhasebeListeKasaRaporu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeKasaRaporu.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeKasaRaporu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeButceliMizan.aspx.cs">
+      <DependentUpon>MuhasebeListeButceliMizan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeButceliMizan.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeButceliMizan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisNoDegistirme.aspx.cs">
+      <DependentUpon>MuhasebeFisNoDegistirme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisNoDegistirme.aspx.designer.cs">
+      <DependentUpon>MuhasebeFisNoDegistirme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisArama.aspx.cs">
+      <DependentUpon>MuhasebeFisArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisArama.aspx.designer.cs">
+      <DependentUpon>MuhasebeFisArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisKayit.aspx.cs">
+      <DependentUpon>MuhasebeFisKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeFisKayit.aspx.designer.cs">
+      <DependentUpon>MuhasebeFisKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeMizan.aspx.cs">
+      <DependentUpon>MuhasebeListeMizan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeMizan.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeMizan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeHesapPlani.aspx.cs">
+      <DependentUpon>MuhasebeListeHesapPlani.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeListeHesapPlani.aspx.designer.cs">
+      <DependentUpon>MuhasebeListeHesapPlani.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\RaporMuhasebeIslemleri.aspx.cs">
+      <DependentUpon>RaporMuhasebeIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\RaporMuhasebeIslemleri.aspx.designer.cs">
+      <DependentUpon>RaporMuhasebeIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeKesintiListesi.aspx.cs">
+      <DependentUpon>MuhasebeKesintiListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeKesintiListesi.aspx.designer.cs">
+      <DependentUpon>MuhasebeKesintiListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTescilGelirleri.aspx.cs">
+      <DependentUpon>MuhasebeTescilGelirleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTescilGelirleri.aspx.designer.cs">
+      <DependentUpon>MuhasebeTescilGelirleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTahsilatBordro.aspx.cs">
+      <DependentUpon>MuhasebeTahsilatBordro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTahsilatBordro.aspx.designer.cs">
+      <DependentUpon>MuhasebeTahsilatBordro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBeyanYevmiyeListeleri.aspx.cs">
+      <DependentUpon>MuhasebeBeyanYevmiyeListeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeBeyanYevmiyeListeleri.aspx.designer.cs">
+      <DependentUpon>MuhasebeBeyanYevmiyeListeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeAdIslemleri.aspx.cs">
+      <DependentUpon>MuhasebeAdIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeAdIslemleri.aspx.designer.cs">
+      <DependentUpon>MuhasebeAdIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapBakiyesi.aspx.cs">
+      <DependentUpon>MuhasebeHesapBakiyesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapBakiyesi.aspx.designer.cs">
+      <DependentUpon>MuhasebeHesapBakiyesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniArama.aspx.cs">
+      <DependentUpon>MuhasebeHesapPlaniArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniArama.aspx.designer.cs">
+      <DependentUpon>MuhasebeHesapPlaniArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTasdikFasilAktarma.aspx.cs">
+      <DependentUpon>MuhasebeTasdikFasilAktarma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeTasdikFasilAktarma.aspx.designer.cs">
+      <DependentUpon>MuhasebeTasdikFasilAktarma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniKayit.aspx.cs">
+      <DependentUpon>MuhasebeHesapPlaniKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhasebeIslemleri\MuhasebeHesapPlaniKayit.aspx.designer.cs">
+      <DependentUpon>MuhasebeHesapPlaniKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx.cs">
+      <DependentUpon>AnaMenuMuhtelifIslemler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\AnaMenuMuhtelifIslemler.aspx.designer.cs">
+      <DependentUpon>AnaMenuMuhtelifIslemler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\BorsaSubeleri.aspx.cs">
+      <DependentUpon>BorsaSubeleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\BorsaSubeleri.aspx.designer.cs">
+      <DependentUpon>BorsaSubeleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\GelenEvrakIslemleri.aspx.cs">
+      <DependentUpon>GelenEvrakIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\GelenEvrakIslemleri.aspx.designer.cs">
+      <DependentUpon>GelenEvrakIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\GidenEvrakIslemleri.aspx.cs">
+      <DependentUpon>GidenEvrakIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\GidenEvrakIslemleri.aspx.designer.cs">
+      <DependentUpon>GidenEvrakIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\YazismaAdresleri.aspx.cs">
+      <DependentUpon>YazismaAdresleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\YazismaAdresleri.aspx.designer.cs">
+      <DependentUpon>YazismaAdresleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\TelefonRehberi.aspx.cs">
+      <DependentUpon>TelefonRehberi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\TelefonRehberi.aspx.designer.cs">
+      <DependentUpon>TelefonRehberi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\DosyaGrupIslemleri.aspx.cs">
+      <DependentUpon>DosyaGrupIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\MuhtelifIslemler\DosyaGrupIslemleri.aspx.designer.cs">
+      <DependentUpon>DosyaGrupIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuParametreKodluBilgiIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\AnaMenuParametreKodluBilgiIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuParametreKodluBilgiIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx.cs">
+      <DependentUpon>DereceIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\DereceIslemleri.aspx.designer.cs">
+      <DependentUpon>DereceIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx.cs">
+      <DependentUpon>IlIlceIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\IlIlceIslemleri.aspx.designer.cs">
+      <DependentUpon>IlIlceIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx.cs">
+      <DependentUpon>KurulusTurIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\KurulusTurIslemleri.aspx.designer.cs">
+      <DependentUpon>KurulusTurIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx.cs">
+      <DependentUpon>MaddeKodIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MaddeKodIslemleri.aspx.designer.cs">
+      <DependentUpon>MaddeKodIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx.cs">
+      <DependentUpon>MeslekGrupIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\MeslekGrupIslemleri.aspx.designer.cs">
+      <DependentUpon>MeslekGrupIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx.cs">
+      <DependentUpon>TicaretSicilMemurluguIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\TicaretSicilMemurluguIslemleri.aspx.designer.cs">
+      <DependentUpon>TicaretSicilMemurluguIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx.cs">
+      <DependentUpon>VergiDaireIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\ParametreKodluBilgiIslemleri\VergiDaireIslemleri.aspx.designer.cs">
+      <DependentUpon>VergiDaireIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuTuccarIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuTuccarIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\PopUp\RaporPopUp.aspx.cs">
+      <DependentUpon>RaporPopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\PopUp\RaporPopUp.aspx.designer.cs">
+      <DependentUpon>RaporPopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\RaporTuccarIslemleri.aspx.cs">
+      <DependentUpon>RaporTuccarIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\RaporTuccarIslemleri.aspx.designer.cs">
+      <DependentUpon>RaporTuccarIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajBakiyeKontrolu.aspx.cs">
+      <DependentUpon>TuccarStopajBakiyeKontrolu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajBakiyeKontrolu.aspx.designer.cs">
+      <DependentUpon>TuccarStopajBakiyeKontrolu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahsilatKontrolu.aspx.cs">
+      <DependentUpon>TuccarStopajTahsilatKontrolu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahsilatKontrolu.aspx.designer.cs">
+      <DependentUpon>TuccarStopajTahsilatKontrolu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahakkukKontrolu.aspx.cs">
+      <DependentUpon>TuccarStopajTahakkukKontrolu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarStopajTahakkukKontrolu.aspx.designer.cs">
+      <DependentUpon>TuccarStopajTahakkukKontrolu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlinacakUyeListesi.aspx.cs">
+      <DependentUpon>TuccarAskiyaAlinacakUyeListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlinacakUyeListesi.aspx.designer.cs">
+      <DependentUpon>TuccarAskiyaAlinacakUyeListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarBeyanDepoYaratma.aspx.cs">
+      <DependentUpon>TuccarBeyanDepoYaratma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarBeyanDepoYaratma.aspx.designer.cs">
+      <DependentUpon>TuccarBeyanDepoYaratma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatOdemeListesi.aspx.cs">
+      <DependentUpon>TuccarUyeAidatOdemeListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatOdemeListesi.aspx.designer.cs">
+      <DependentUpon>TuccarUyeAidatOdemeListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatTahakkuku.aspx.cs">
+      <DependentUpon>TuccarAidatTahakkuku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatTahakkuku.aspx.designer.cs">
+      <DependentUpon>TuccarAidatTahakkuku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatOdemesi.aspx.cs">
+      <DependentUpon>TuccarAidatOdemesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatOdemesi.aspx.designer.cs">
+      <DependentUpon>TuccarAidatOdemesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatCezaHesabi.aspx.cs">
+      <DependentUpon>TuccarAidatCezaHesabi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatCezaHesabi.aspx.designer.cs">
+      <DependentUpon>TuccarAidatCezaHesabi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatCezaOranlari.aspx.cs">
+      <DependentUpon>TuccarUyeAidatCezaOranlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatCezaOranlari.aspx.designer.cs">
+      <DependentUpon>TuccarUyeAidatCezaOranlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresEtiketiIslemleri.aspx.cs">
+      <DependentUpon>TuccarAdresEtiketiIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresEtiketiIslemleri.aspx.designer.cs">
+      <DependentUpon>TuccarAdresEtiketiIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSecimListesi.aspx.cs">
+      <DependentUpon>TuccarSecimListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSecimListesi.aspx.designer.cs">
+      <DependentUpon>TuccarSecimListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarTicaretSicilMemurluguListesi.aspx.cs">
+      <DependentUpon>TuccarTicaretSicilMemurluguListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarTicaretSicilMemurluguListesi.aspx.designer.cs">
+      <DependentUpon>TuccarTicaretSicilMemurluguListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariIslemleri.aspx.cs">
+      <DependentUpon>TuccarCariIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariIslemleri.aspx.designer.cs">
+      <DependentUpon>TuccarCariIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeKayitTahakkuku.aspx.cs">
+      <DependentUpon>TuccarUyeKayitTahakkuku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeKayitTahakkuku.aspx.designer.cs">
+      <DependentUpon>TuccarUyeKayitTahakkuku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarVergiDairesiUyeAidatDagilimiListesi.aspx.cs">
+      <DependentUpon>TuccarVergiDairesiUyeAidatDagilimiListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarVergiDairesiUyeAidatDagilimiListesi.aspx.designer.cs">
+      <DependentUpon>TuccarVergiDairesiUyeAidatDagilimiListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatGenelDurum.aspx.cs">
+      <DependentUpon>TuccarAidatGenelDurum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatGenelDurum.aspx.designer.cs">
+      <DependentUpon>TuccarAidatGenelDurum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatDereceDegistirme.aspx.cs">
+      <DependentUpon>TuccarAidatDereceDegistirme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAidatDereceDegistirme.aspx.designer.cs">
+      <DependentUpon>TuccarAidatDereceDegistirme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatBeyanListesi.aspx.cs">
+      <DependentUpon>TuccarUyeAidatBeyanListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeAidatBeyanListesi.aspx.designer.cs">
+      <DependentUpon>TuccarUyeAidatBeyanListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariYilAidatListesi.aspx.cs">
+      <DependentUpon>TuccarCariYilAidatListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarCariYilAidatListesi.aspx.designer.cs">
+      <DependentUpon>TuccarCariYilAidatListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarKefaletTeminatIslemleri.aspx.cs">
+      <DependentUpon>TuccarKefaletTeminatIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarKefaletTeminatIslemleri.aspx.designer.cs">
+      <DependentUpon>TuccarKefaletTeminatIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\AnaMenuProgramIslem.aspx.cs">
+      <DependentUpon>AnaMenuProgramIslem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\AnaMenuProgramIslem.aspx.designer.cs">
+      <DependentUpon>AnaMenuProgramIslem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\RolIslemleri.aspx.cs">
+      <DependentUpon>RolIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\RolIslemleri.aspx.designer.cs">
+      <DependentUpon>RolIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\Duyurular.aspx.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\Duyurular.aspx.designer.cs">
+      <DependentUpon>Duyurular.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\KullaniciIslemleri.aspx.cs">
+      <DependentUpon>KullaniciIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\KullaniciIslemleri.aspx.designer.cs">
+      <DependentUpon>KullaniciIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\BorsaBilgileri.aspx.cs">
+      <DependentUpon>BorsaBilgileri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\ProgramIslem\BorsaBilgileri.aspx.designer.cs">
+      <DependentUpon>BorsaBilgileri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\AnalizHizmetUcretleri.aspx.cs">
+      <DependentUpon>AnalizHizmetUcretleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\AnalizHizmetUcretleri.aspx.designer.cs">
+      <DependentUpon>AnalizHizmetUcretleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\NumuneArama.aspx.cs">
+      <DependentUpon>NumuneArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\NumuneArama.aspx.designer.cs">
+      <DependentUpon>NumuneArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\NumuneKayit.aspx.cs">
+      <DependentUpon>NumuneKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\NumuneKayit.aspx.designer.cs">
+      <DependentUpon>NumuneKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOBaslangicAlimFiyatlari.aspx.cs">
+      <DependentUpon>TMOBaslangicAlimFiyatlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOBaslangicAlimFiyatlari.aspx.designer.cs">
+      <DependentUpon>TMOBaslangicAlimFiyatlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteArama.aspx.cs">
+      <DependentUpon>TMOHadKaliteArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteArama.aspx.designer.cs">
+      <DependentUpon>TMOHadKaliteArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteKayit.aspx.cs">
+      <DependentUpon>TMOHadKaliteKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteKayit.aspx.designer.cs">
+      <DependentUpon>TMOHadKaliteKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOAnalizIlaveAciklamalari.aspx.cs">
+      <DependentUpon>TMOAnalizIlaveAciklamalari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOAnalizIlaveAciklamalari.aspx.designer.cs">
+      <DependentUpon>TMOAnalizIlaveAciklamalari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteFiyatListesi.aspx.cs">
+      <DependentUpon>TMOHadKaliteFiyatListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TMOHadKaliteFiyatListesi.aspx.designer.cs">
+      <DependentUpon>TMOHadKaliteFiyatListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\VerilenVerilmeyenMallar.aspx.cs">
+      <DependentUpon>VerilenVerilmeyenMallar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\VerilenVerilmeyenMallar.aspx.designer.cs">
+      <DependentUpon>VerilenVerilmeyenMallar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TSELabParametreArama.aspx.cs">
+      <DependentUpon>TSELabParametreArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TSELabParametreArama.aspx.designer.cs">
+      <DependentUpon>TSELabParametreArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TSELabParametreKayit.aspx.cs">
+      <DependentUpon>TSELabParametreKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\TSELabParametreKayit.aspx.designer.cs">
+      <DependentUpon>TSELabParametreKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\UretimMerkezleri.aspx.cs">
+      <DependentUpon>UretimMerkezleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\UretimMerkezleri.aspx.designer.cs">
+      <DependentUpon>UretimMerkezleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\SatisEkrani.aspx.cs">
+      <DependentUpon>SatisEkrani.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\SatisEkrani.aspx.designer.cs">
+      <DependentUpon>SatisEkrani.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresTelFaxIslemleri.aspx.cs">
+      <DependentUpon>TuccarAdresTelFaxIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAdresTelFaxIslemleri.aspx.designer.cs">
+      <DependentUpon>TuccarAdresTelFaxIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlmaIslemleri.aspx.cs">
+      <DependentUpon>TuccarAskiyaAlmaIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarAskiyaAlmaIslemleri.aspx.designer.cs">
+      <DependentUpon>TuccarAskiyaAlmaIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoArama.aspx.cs">
+      <DependentUpon>TuccarDepoArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoArama.aspx.designer.cs">
+      <DependentUpon>TuccarDepoArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoKayit.aspx.cs">
+      <DependentUpon>TuccarDepoKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarDepoKayit.aspx.designer.cs">
+      <DependentUpon>TuccarDepoKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiArama.aspx.cs">
+      <DependentUpon>TuccarSicilBilgiArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiArama.aspx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiKayit.aspx.cs">
+      <DependentUpon>TuccarSicilBilgiKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarSicilBilgiKayit.aspx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeDagilimlari.aspx.cs">
+      <DependentUpon>TuccarUyeDagilimlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\MerkezBorsa\TuccarIslemleri\TuccarUyeDagilimlari.aspx.designer.cs">
+      <DependentUpon>TuccarUyeDagilimlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\LaboratuarParametreleri.aspx.cs">
+      <DependentUpon>LaboratuarParametreleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\SatisIslemleri\LaboratuarParametreleri.aspx.designer.cs">
+      <DependentUpon>LaboratuarParametreleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx.cs">
+      <DependentUpon>AnaMenuTuccarIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\AnaMenuTuccarIslemleri.aspx.designer.cs">
+      <DependentUpon>AnaMenuTuccarIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoArama.aspx.cs">
+      <DependentUpon>TuccarDepoArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoArama.aspx.designer.cs">
+      <DependentUpon>TuccarDepoArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoKayit.aspx.cs">
+      <DependentUpon>TuccarDepoKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarDepoKayit.aspx.designer.cs">
+      <DependentUpon>TuccarDepoKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarKoltukTanimlari.aspx.cs">
+      <DependentUpon>TuccarKoltukTanimlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarKoltukTanimlari.aspx.designer.cs">
+      <DependentUpon>TuccarKoltukTanimlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiArama.aspx.cs">
+      <DependentUpon>TuccarSicilBilgiArama.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiArama.aspx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiArama.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiKayit.aspx.cs">
+      <DependentUpon>TuccarSicilBilgiKayit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarSicilBilgiKayit.aspx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiKayit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarTuccarlarListesi.aspx.cs">
+      <DependentUpon>TuccarTuccarlarListesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Program\SalonSatis\TuccarIslemleri\TuccarTuccarlarListesi.aspx.designer.cs">
+      <DependentUpon>TuccarTuccarlarListesi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\AdresEtiketleri.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\AdresEtiketleri.Designer.cs">
+      <DependentUpon>AdresEtiketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\EnFazlaIslemGorenler.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\EnFazlaIslemGorenler.Designer.cs">
+      <DependentUpon>EnFazlaIslemGorenler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\FaaliyetBelgeleri.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\FaaliyetBelgeleri.Designer.cs">
+      <DependentUpon>FaaliyetBelgeleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\Istatistik.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\Istatistik.Designer.cs">
+      <DependentUpon>Istatistik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IstatistikFoyu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IstatistikFoyu.Designer.cs">
+      <DependentUpon>IstatistikFoyu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IstatistikSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IstatistikSubReport.Designer.cs">
+      <DependentUpon>IstatistikSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\TescilDefteriBeyanSirali.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\TescilDefteriBeyanSirali.designer.cs">
+      <DependentUpon>TescilDefteriBeyanSirali.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\TescilDefteriFatMusNolu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\TescilDefteriFatMusNolu.Designer.cs">
+      <DependentUpon>TescilDefteriFatMusNolu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IhracaatBeyannamesi.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\IhracaatBeyannamesi.Designer.cs">
+      <DependentUpon>IhracaatBeyannamesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\YevmiyeDefteri.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\MerkezBorsa\YevmiyeDefteri.Designer.cs">
+      <DependentUpon>YevmiyeDefteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\CustomType\SalonSatis\Startup.cs" />
+    <Compile Include="Class\CustomType\SalonSatis\SatisTicker.cs" />
+    <Compile Include="Class\CustomType\SalonSatis\SatisTickerHub.cs" />
+    <Compile Include="User_Control\Ortak\MuhtelifBorsaSubeleriUserControl.ascx.cs">
+      <DependentUpon>MuhtelifBorsaSubeleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\MuhtelifBorsaSubeleriUserControl.ascx.designer.cs">
+      <DependentUpon>MuhtelifBorsaSubeleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluDereceIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluDereceIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluDereceIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluDereceIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluIlIlceIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluIlIlceIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluIlIlceIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluIlIlceIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluKurulusTurIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluKurulusTurIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluKurulusTurIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluKurulusTurIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluMeslekGrupIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluMeslekGrupIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluMeslekGrupIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluMeslekGrupIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluTicaretSicilMemurluguIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluTicaretSicilMemurluguIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluTicaretSicilMemurluguIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluTicaretSicilMemurluguIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluVergiDaireIslemleriUserControl.ascx.cs">
+      <DependentUpon>ParametreKodluVergiDaireIslemleriUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\ParametreKodluVergiDaireIslemleriUserControl.ascx.designer.cs">
+      <DependentUpon>ParametreKodluVergiDaireIslemleriUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilBilgiAramaUserControl.ascx.cs">
+      <DependentUpon>TuccarSicilBilgiAramaUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilBilgiAramaUserControl.ascx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiAramaUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilBilgiKayitUserControl.ascx.cs">
+      <DependentUpon>TuccarSicilBilgiKayitUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilBilgiKayitUserControl.ascx.designer.cs">
+      <DependentUpon>TuccarSicilBilgiKayitUserControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilMemurluguListesiUserControl.ascx.cs">
+      <DependentUpon>TuccarSicilMemurluguListesiUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="User_Control\Ortak\TuccarSicilMemurluguListesiUserControl.ascx.designer.cs">
+      <DependentUpon>TuccarSicilMemurluguListesiUserControl.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\UploadTemp\" />
+    <Folder Include="Content\Uploads\" />
+    <Folder Include="Data\CanliHayvanBorsa\" />
+    <Folder Include="Data\SupurgeBorsa\" />
+    <Folder Include="Data\ToprakTahlilLaboratuvar\" />
+    <Folder Include="Genel\Bootstrap example\css\plugins\fonts\" />
+    <Folder Include="Program\CanliHayvanBorsa\" />
+    <Folder Include="Program\SupurgeBorsa\" />
+    <Folder Include="Program\ToprakTahlilLaboratuvar\" />
+    <Folder Include="Report\CanliHayvanBorsa\" />
+    <Folder Include="Report\ProgramIslem\" />
+    <Folder Include="Report\SalonSatis\" />
+    <Folder Include="Report\SupurgeBorsa\" />
+    <Folder Include="Report\ToprakTahlilLaboratuvar\" />
+    <Folder Include="User_Control\CanliHayvanBorsa\" />
+    <Folder Include="User_Control\Genel\" />
+    <Folder Include="User_Control\MerkezBorsa\" />
+    <Folder Include="User_Control\ProgramIslem\" />
+    <Folder Include="User_Control\SalonSatis\" />
+    <Folder Include="User_Control\SupurgeBorsa\" />
+    <Folder Include="User_Control\ToprakTahlilLaboratuvar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report\MerkezBorsa\AdresEtiketleri.resx">
+      <DependentUpon>AdresEtiketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\EnFazlaIslemGorenler.resx">
+      <DependentUpon>EnFazlaIslemGorenler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\FaaliyetBelgeleri.resx">
+      <DependentUpon>FaaliyetBelgeleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\Istatistik.resx">
+      <DependentUpon>Istatistik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\IstatistikFoyu.resx">
+      <DependentUpon>IstatistikFoyu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\IstatistikSubReport.resx">
+      <DependentUpon>IstatistikSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\TescilDefteriBeyanSirali.resx">
+      <DependentUpon>TescilDefteriBeyanSirali.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\TescilDefteriFatMusNolu.resx">
+      <DependentUpon>TescilDefteriFatMusNolu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\IhracaatBeyannamesi.resx">
+      <DependentUpon>IhracaatBeyannamesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\MerkezBorsa\YevmiyeDefteri.resx">
+      <DependentUpon>YevmiyeDefteri.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:28060/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

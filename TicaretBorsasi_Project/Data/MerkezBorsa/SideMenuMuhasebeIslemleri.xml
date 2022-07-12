@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Muhasebe Ad İşlemleri" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeAdIslemleri.aspx" />
+  <group Text="Muhasebe İşlemleri" NavigateUrl="">
+    <item Text="Hesap Bakiyesi" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeHesapBakiyesi.aspx" />
+    <item Text="Hesap Planı Kayıt" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeHesapPlaniKayit.aspx" />
+    <item Text="Hesap Planı Arama" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeHesapPlaniArama.aspx" />
+    <item Text="! Fiş Kayıt" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeFisKayit.aspx" />
+    <item Text="Fiş Arama" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeFisArama.aspx" />
+    <item Text="Fiş No Değiştirme" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeFisNoDegistirme.aspx" />
+    <item Text="Bütçe Kayit" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeButceKayit.aspx" />
+    <item Text="! Bütçe Arama" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeButceArama.aspx" />
+    <item Text="Tasdik ve Fasıl Aktarma" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeTasdikFasilAktarma.aspx" />
+  </group>
+  <group Text="Muhasebe Listeler" NavigateUrl="">
+    <item Text="Hesap Planı" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeHesapPlani.aspx" />
+    <item Text="! Mizan" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeMizan.aspx" />
+    <item Text="! Bütçeli Mizan" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeButceliMizan.aspx" />
+    <item Text="! Kasa Raporu" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeKasaRaporu.aspx" />
+    <item Text="! Konsolide" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeKonsolide.aspx" />
+    <item Text="! Yardımcı Defter" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeYardimciDefter.aspx" />
+    <!--<item Text="*Yevmiye Defteri" NavigateUrl="" /> raporlar ksımına alındı-->
+    <item Text="! Defteri Kebir" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeDefteriKebir.aspx" />
+    <item Text="+ Fiş Listeleri" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeFisListeleri.aspx" />
+    <item Text="! Bilanço" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeBilanco.aspx" />
+    <item Text="! Günlük Giriş/Çıkışlar" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeListeGunlukGirisCikislar.aspx" />
+    <item Text="*Çoklu Mizan (2 Yıllık)" NavigateUrl="" />
+  </group>
+  <group Text="Muhasebe Kontroller" NavigateUrl="">
+    <item Text="*Mizan Sıfırlama" NavigateUrl="" />
+    <item Text="*Yevmiyeden Mizan Yaratma" NavigateUrl="" />
+    <item Text="*Yarım Yevmiye Fişi Silme" NavigateUrl="" />
+    <item Text="*Fişleri Sıraya Sokma" NavigateUrl="" />
+    <item Text="*Mizan Hata Kontrolü" NavigateUrl="" />
+    <item Text="*Bütçe Mizanı Hata Düzeltme" NavigateUrl="" />
+    <item Text="*Fiş Koruma Tarihi Koyma" NavigateUrl="" />
+    <item Text="*Kapanış Maddesi Oluştur" NavigateUrl="" />
+  </group>
+  <group Text="Banka Mevduat İşlemleri" NavigateUrl="">
+    <item Text="+ Banka Mevduat Kayıt"
+          NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeBankaMevduatKayit.aspx" />
+    <item Text="+ Banka Mevduat Arama"
+          NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/MuhasebeBankaMevduatArama.aspx" />
+  </group>
+  <group Text="*Tahsilat Makbuzu İşlemleri" NavigateUrl="" />
+  <group Text="*Tahsilat Bordrosu İşlemleri" NavigateUrl="" />
+  <group Text="*Personel İzin İşlemleri" NavigateUrl="" />
+  <group Text="Raporlar" NavigateUrl="">
+    <item Text="Yevmiye Defteri" NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/RaporMuhasebeIslemleri.aspx?Rapor=YevmiyeDefteri" />
+  </group>
+</menu>

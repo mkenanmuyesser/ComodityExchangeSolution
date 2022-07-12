@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Derece Tablosu" NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/DereceIslemleri.aspx" />
+  <group Text="İl ve İlçe Adları"
+         NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/IlIlceIslemleri.aspx" />
+  <group Text="Vergi Daireleri"
+         NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/VergiDaireIslemleri.aspx" />
+  <group Text="Kuruluş Türleri"
+         NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/KurulusTurIslemleri.aspx" />
+  <group Text="Ticaret Sicil Memurluğu"
+         NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/TicaretSicilMemurluguIslemleri.aspx" />
+  <group Text="Meslek Grupları"
+         NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/MeslekGrupIslemleri.aspx" />
+  <group Text="Madde Kodları" NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/MaddeKodIslemleri.aspx" />
+</menu>

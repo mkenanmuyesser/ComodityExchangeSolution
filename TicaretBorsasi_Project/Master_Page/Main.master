@@ -1,0 +1,62 @@
+<%@ Master Language="C#" MasterPageFile="Root.master" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="TicaretBorsasi_Project.Master_Page.MainMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPopupControl" TagPrefix="dx" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxNavBar" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxMenu" TagPrefix="dx" %>
+
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderMenu" runat="server">
+    <dx:ASPxMenu ID="Menu" runat="server" ItemAutoWidth="true" RenderMode="Lightweight" Width="100%" Font-Size="Small" SyncSelectionMode="CurrentPath" AppearAfter="100" ShowSubMenuShadow="False">
+        <Border BorderWidth="0px" />
+        <BorderTop BorderWidth="0px" />
+    </dx:ASPxMenu>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">   
+    <dx:ASPxSplitter ID="ContentSplitter" runat="server" Width="100%" Height="100%">
+        <Styles>
+            <Pane>
+                <Paddings Padding="0px" />
+                <Border BorderWidth="0px" />
+            </Pane>
+        </Styles>
+        <Panes>
+            <dx:SplitterPane Name="ContentLeft" ShowCollapseBackwardButton="True" Size="18%" AllowResize="false" ScrollBars="Auto">
+                <PaneStyle CssClass="leftPane">
+                    <Paddings Padding="0px"></Paddings>
+                </PaneStyle>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <div class="leftPanel">
+                            <dx:ASPxNavBar ID="NavBarAltMenu" runat="server" AutoCollapse="True" EnableAnimation="True" SyncSelectionMode="CurrentPath"
+                                Width="100%" Height="100%">
+                                <LinkStyle>
+                                    <Font Underline="false" Italic="false" Overline="false" Strikeout="false"></Font>
+                                </LinkStyle>
+                                <Border BorderWidth="0px" />
+                                <Paddings Padding="0px" />
+                            </dx:ASPxNavBar>
+                        </div>
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+            <dx:SplitterPane Name="ContentCenter" ScrollBars="Auto">
+                <PaneStyle CssClass="contentPane">
+                    <Paddings Padding="0px" />
+                    <Border BorderWidth="0px" />
+                </PaneStyle>
+                <Separator Visible="True">
+                    <SeparatorStyle>
+                        <Border BorderWidth="1px" />
+                        <BorderTop BorderWidth="1px" />
+                    </SeparatorStyle>
+                </Separator>
+                <ContentCollection>
+                    <dx:SplitterContentControl>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddleContent" runat="server" />
+                    </dx:SplitterContentControl>
+                </ContentCollection>
+            </dx:SplitterPane>
+        </Panes>
+    </dx:ASPxSplitter>
+</asp:Content>

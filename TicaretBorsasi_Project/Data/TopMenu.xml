@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<items>
+  <item Text="Merkez Borsa İşlemleri">
+    <item Text="Tüccar İşlemleri" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/AnaMenuTuccarIslemleri.aspx" />
+    <item Text="Muhasebe İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/MuhasebeIslemleri/AnaMenuMuhasebeIslemleri.aspx" />
+    <item Text="Bordro İşlemleri" NavigateUrl="../Program/MerkezBorsa/BordroIslemleri/AnaMenuBordroIslemleri.aspx" />
+    <item Text="Beyanname Tescil İşlemleri" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/AnaMenuBeyannameTescilIslemleri.aspx" />
+    <item Text="Muhtelif İşlemler" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/AnaMenuMuhtelifIslemler.aspx" />
+    <item Text="Parametre Kodlu Bilgi İşlemleri" NavigateUrl="../Program/MerkezBorsa/ParametreKodluBilgiIslemleri/AnaMenuParametreKodluBilgiIslemleri.aspx" />
+  </item>
+  <item Text="Canlı Hayvan Borsa İşlemleri" NavigateUrl="">
+
+  </item>
+  <item Text="Süpürge Borsa İşlemleri" NavigateUrl="">
+
+  </item>
+  <item Text="Toprak Tahlil İşlemleri" NavigateUrl="">
+
+  </item>
+  <item Text="Salon Satış İşlemleri">
+    <item Text="Tüccar İşlemleri" NavigateUrl="../Program/SalonSatis/TuccarIslemleri/AnaMenuTuccarIslemleri.aspx" />
+    <item Text="Satış İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/AnaMenuSatisIslemleri.aspx" />
+    <item Text="Lab ve Satış Listeleri" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/AnaMenuLabSatisListeleri.aspx" />
+    <item Text="Muhtelif İşlemler" NavigateUrl="../Program/SalonSatis/MuhtelifIslemler/AnaMenuMuhtelifIslemler.aspx" />
+    <item Text="Parametre Kodlu Bilgi İşlemleri"  NavigateUrl="../Program/SalonSatis/ParametreKodluBilgiIslemleri/AnaMenuParametreKodluBilgiIslemleri.aspx" />
+  </item>
+  <item Text="Program İşlemleri" NavigateUrl="../Program/ProgramIslem/AnaMenuProgramIslem.aspx" />
+</items>

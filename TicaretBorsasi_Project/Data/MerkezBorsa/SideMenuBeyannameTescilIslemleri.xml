@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="! Beyanname Tescil"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilIslemleri.aspx" />
+  <group Text="! İstihbarat" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameIstihbarat.aspx" />
+  <group Text="Borsa Yevmiye" NavigateUrl="">
+    <item Text="! Beyan Yevmiye Listeleri"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameBeyanYevmiyeListeleri.aspx" />
+    <!--hepsi beyan yevmiye listelerinde toplandı -->
+    <!--<item Text="*Peşin Beyan Yevmiye Listesi" NavigateUrl=""/>
+    <item Text="*Tüm Borsa Gelirleri" NavigateUrl=""/>-->
+    <item Text="*Beyan Dışı Tüm Borsa Gelir Detayları" NavigateUrl="" />
+    <item Text="! Tahsilat Bordrosu"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTahsilatBordro.aspx" />
+    <item Text="*Tahsilat Bordrosu Gelir Detayları" NavigateUrl="" />
+    <item Text="! Borsa Beyan Gelirleri Kontrolü" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameBorsaBeyanGelirleriKontrolu.aspx" />
+    <item Text="*Üye Müfredat Mizanı" NavigateUrl="" />
+    <item Text="Beyanname Tescil ve Sat. Org. H. Gelirleri"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilGelirleri.aspx" />
+    <item Text="! Beyanname Kesintileri Listesi"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameKesintiListesi.aspx" />
+  </group>
+  <group Text="Satış Şekilleri"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameSatisSekilleri.aspx" />
+  <group Text="Tescil Defteri"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilDefteri.aspx" />
+  <group Text="Tescil No Takibi"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilNoTakip.aspx" />
+  <!--hepsi tescil no takibinde toplandı -->
+  <!--<group Text="+Tescil No Takibi(Detaylı)"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilNoTakipDetay.aspx" />-->
+  <group Text="! Tüccar Tescil Takibi"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTuccarTescilTakip.aspx" />
+  <group Text="! Tüccar Tescil Takibi 2 "
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTuccarTescilTakipDetay.aspx" />
+  <group Text="Tescil Oranları" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilOran.aspx" />
+  <group Text="Tescil ve Sat. Org. H. Toplamı" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilSatOrgToplam.aspx" />
+  <group Text="Emtia Kodlu Tes. Sim. Toplamı" NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameEmtiaKodluTesSimToplam.aspx" />
+  <group Text="! Müstahsil Tarama"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameMustahsilTarama.aspx" />
+  <group Text="! Birim Fiyatlı Beyan Tarama"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameBeyanTarama.aspx" />
+  <group Text="Tescil Ücret Tavanı Aşanlar"
+         NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/BeyannameTescilUcretTavanAsanlar.aspx" />
+  <group Text="Raporlar" NavigateUrl="">
+    <item Text="İstatistik"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=Istatistik" />
+    <item Text="İstatistik Föyü"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=IstatistikFoyu" />
+    <item Text="*İstatistik(İnternet)"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx" />
+    <item Text="En Fazla İşlem Görenler"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=EnFazlaIslemGorenler" />
+    <item Text="! Tescil Defteri Beyan Sıralı"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=TescilDefteriBeyanSirali" />
+    <item Text="Tescil Defteri Fat/Müs Nolu"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=TescilDefteriFatMusNolu" />
+    <item Text="İhracaat Beyanname Listesi"
+          NavigateUrl="../Program/MerkezBorsa/BeyannameTescilIslemleri/RaporBeyannameTescilIslemleri.aspx?Rapor=IhracaatBeyannamesi" />
+    <!-- sadece alt toplam mevzusu kaldı-->
+  </group>
+</menu>

@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="sqlDataSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="customSqlQuery1.Sql" xml:space="preserve">
+    <value>--declare @BaslangicTarihi date='2014.01.01';
+--declare @BitisTarihi date='2014.01.31';
+--declare @BaslangicSubeKod int=1;
+--declare @BitisSubeKod int=99;
+--declare @KodBaslangic varchar='01';
+--declare @Kod varchar='010000';
+
+with ButunGunler as
+(
+SELECT BeyanTarihi = DATEADD(Day,Number,@BaslangicTarihi) 
+FROM  master..spt_values 
+WHERE Type='P'
+AND DATEADD(day,Number,@BaslangicTarihi) &lt;= @BitisTarihi
+),
+Datalar as(
+select 
+'T.C. '+BB.ProgramBaslik as BorsaAdi,
+DATEPART(WEEKDAY,BeyanTarihi) as HaftaninGunu,
+(select Adi from MERKEZ_BORSA.TT_MADDE_KOD where Kod=@Kod) as Cinsi,
+B.BeyanTarihi,
+CAST (B.BeyanTarihi as varchar) as BeyanZamani,
+COUNT(B.BeyanNo) as MuameleSayisi,
+MIN(B.BirimFiyat) as EnAz,
+MAX(B.BirimFiyat) as EnCok,
+AVG(B.BirimFiyat) as Ortalama,
+SUM(B.BeyanMiktar) as Miktar,
+SUM(B.BeyanSatisTutari) as Bedeli
+from MERKEZ_BORSA.BEYAN as B
+left join MERKEZ_BORSA.TT_MADDE_KOD as MK
+on B.MaddeKodKey=MK.MaddeKodKey
+left join MERKEZ_BORSA.TUCCAR_SICIL as TS
+on b.TuccarSicilKey=TS.TuccarSicilKey
+left join MERKEZ_BORSA.TT_BIRIM_TIP as BT
+on B.BirimTipKey=BT.BirimTipKey
+left join MERKEZ_BORSA.TT_BORSA_SUBE as BS
+on B.BorsaSubeKey=BS.BorsaSubeKey
+left join MERKEZ_BORSA.TT_BEYAN_TIP as BET
+on B.BeyanTipKey=BET.BeyanTipKey
+cross join 
+PROGRAM.BORSA_BILGI as BB
+where 
+(B.BeyanKayitTipKey=2 or B.BeyanTipKey=1) and
+MK.Kod like ''+@KodBaslangic+'%' and
+BeyanTarihi between @BaslangicTarihi and @BitisTarihi and
+cast(BS.Kod as int) between cast(@BaslangicSubeKod as int) and cast(@BitisSubeKod as int)
+group by 'T.C. '+BB.ProgramBaslik,DATEPART(WEEKDAY,BeyanTarihi),B.BeyanTarihi,CAST (B.BeyanTarihi as varchar)
+),
+AyinSonGunu as
+(SELECT 
+BorsaAdi as BorsaAdi,
+NULL as HaftaninGunu,
+Cinsi as Cinsi,
+cast(@BitisTarihi as DATE) as BeyanTarihi,
+'Aylık Toplam' as BeyanZamani,
+SUM(MuameleSayisi) as MuameleSayisi,
+MIN(EnAz) as EnAz,
+MAX(EnCok) as EnCok,
+AVG(Ortalama) as Ortalama,
+SUM(Miktar) as Miktar,
+SUM(Bedeli) as Bedeli
+from Datalar
+group by BorsaAdi,Cinsi
+),
+AyinSonHaftasi as
+(SELECT 
+BorsaAdi as BorsaAdi,
+1 as HaftaninGunu,
+Cinsi as Cinsi,
+cast(@BitisTarihi as DATE) as BeyanTarihi,
+'Hafta Toplam' as BeyanZamani,
+SUM(MuameleSayisi) as MuameleSayisi,
+MIN(EnAz) as EnAz,
+MAX(EnCok) as EnCok,
+AVG(Ortalama) as Ortalama,
+SUM(Miktar) as Miktar,
+SUM(Bedeli) as Bedeli
+from Datalar
+where DATEPART(WEEKDAY,@BitisTarihi)!=1
+and BeyanTarihi between (select top 1 BeyanTarihi from ButunGunler where DATEPART(WEEKDAY,BeyanTarihi)=2 order by BeyanTarihi desc) and @BitisTarihi
+group by BorsaAdi,Cinsi
+)
+select * from Datalar
+union all
+select 'T.C. '+BB.ProgramBaslik as BorsaAdi,
+DATEPART(WEEKDAY,BeyanTarihi) as HaftaninGunu,
+(select Adi from MERKEZ_BORSA.TT_MADDE_KOD where Kod=@Kod) as Cinsi,
+BeyanTarihi,
+case 
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then 'Hafta Toplam'
+else CAST(CAST(B.BeyanTarihi as date) as varchar) end as BeyanZamani,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select SUM(D.MuameleSayisi) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select MIN(D.EnAz) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select MAX(D.EnCok) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select AVG(D.Ortalama) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select SUM(D.Miktar) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end,
+case
+when DATEPART(WEEKDAY,BeyanTarihi)=1 then (select SUM(D.Bedeli) from Datalar as D where D.BeyanTarihi between DATEADD(DAY,-7,B.BeyanTarihi) and B.BeyanTarihi)
+else NULL end
+from ButunGunler as B
+cross join 
+PROGRAM.BORSA_BILGI as BB
+where BeyanTarihi not in (select BeyanTarihi from Datalar)
+union all 
+select * from AyinSonGunu
+union all 
+select * from AyinSonHaftasi
+order by BeyanTarihi asc,HaftaninGunu desc 
+
+
+</value>
+  </data>
+  <data name="sqlDataSource1.ResultSchemaSerializable" xml:space="preserve">
+    <value>PERhdGFTZXQgTmFtZT0iTmV3RGF0YVNldCI+PFZpZXcgTmFtZT0iQ3VzdG9tU3FsUXVlcnkiPjxGaWVsZCBOYW1lPSJCb3JzYUFkaSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJIYWZ0YW5pbkd1bnUiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJDaW5zaSIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJCZXlhblRhcmloaSIgVHlwZT0iRGF0ZVRpbWUiIC8+PEZpZWxkIE5hbWU9IkJleWFuWmFtYW5pIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9Ik11YW1lbGVTYXlpc2kiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJFbkF6IiBUeXBlPSJEZWNpbWFsIiAvPjxGaWVsZCBOYW1lPSJFbkNvayIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iT3J0YWxhbWEiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik1pa3RhciIgVHlwZT0iRGVjaW1hbCIgLz48RmllbGQgTmFtZT0iQmVkZWxpIiBUeXBlPSJEZWNpbWFsIiAvPjwvVmlldz48VmlldyBOYW1lPSJDdXN0b21TcWxRdWVyeV9NYWRkZUtvZHUiPjxGaWVsZCBOYW1lPSJNYWRkZUtvZEtleSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IktvZCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48VmlldyBOYW1lPSJDdXN0b21TcWxRdWVyeV9TdWJlS29kdSI+PEZpZWxkIE5hbWU9IkJvcnNhU3ViZUtleSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IktvZCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+</value>
+  </data>
+</root>

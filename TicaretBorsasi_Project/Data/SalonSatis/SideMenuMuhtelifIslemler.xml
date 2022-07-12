@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Borsa Şubeleri" NavigateUrl="../Program/SalonSatis/MuhtelifIslemler/BorsaSubeleri.aspx" />
+  <group Text="! Tartı Ücretleri" NavigateUrl="../Program/SalonSatis/MuhtelifIslemler/TartiUcretleri.aspx" />
+  <group Text="! Otomatik Satış Ayarları" NavigateUrl="../Program/SalonSatis/MuhtelifIslemler/OtomatikSatisAyarlari.aspx" />
+</menu>

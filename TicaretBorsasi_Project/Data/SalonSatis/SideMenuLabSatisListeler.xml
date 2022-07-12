@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Günlük Raporlar">
+    <item Text="* Beyan Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Tüccar Bazlı Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Salon Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Satış Ortalamaları Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Analiz Hizmeti Ücret Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Müstahsil Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Gerçek Miktar Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Kantar Kartela Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Günlük Özet" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Günlük Satış Tüm Liste" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="Genel Raporlar">
+    <item Text="* Tüccar Alış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Müstahsil Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Üretim Merkezi Satış Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Genel Beyan Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Genel Tüccar Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Üretim Merkezi Özet Liste" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Mahsülün Geldiği Merkezler" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Mahsülün Adına Göre Listeler" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Analiz Hizmeti Ücret Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Satış Ortalamaları Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+    <item Text="* Tüccar Kantar Kartela Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="Laboratuar Analiz Raporları">
+    <item Text="* " NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="Lab. Analizine Göre Fiyatlar">
+    <item Text="* " NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="Hububat Gr. Derece Fiyat Raporu">
+    <item Text="* " NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="Ayçiçek Yabancı Madde ve Yağ Oranı">
+    <item Text="* " NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  </group>
+  <group Text="* Laboratuar Analiz Raporları" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  <group Text="* Üretim Merkez Listeleri" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  <group Text="* Harici Analiz Raporları" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  <group Text="* Analiz Gelirler Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  <group Text="* Üreticiler Listesi" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+  <group Text="! Derece, Yemlik, Barem Dışı No" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/DereceYemlikBaremDisiNo.aspx" />
+  <group Text="! Yemlik veya Barem Dışı Kodlar" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/YemlikBaremDisiKodlar.aspx" />
+  <group Text="! Otomatik Satış Detayları" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/OtomatikSatisDetaylari.aspx" />
+  <group Text="* Satışa Gelen Emtia Tanımı" NavigateUrl="../Program/SalonSatis/LabSatisListeleri/RaporLabSatisListeleri.aspx?Rapor=???" />
+</menu>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Duyurular" NavigateUrl="../Program/ProgramIslem/Duyurular.aspx" />
+  <group Text="Borsa Bilgileri" NavigateUrl="../Program/ProgramIslem/BorsaBilgileri.aspx" />
+  <group Text="Rol Tanımlamaları" NavigateUrl="../Program/ProgramIslem/RolIslemleri.aspx" />
+  <group Text="Kullanıcı ve Yetki İşlemleri" NavigateUrl="../Program/ProgramIslem/KullaniciIslemleri.aspx" />
+  <group Text="*Program Ayarları ve Bakım" NavigateUrl="" />
+</menu>

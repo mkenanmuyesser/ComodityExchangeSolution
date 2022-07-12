@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Borsa Şubeleri" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/BorsaSubeleri.aspx" />
+  <group Text="Telefon Rehberi" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/TelefonRehberi.aspx" />
+  <group Text="Gelen Giden Evrak" NavigateUrl="">
+    <item Text="! Gelen Evrak İşlemleri" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/GelenEvrakIslemleri.aspx" />
+    <item Text="! Giden Evrak İşlemleri" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/GidenEvrakIslemleri.aspx" />
+    <item Text="Dosya Grup İşlemleri" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/DosyaGrupIslemleri.aspx" />
+    <item Text="*Yıl Başında Boş Evrak Dosyası Açınımı" NavigateUrl="" />
+  </group>
+  <group Text="! Yazışma Adresleri" NavigateUrl="../Program/MerkezBorsa/MuhtelifIslemler/YazismaAdresleri.aspx" />
+  <group Text="*Döviz İşlemleri" NavigateUrl="">
+    <item Text="*Kayıtlı Döviz Adları" NavigateUrl="" />
+    <item Text="*Döviz Kurları Girişi" NavigateUrl="" />
+    <item Text="*Döviz Kurları Listesi" NavigateUrl="" />
+  </group>
+  <group Text="*Demirbaş İşlemi" NavigateUrl="" />
+  <group Text="*Hatırlatma Mesajı" NavigateUrl="" />
+  <group Text="*Yeniyıl Açılışları" NavigateUrl="" />
+</menu>

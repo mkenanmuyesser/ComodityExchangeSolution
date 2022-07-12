@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <group Text="Tüccar Sicil İşlemleri">
+    <item Text="Tüccar Sicil Kayıt İşlemleri"
+          NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarSicilBilgiKayit.aspx" />
+    <item Text="Tüccar Sicil Arama İşlemleri"
+          NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarSicilBilgiArama.aspx" />
+  </group>
+  <group Text="Tüccar Depo Tanımları">
+    <item Text="! Tüccar Depo Kayıt İşlemleri" NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarDepoKayit.aspx" />
+    <item Text="! Tüccar Depo Arama İşlemleri" NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarDepoArama.aspx" />   
+  </group>
+  <group Text="! Tüccar Koltuk Tanımları" NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarKoltukTanimlari.aspx" />
+  <group Text="Tüccarlar Listesi" NavigateUrl="../Program/SalonSatis/TuccarIslemleri/TuccarTuccarlarListesi.aspx"/>
+</menu>

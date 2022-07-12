@@ -1,0 +1,84 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="TicaretBorsasi_Project.Master_Page.RootMaster" %>
+
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxEditors" TagPrefix="dx" %>
+<%@ Register Assembly="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxSplitter" TagPrefix="dx" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title></title>
+        <link href="../Content/Css/Site.css" rel="stylesheet" />
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <dx:ASPxSplitter ID="SplitterRoot" runat="server" AllowResize="False" Orientation="Vertical"
+                             FullscreenMode="True" SeparatorVisible="False" Height="100%" Width="100%">
+                <Styles>
+                    <Pane>
+                        <Paddings Padding="0px" />
+                        <Border BorderWidth="0px" />
+                    </Pane>
+                </Styles>
+                <Panes>
+                    <dx:SplitterPane Name="Header" Size="83px" MinSize="83px">
+                        <PaneStyle CssClass="headerPane">
+                            <BorderBottom BorderWidth="1px" />
+                        </PaneStyle>
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControl1" runat="server">
+                                <div class="headerTop">
+                                    <div class="templateTitle">
+                                        <a id="TitleLink" href="~/Program/AnaMenu.aspx" runat="server">
+                                            <asp:Label ID="LabelProgramBaslik" runat="server" Text="Ticaret Borsasi Project"></asp:Label>
+                                        </a>
+                                    </div>
+                                    <div class="loginControl">
+                                        <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                                            <LoggedInTemplate>
+                                                Hoþgeldiniz <span class="bold">
+                                                                <asp:LoginName ID="HeadLoginName" runat="server" />
+                                                            </span>! [
+                                                <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="ÇIKIÞ"
+                                                                 LogoutPageUrl="~/" />
+                                                ]
+                                            </LoggedInTemplate>
+                                        </asp:LoginView>
+                                    </div>
+                                </div>
+                                <div class="headerMenu">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolderMenu" runat="server"></asp:ContentPlaceHolder>
+                                </div>
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                    <dx:SplitterPane Name="Content" MinSize="375px">
+                        <PaneStyle CssClass="mainContentPane">
+                            <Paddings Padding="0px" />
+                            <Border BorderWidth="0px" />
+                        </PaneStyle>
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControl3" runat="server">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                        <PaneStyle BackColor="white">
+                            <BorderBottom BorderWidth="1px" />
+                        </PaneStyle>
+                    </dx:SplitterPane>
+                    <dx:SplitterPane Name="Footer" Size="20px" PaneStyle-CssClass="footerPane" MaxSize="20">
+                        <ContentCollection>
+                            <dx:SplitterContentControl ID="SplitterContentControlFooter" runat="server" Height="10">
+                                <div style="margin: 2px; text-align: center;">
+                                    <dx:ASPxLabel ID="LabelFirma" runat="server" Font-Size="Small" ForeColor="White">
+                                    </dx:ASPxLabel>
+                                </div>
+                            </dx:SplitterContentControl>
+                        </ContentCollection>
+                    </dx:SplitterPane>
+                </Panes>
+            </dx:ASPxSplitter>
+        </form>
+    </body>
+</html>

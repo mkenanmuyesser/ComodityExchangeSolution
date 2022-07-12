@@ -1,0 +1,7 @@
+<%@ Master Language="C#" MasterPageFile="Root.master" AutoEventWireup="true" CodeBehind="Light.master.cs" Inherits="TicaretBorsasi_Project.Master_Page.LightMaster" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolderMain" runat="server">
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderMain" runat="server" />
+    </div>
+</asp:Content>

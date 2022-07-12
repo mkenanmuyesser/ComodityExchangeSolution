@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Numune İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/.aspx" >
+    <item Text="! Numune Kayıt İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/NumuneKayit.aspx" />
+    <item Text="! Numune Arama İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/NumuneArama.aspx" />
+  </group>
+  <group Text="! Satış Ekranı" NavigateUrl="../Program/SalonSatis/SatisIslemleri/SatisEkrani.aspx" />
+  <group Text="! Laboatuar Parametreleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/LaboratuarParametreleri.aspx" />
+  <group Text="TSE Lab Parametre Dereceler" >
+    <item Text="! TSE Lab Parametre Kayıt İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TSELabParametreKayit.aspx" />
+    <item Text="! TSE Lab Parametre Arama İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TSELabParametreArama.aspx" />
+  </group>
+  <group Text="TMO Had, Kalite ve Fiyat Tanımları" >
+    <item Text="! TMO Başlangıç Alım Fiyatları" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TMOBaslangicAlimFiyatlari.aspx" />
+    <item Text="! TMO Analiz İlave Açıklamaları" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TMOAnalizIlaveAciklamalari.aspx" />
+    <item Text="! TMO Had ve Kalite Kayıt İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TMOHadKaliteKayit.aspx" />
+    <item Text="! TMO Had ve Kalite Arama İşlemleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TMOHadKaliteArama.aspx" />
+    <item Text="! TMO Had, Kalite ve Fiyat Listesi" NavigateUrl="../Program/SalonSatis/SatisIslemleri/TMOHadKaliteFiyatListesi.aspx" />
+  </group>
+  <group Text="! Üretim Merkezleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/UretimMerkezleri.aspx" />
+  <!--
+  numune güncellemede bu işlem yapılabileceği için kapatıldı
+  <group Text="! Numune Madde Kodu Değiştirme" NavigateUrl="../Program/SalonSatis/SatisIslemleri/.aspx" />
+  -->
+  <group Text="! Analiz Hizmet Ücretleri" NavigateUrl="../Program/SalonSatis/SatisIslemleri/AnalizHizmetUcretleri.aspx" />
+  <group Text="* Laboratuar Analiz Listesi" NavigateUrl="../Program/SalonSatis/SatisIslemleri/.aspx" />
+  <group Text="! Verilen/Verilmeyen Mallar" NavigateUrl="../Program/SalonSatis/SatisIslemleri/VerilenVerilmeyenMallar.aspx" />
+</menu>

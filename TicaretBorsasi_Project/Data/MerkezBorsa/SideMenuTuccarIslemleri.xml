@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Tüccar Sicil İşlemleri">
+    <item Text="Tüccar Sicil Kayıt İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarSicilBilgiKayit.aspx" />
+    <item Text="Tüccar Sicil Arama İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarSicilBilgiArama.aspx" />
+  </group>
+  <group Text="! Tüccar Cari İşlemleri" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarCariIslemleri.aspx" />
+  <group Text="Tüccar Depo İşlemleri">
+    <item Text="Tüccar Depo Kayıt İşlemleri" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarDepoKayit.aspx" />
+    <item Text="Tüccar Depo Arama İşlemleri" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarDepoArama.aspx" />
+    <item Text="! Beyanlardan Tüccar Depo Yaratma"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarBeyanDepoYaratma.aspx" />
+  </group>
+  <group Text="Tüccar Adres Etiketi İşlemleri"
+         NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAdresEtiketiIslemleri.aspx" />
+  <!--seçimli seçimsiz iki menü bir arada olacak-->
+  <group Text="Tüccar Kefalet veya Teminat İşlemleri"
+         NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarKefaletTeminatIslemleri.aspx" />
+  <group Text="Tüccar Aidat İşlemleri" NavigateUrl="">
+    <item Text="Cari Yıl Aidat Listesi"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarCariYilAidatListesi.aspx" />
+    <item Text="Üye Aidat Beyan Listesi"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarUyeAidatBeyanListesi.aspx" />
+    <item Text="Aidat Derece Değiştirme"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAidatDereceDegistirme.aspx" />
+    <item Text="Üye Aidat Ceza Oranları"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarUyeAidatCezaOranlari.aspx" />
+    <item Text="Aidat Ceza Hesabı" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAidatCezaHesabi.aspx" />
+    <item Text="! Üye Aidat Ödemesi" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAidatOdemesi.aspx" />
+    <item Text="+Üye Aidat Tahakkuku" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAidatTahakkuku.aspx" />
+    <item Text="Aidat ve Ödeme Listeleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarUyeAidatOdemeListesi.aspx" />
+    <item Text="Üye Aidat Genel Durumu"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAidatGenelDurum.aspx" />
+    <item Text="*Geçmiş Yıl Aidat Girişi" NavigateUrl="" />
+    <!--<item Text="*Hatalı Aidat Ödeme İptali" NavigateUrl=""/> üye aidat genel duruma taşındı-->
+    <item Text="Vergi Dairesi Üye Aidat Dağılımı"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarVergiDairesiUyeAidatDagilimiListesi.aspx" />
+    <item Text="! Üye Kayıt Tahakkuku"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarUyeKayitTahakkuku.aspx" />
+  </group>
+  <group Text="Tüccar Liste İşlemleri">
+    <item Text="! Seçim Listeleri" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarSecimListesi.aspx" />
+    <item Text="Ticaret Sicil Memurluğu Listesi"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarTicaretSicilMemurluguListesi.aspx" />
+    <item Text="Tüccar Adresleri/Tel/Fax İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAdresTelFaxIslemleri.aspx" />
+    <!--işlemlerin doğruluğuna bakılacak,kayıtlı üye-tescil değil- üzerinden hesaplama işlemi yapılacak-->
+    <item Text="Üye Dağılımları" NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarUyeDagilimlari.aspx" />
+    <!--seçim listeleri içerisine taşındı-->
+    <!--<item Text="*İlçe Seçim Listesi" NavigateUrl=""/>-->
+    <!--tüccar sicil aram içerisinde detay butonu kullanıldı taşındı-->
+    <!--<item Text="*Düz Tüccar Bilgileri" NavigateUrl=""/>-->
+  </group>
+  <group Text="Tüccar Askıya Alma İşlemleri">
+    <item Text="! Askıya Alınacak Üyeleri Bul"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAskiyaAlinacakUyeListesi.aspx" />
+    <item Text="Askıya Alma İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarAskiyaAlmaIslemleri.aspx" />
+  </group>
+  <group Text="Tüccar Stopaj Vergisi İşlemleri" NavigateUrl="">
+    <item Text="! Zirai Stopaj Tahakkuk Kontrolü"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarStopajTahakkukKontrolu.aspx" />
+    <item Text="! Zirai Stopaj Tahsilat Kontrolü"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarStopajTahsilatKontrolu.aspx" />
+    <item Text="+Zirai Stopaj Bakiyesi Kontrolü"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/TuccarStopajBakiyeKontrolu.aspx" />
+  </group>
+  <group Text="Raporlar" NavigateUrl="">
+    <item Text="Tüccar Faaliyet Belgesi İşlemleri"
+          NavigateUrl="../Program/MerkezBorsa/TuccarIslemleri/RaporTuccarIslemleri.aspx?Rapor=FaaliyetBelgeleri" />
+  </group>
+</menu>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<menu>
+  <group Text="Özlük Bilgileri" NavigateUrl="">
+    <item Text="*Personel İşlemleri" NavigateUrl="" />
+    <item Text="*Huzur Hakkı" NavigateUrl="" />
+    <item Text="*Personel Yakınları" NavigateUrl="" />
+    <item Text="*Personel Sicili" NavigateUrl="" />
+    <item Text="*Personel İzinleri" NavigateUrl="" />
+  </group>
+  <group Text="Tahakkuk İşlemleri" NavigateUrl="">
+    <item Text="*Terfiler" NavigateUrl="" />
+    <item Text="*Sosyal Yardım" NavigateUrl="" />
+    <item Text="*İkramiye (Brüt)" NavigateUrl="" />
+    <item Text="*Hayat Sigortası" NavigateUrl="" />
+    <item Text="*Kesintiler" NavigateUrl="" />
+    <item Text="*Tahakkuk" NavigateUrl="" />
+    <item Text="*Görüntüleme" NavigateUrl="" />
+    <item Text="*Nema Girişleri" NavigateUrl="" />
+    <item Text="*Mesai" NavigateUrl="" />
+    <item Text="*Huzur Hakkı" NavigateUrl="" />
+  </group>
+  <group Text="Listeler" NavigateUrl="">
+    <item Text="*Bordro Dökümü" NavigateUrl="" />
+    <item Text="*Personel Listesi" NavigateUrl="" />
+    <item Text="*Tasarruf Listesi" NavigateUrl="" />
+    <item Text="*Sandık Kesintisi" NavigateUrl="" />
+    <item Text="*Vergiler" NavigateUrl="" />
+    <item Text="*Konut Ed. Listesi" NavigateUrl="" />
+    <item Text="*Aylık İcmal" NavigateUrl="" />
+    <item Text="*Top. SSK Matrahı" NavigateUrl="" />
+    <item Text="*Sigorta Bordrosu" NavigateUrl="" />
+    <item Text="*Nemalar" NavigateUrl="" />
+    <item Text="*Huzur Hakkı" NavigateUrl="" />
+    <item Text="*Toplam Kesintiler" NavigateUrl="" />
+  </group>
+  <group Text="Tanımlar" NavigateUrl="">
+    <item Text="*Huzur Kodları" NavigateUrl="" />
+    <item Text="*Servisler" NavigateUrl="" />
+    <item Text="*Unvanlar" NavigateUrl="" />
+    <item Text="*Göstergeler" NavigateUrl="" />
+    <item Text="*Parametreler" NavigateUrl="" />
+    <item Text="*Açıklamalar" NavigateUrl="" />
+    <item Text="*Oda-Borsa Bilgileri" NavigateUrl="" />
+    <item Text="*Sicil Kodları" NavigateUrl="" />
+    <item Text="*İzin Kodları" NavigateUrl="" />
+    <item Text="*Bordro Altı Tasd." NavigateUrl="" />
+    <item Text="*Yuvarlama Bilgisi" NavigateUrl="" />
+  </group>
+  <!-- Bu menüye gerek duyulmadığı için kapatıldı -->
+  <!--<group Text="Muhtelif İşlemler" NavigateUrl=""  />-->
+</menu>
