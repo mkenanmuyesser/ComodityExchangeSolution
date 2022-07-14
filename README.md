@@ -9,3 +9,7 @@ The project is an crm solution.
 Used technologies : C#, Asp.Net Webform, Entity Framework, Reporting, Devex components, MS Sql Server, SignalR and include terminal applications.
 
 It is a individual package software. It is web-based and includes a mobile compatible sales module that allows multiple users to bid in live sales using SignalR. Sales transactions are made with live auction modules.
+
+Minran Kenan MÜYESSER
+mkenanmuyesser@hotmail.com
+https://www.linkedin.com/in/minran-kenan-müyesser
