@@ -12,4 +12,4 @@ It is a individual package software. It is web-based and includes a mobile compa
 
 Minran Kenan MÜYESSER
 mkenanmuyesser@hotmail.com
-https://www.linkedin.com/in/minran-kenan-müyesser
+https://www.linkedin.com/in/mkenanmuyesser
